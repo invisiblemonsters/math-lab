@@ -3,3 +3,4 @@ __pycache__/
 sessions/*.txt
 sessions/*.jsonl
 .env
+.api_key_b64

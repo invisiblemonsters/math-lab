@@ -32,7 +32,10 @@ from collections import Counter
 # CONFIGURATION
 # ============================================================================
 
-HUNTER_API_KEY="nvapi-...pYKJ"
+import base64 as _b64
+_key_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".api_key_b64")
+with open(_key_file) as _kf:
+    HUNTER_API_KEY = _b64.b64decode(_kf.read().strip()).decode()
 API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 # Models
