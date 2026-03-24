@@ -569,9 +569,8 @@ def git_commit(message: str):
     """Stage and commit changes in the math-lab directory."""
     try:
         subprocess.run(["git", "add", "-A"], cwd=PROJECT_DIR,
-                       capture_output=True, timeout=10)
-        subprocess.run(["git", "add", "-A"], cwd=MATHLIB_DIR,
-                       capture_output=True, timeout=10)
+                       capture_output=True, timeout=30)
+        # Skip mathlib dir (too large for git add)
         result = subprocess.run(
             ["git", "commit", "-m", message],
             cwd=PROJECT_DIR, capture_output=True, text=True, timeout=10,
