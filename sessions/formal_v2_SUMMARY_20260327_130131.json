@@ -1,0 +1,21 @@
+{
+  "session": "20260327_130131",
+  "version": "2.0",
+  "proposer": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+  "formalizer": "meta/llama-3.1-405b-instruct",
+  "turns": 25,
+  "verified": 13,
+  "substantive": 13,
+  "trivial": 0,
+  "failed": 12,
+  "success_rate": 52.0,
+  "prior_knowledge": 934,
+  "phase_counts": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 1
+  },
+  "verified_file": "/home/power/projects/math-lab/sessions/formal_v2_VERIFIED_20260327_130131.md"
+}
