@@ -92,6 +92,34 @@ def load_api_key() -> str:
 
 API_KEY = load_api_key()
 
+# Telegram alerts
+def load_telegram_config():
+    """Load Telegram bot token and chat ID from Hermes .env."""
+    env_path = Path.home() / ".hermes" / ".env"
+    token, chat_id = None, None
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            if line.startswith("TELEGRAM_BOT_TOKEN="):
+                token = line.split("=", 1)[1].strip()
+            elif line.startswith("TELEGRAM_HOME_CHANNEL="):
+                chat_id = line.split("=", 1)[1].strip()
+    return token, chat_id
+
+TG_TOKEN, TG_CHAT_ID = load_telegram_config()
+
+def telegram_alert(message: str):
+    """Send a Telegram message. Fire-and-forget, never crashes the pipeline."""
+    if not TG_TOKEN or not TG_CHAT_ID:
+        return
+    try:
+        requests.post(
+            f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
+            json={"chat_id": TG_CHAT_ID, "text": message, "parse_mode": "HTML"},
+            timeout=10,
+        )
+    except:
+        pass  # Never let Telegram failure affect the research pipeline
+
 def llm_call(model: str, messages: list, temperature: float = 0.7,
              max_tokens: int = 4096, timeout: int = API_TIMEOUT) -> Optional[str]:
     """Call NVIDIA API. Returns text or None on failure."""
@@ -721,6 +749,17 @@ def run_cycle(cycle: int, memory: SwarmMemory, session_log: list):
         memory.add_verified(theorem_name, proposal["text"][:500], lean_code, proposal["source"])
         verified_this_cycle += 1
         cycle_data["verified"] += 1
+
+        # 🔥 ALERT — Telegram notification
+        telegram_alert(
+            f"🔥 <b>MATH LAB v29 — THEOREM VERIFIED</b>\n\n"
+            f"<b>{theorem_name}</b>\n"
+            f"Source: {proposal['source']} ({proposal['model']})\n"
+            f"Cycle: {cycle}\n\n"
+            f"<pre>{proposal['text'][:500]}</pre>\n\n"
+            f"Barrier scores: R={scores.get('R','?')} N={scores.get('N','?')} A={scores.get('A','?')}\n"
+            f"Total verified: {memory.global_state['total_verified']}"
+        )
 
     # Scribe summary
     summary = run_scribe_summary(cycle_data)

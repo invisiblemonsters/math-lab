@@ -1912,5 +1912,61 @@
       "killed": false
     },
     "timestamp": "2026-03-28T06:48:18.521816"
+  },
+  {
+    "approach": "CONJECTURE_NAME: MonotoneKwiseIndependentHittingSet\nSTATEMENT: Let $n, k$ be integers with $k \\le n/2$. Let $\\mathcal{D}_{n,k}$ be the uniform distribution over monotone Boolean vectors in $\\{0,1\\}^n$ having exactly $k$ ones (the \"middle slice\" of the Boolean hypercube). Let $f: \\{0,1\\}^n \\to \\{0,1\\",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (6.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "A": 3,
+      "R": 3,
+      "N": 2,
+      "total": 8,
+      "killed": false
+    },
+    "timestamp": "2026-03-28T06:56:46.977614"
+  },
+  {
+    "approach": "Okay, so I need to come up with a conjecture related to P vs NP, specifically in computational complexity. The user mentioned circuit lower bounds, proof complexity, barrier evasion, etc. Let me think about what areas are hot right now. \n\nI remember the Natural Proofs barrier by Razborov and Rudich,",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 8,
+      "N": 5,
+      "A": 5
+    },
+    "timestamp": "2026-03-28T06:57:22.456979"
+  },
+  {
+    "approach": "CONJECTURE_NAME: MonotoneCircuitParityDiscrepancy\nSTATEMENT: Let $n$ be an even integer. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the Parity function ($f_n(x) = x_1 \\oplus x_2 \\oplus \\dots \\oplus x_n$). Let $\\mathcal{M}_{n, d}$ denote the class of monotone Boolean circuits of depth $d$ and size $S$. Ther",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.7s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "A": 7,
+      "N": 2,
+      "R": 2,
+      "total": 11,
+      "killed": false
+    },
+    "timestamp": "2026-03-28T07:07:42.100992"
+  },
+  {
+    "approach": "CONJECTURE_NAME: ShrinkageUnderRestrictionsForNC1\nSTATEMENT: Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the st-connectivity function. For any depth-$d$ Boolean circuit $C$ computing $f_n$, there exists a random restriction $\\rho$ leaving at least $n/2$ variables free, such that the restricted circuit $C|_\\",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 3,
+      "A": 3
+    },
+    "timestamp": "2026-03-28T07:08:31.894868"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NonCommutativeRankLowerBoundForPermanent**\nSTATEMENT:\nLet \\( \\text{Perm}_n : \\mathbb{F}^{n \\times n} \\to \\mathbb{F} \\) be the permanent function over a field \\( \\mathbb{F} \\) of characteristic 0. For any arithmetic circuit \\( C \\) of size \\( s \\) and depth \\( d \\) computing \\( \\te",
+    "reason": "Compile failed: \u2716 [8203/8205] Running Mathlib.LinearAlgebra.Basic\nerror: no such file or directory (error code: 4294967294)\n  file: /home/power/mathlib_test/.lake/packages/mathlib/Mathlib/LinearAlgebra/Basic.lean\n\u2716 [",
+    "barrier_profile": {
+      "A": 3,
+      "N": 2,
+      "R": 3,
+      "total": 8,
+      "killed": false
+    },
+    "timestamp": "2026-03-28T07:13:12.898363"
   }
 ]
