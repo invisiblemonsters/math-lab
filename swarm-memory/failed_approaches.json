@@ -2002,5 +2002,17 @@
       "A": 3
     },
     "timestamp": "2026-03-28T07:30:07.358340"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SubcubicSizeModularGateLowerBoundForParity**\n\nSTATEMENT:\nLet \\( n \\geq 1 \\) be an integer, and let \\( \\text{PARITY}_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be the parity function. For any constant \\( \\epsilon > 0 \\), there exists no sequence of circuits \\(\\{ C_n \\}_{n \\geq 1}\\) such that:\n1.",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (6.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "A": 3,
+      "N": 2,
+      "R": 2,
+      "total": 7,
+      "killed": false
+    },
+    "timestamp": "2026-03-28T07:38:42.712960"
   }
 ]

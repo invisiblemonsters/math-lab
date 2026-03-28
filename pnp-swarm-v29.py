@@ -52,10 +52,10 @@ PARALLEL_TIMEOUT = 180   # seconds for parallel calls
 # ============================================================
 
 MODELS = {
-    # Layer 1: Barrier Council
+    # Layer 1: Barrier Council (reasoning about proof methodology, not math itself)
     "barrier_relativization": "qwen/qwq-32b",
     "barrier_natural_proofs": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-    "barrier_algebrization":  "mistralai/mathstral-7b-v0.1",
+    "barrier_algebrization":  "meta/llama-3.3-70b-instruct",
 
     # Layer 2: Conjecture Engine (3 different model families)
     "conjecture_alpha":  "nvidia/llama-3.1-nemotron-ultra-253b-v1",
@@ -63,15 +63,15 @@ MODELS = {
     "conjecture_gamma":  "qwen/qwen3.5-397b-a17b",
 
     # Layer 3: Decomposer + Formalizer
-    "decomposer":        "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "decomposer":        "qwen/qwen3-next-80b-a3b-thinking",   # thinking model for subgoal decomposition
     "formalizer_primary": "qwen/qwen3-coder-480b-a35b-instruct",
-    "formalizer_backup":  "meta/llama-3.1-405b-instruct",
+    "formalizer_backup":  "mistralai/mathstral-7b-v0.1",        # math-tuned model as backup formalizer
 
     # Layer 4: Adversarial Critics
-    "critic_counterexample": "meta/llama-3.3-70b-instruct",
+    "critic_counterexample": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
     "critic_triviality":     "nvidia/llama-3.3-nemotron-super-49b-v1.5",
 
-    # Layer 5: Proof Search Workers
+    # Layer 5: Proof Search Workers (fix Lean compilation errors)
     "prover_alpha": "mistralai/devstral-2-123b-instruct-2512",
     "prover_beta":  "qwen/qwen3.5-122b-a10b",
 
