@@ -1,8 +1,8 @@
 {
-  "total_cycles": 66,
+  "total_cycles": 68,
   "total_verified": 0,
   "total_rejected_barrier": 0,
-  "total_falsified": 76,
-  "total_trivial": 10,
+  "total_falsified": 77,
+  "total_trivial": 11,
   "session_count": 4
 }

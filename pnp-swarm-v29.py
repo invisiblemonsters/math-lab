@@ -313,10 +313,41 @@ def load_existing_theorems() -> str:
     if RESEARCH_LEAN.exists():
         content = RESEARCH_LEAN.read_text()
         lines = content.split('\n')
-        # Extract theorem names
         theorems = [l.strip() for l in lines if l.strip().startswith("theorem ") or l.strip().startswith("lemma ")]
         return f"Existing library: {len(theorems)} theorems/lemmas in Research.lean ({len(lines)} lines)"
     return "No existing theorem library."
+
+
+def load_lean_examples() -> str:
+    """Extract compiled Lean 4 examples from Research.lean to help the formalizer."""
+    if not RESEARCH_LEAN.exists():
+        return ""
+    content = RESEARCH_LEAN.read_text()
+    lines = content.split('\n')
+
+    # Extract complete theorem blocks (theorem/lemma + proof up to next blank line or comment block)
+    examples = []
+    i = 0
+    while i < len(lines) and len(examples) < 20:
+        line = lines[i].strip()
+        if line.startswith("theorem ") or line.startswith("lemma "):
+            block = []
+            while i < len(lines) and lines[i].strip() != "" and not lines[i].strip().startswith("-- ═"):
+                block.append(lines[i])
+                i += 1
+            text = '\n'.join(block)
+            # Skip trivial ones, keep substantive ones (>2 lines, not just `rfl` or `trivial`)
+            if len(block) >= 2 and "trivial" not in text and ":= rfl" not in text:
+                examples.append(text)
+        i += 1
+
+    if not examples:
+        return ""
+
+    # Take a diverse sample
+    sample = examples[:15] if len(examples) <= 15 else examples[::len(examples)//15][:15]
+    header = f"--- {len(sample)} COMPILED LEAN 4 EXAMPLES FROM OUR LIBRARY (use similar style) ---\n"
+    return header + "\n\n".join(sample)
 
 
 # --- Layer 2: Conjecture Engine ---
@@ -511,6 +542,7 @@ Keep it precise and formal. Output should be ready for a Lean 4 formalizer."""},
     print(f"    Decomposed ({len(decomposition)} chars)")
 
     # Step 2: Formalize to Lean 4
+    lean_examples = load_lean_examples()
     print("  [LAYER 3] Formalizer — translating to Lean 4...")
     formalize_msg = [
         {"role": "system", "content": f"""You are a Lean 4 formalization expert. Convert mathematical statements into COMPILABLE Lean 4 code.
@@ -518,6 +550,7 @@ Keep it precise and formal. Output should be ready for a Lean 4 formalizer."""},
 RULES:
 - Import Mathlib (use `import Mathlib` at top)
 - Use proper Lean 4 syntax (not Lean 3)
+- Do NOT use `begin`/`end` blocks — use `by` tactic blocks or term-mode proofs
 - Include all necessary imports
 - Every theorem MUST have a complete proof (no `sorry`)
 - If the proof is hard, prove a simpler version that still compiles
@@ -525,6 +558,8 @@ RULES:
 - The code must be SELF-CONTAINED (except for Mathlib imports)
 
 {existing_library}
+
+{lean_examples}
 
 Output ONLY the Lean 4 code, nothing else. Start with `import Mathlib`."""},
         {"role": "user", "content": f"Formalize this decomposition into Lean 4:\n\n{decomposition}"}

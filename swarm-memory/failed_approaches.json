@@ -1968,5 +1968,39 @@
       "killed": false
     },
     "timestamp": "2026-03-28T07:13:12.898363"
+  },
+  {
+    "approach": "CONJECTURE_NAME: MonotoneSwitchingNetworkParityGap\nSTATEMENT: Let $n$ be an even integer. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the Parity function ($f_n(x) = \\bigoplus_{i=1}^n x_i$). Let $S_n$ denote the minimum size (number of vertices) of a non-deterministic switching network over the basis $\\{x_1,",
+    "reason": "Compile failed: \u2716 [598/598] Building MyProofs.Attempt (1.0s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean",
+    "barrier_profile": {
+      "A": 3,
+      "N": 2,
+      "R": 2,
+      "total": 7,
+      "killed": false
+    },
+    "timestamp": "2026-03-28T07:23:26.238575"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SymmetricPolynomialDegreeFourLowerBound**\nSTATEMENT: Let \\( e_4 \\in \\mathbb{R}[x_1, \\ldots, x_n] \\) be the elementary symmetric polynomial of degree 4. For any homogeneous depth-4 arithmetic circuit \\( C \\) computing \\( e_4 \\), the size of \\( C \\) is at least \\( \\Omega(n^2) \\).\nPR",
+    "reason": "Compile failed: \u2716 [8203/8208] Running Mathlib.Algebra.MultivariatePolynomial.Basic\nerror: no such file or directory (error code: 4294967294)\n  file: /home/power/mathlib_test/.lake/packages/mathlib/Mathlib/Algebra/Mul",
+    "barrier_profile": {
+      "A": 3,
+      "N": 2,
+      "R": 2,
+      "total": 7,
+      "killed": false
+    },
+    "timestamp": "2026-03-28T07:27:24.473063"
+  },
+  {
+    "approach": "CONJECTURE_NAME: AffineProjectionDegreeGap\nSTATEMENT: Let $n$ be an even integer and let $\\text{MWPM}_n: \\{0,1\\}^{\\binom{n}{2}} \\to \\{0,1\\}$ be the Boolean function indicating whether a graph on $n$ vertices contains a perfect matching. Let $d(n)$ be the minimum degree of a multilinear polynomial $P",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 3
+    },
+    "timestamp": "2026-03-28T07:30:07.358340"
   }
 ]
