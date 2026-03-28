@@ -1,0 +1,36 @@
+[
+  {
+    "approach": "CONJECTURE_NAME: MonotoneCircuitDepthLowerBound\nSTATEMENT: For any integer n > 1, there exists a Boolean function f: {0,1}^n \u2192 {0,1} in monotone-P that requires monotone circuits of depth at least \u03a9(n / log n) to compute.\nPROOF_SKETCH: Utilize a recursive, size-based argument on the structure of mon",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-27T19:59:56.697434"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** *RandomRestrictionLowerBound*\n\n**STATEMENT:**\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a depth-\\( d \\) circuit of size \\( s \\geq n \\). For a random restriction \\( \\rho \\) that leaves \\( n^{1/d} \\) variables free with probability \\( 1/n \\) each, the fo",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "A": 1,
+      "N": 2,
+      "R": 2,
+      "total": 5,
+      "killed": false
+    },
+    "timestamp": "2026-03-27T20:06:12.375730"
+  },
+  {
+    "approach": "CONJECTURE_NAME: LogDepth_XOR_Quadratic_LB\nSTATEMENT: For every integer $n \\geq 1$, any Boolean circuit $C$ of depth $d(n) = O(\\log n)$ composed exclusively of XOR gates (unbounded fan-in) and AND gates (fan-in 2) that computes the Parity function on $n$ bits ($\\bigoplus_{i=1}^n x_i$) must have size",
+    "reason": "Formalization failed",
+    "barrier_profile": {
+      "A": 3,
+      "N": 3,
+      "R": 2,
+      "total": 8,
+      "killed": false
+    },
+    "timestamp": "2026-03-27T20:10:38.429958"
+  }
+]
