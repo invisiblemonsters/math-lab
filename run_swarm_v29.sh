@@ -11,7 +11,7 @@ echo "Started: $(date)"
 while true; do
     echo ""
     echo "=== Starting new session: $(date) ==="
-    python3 pnp-swarm-v29.py 2>&1 | tee -a /tmp/math-lab-v29.log
+    python3 -u pnp-swarm-v29.py 2>&1 | tee -a /tmp/math-lab-v29.log
     echo "=== Session ended: $(date) ==="
     echo "Cooling down 60s..."
     sleep 60
