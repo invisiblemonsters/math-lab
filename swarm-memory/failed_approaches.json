@@ -1,425 +1,5 @@
 [
   {
-    "approach": "CONJECTURE_NAME: **StableFourierConcentrationForAC0**\n\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of size $S$ and depth $d$. Let $\\hat{f}(s)$ denote the Fourier coefficients of $f$. There exists a universal constant $C > 0$ such that for ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 1,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:22:06.582873"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **LiftingWithBoundedRandomnessCollapsesResolutionWidth**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be an unsatisfiable \\( k \\)-CNF formula on \\( n \\) variables, and let \\( \\mathcal{R}_m \\) denote the \\( m \\)-bit random oracle (where \\( m = n^{1 + \\epsilon} \\) for some constant \\( \\epsil",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 3,
-      "A": 7
-    },
-    "timestamp": "2026-03-28T23:23:52.621562"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonUniformMKtSensitivity**\nSTATEMENT: For every integer $k \\geq 2$ and $\\epsilon > 0$, there exists a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\mathsf{MKt}$ with $t = O(n^{1-\\epsilon})$ such that the average sensitivity of $f$ is at least $n^{\\epsilon}$, yet $f$ does not ad",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:26:59.250703"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **AC0_Parity_Orthogonality_Gap**\n\nSTATEMENT: Let $n$ be a positive integer and let $d \\geq 1$ be an integer such that $d \\leq \\frac{\\log n}{10 \\log \\log n}$. Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be any Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $S = ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:29:35.097015"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **MonotoneCircuitHierarchyViaLifting**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be a monotone Boolean function requiring monotone circuits of size \\( s(n) \\). Let \\( g_m : \\{0,1\\}^m \\to \\{0,1\\} \\) be a *non-monotone* Boolean function with \\( \\mathsf{NP} \\)-hardness under \\(",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 3,
-      "A": 4
-    },
-    "timestamp": "2026-03-28T23:31:02.066089"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SuccinctNonUniformLTC**\nSTATEMENT: For every language $L \\in \\mathsf{NP}$, there exists a non-uniform family of locally testable codes $\\{C_n\\}_{n \\in \\mathbb{N}}$ with the following properties:\n1. **Succinctness**: The length of each codeword $C_n(x)$ is $O(n)$ for $x \\in \\{0,1\\}",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 8,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:34:06.934052"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SymmetricXOR_MonotoneCircuitSeparation**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be the Boolean function defined as \\( f_n(x) = \\bigoplus_{i=1}^{n} x_i \\) (i.e., the XOR function on \\( n \\) variables). Let \\( \\text{Sym}(f_n) \\) denote the *symmetric lift* of \\( f_n \\), d",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-28T23:35:41.859280"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SymmetricDegreeAmplification**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a symmetric Boolean function that is not constant on the Hamming weight layers $\\{k, k+1\\}$ for any $0 \\le k < n$ (i.e., $f$ distinguishes adjacent weights). Let $C$ be a Boolean circuit of depth $d \\ge 2$",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:37:30.736718"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ResolutionWidthLowerBoundViaLiftingWithPartialAssignments**\n\nSTATEMENT:\nLet \\( \\phi \\) be an unsatisfiable \\( k \\)-CNF formula over \\( n \\) variables, and let \\( \\pi \\) be a partial assignment that fixes \\( o(n) \\) variables of \\( \\phi \\) (i.e., \\( |\\text{dom}(\\pi)| = o(n) \\)). Su",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-28T23:38:59.498246"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **RobustSymmetricDegreeSeparation**\n\nSTATEMENT: Let $n$ be a positive integer and let $k = \\lfloor \\log_2 n \\rfloor$. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be the symmetric Boolean function defined by $f(x) = 1$ if and only if the Hamming weight $|x| \\equiv 0 \\pmod{2^k}$. Then, for any pol",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-28T23:41:04.881447"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparsePseudorandomnessFromLowSensitivity**\nSTATEMENT: For every Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) with sensitivity \\( s(f) \\leq k \\) and every \\( \\epsilon > 0 \\), there exists a pseudorandom distribution \\( \\mathcal{D} \\) over \\( \\{0,1\\}^n \\) with support size \\( 2^{",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-28T23:44:17.735509"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **CircuitLowerBoundViaRestrictedOracle**\nSTATEMENT: For every sufficiently large integer $n$, there exists an oracle $O$ such that in the relativized world with $O$, the following holds: There exists a language $L \\in \\mathsf{NP}^O$ that cannot be computed by any $2^{n^{1/4}}$-gate ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:45:58.505223"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **RandomRestrictionPreservesMonotoneAC0LowerBounds**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be a monotone Boolean function computed by a depth-\\( d \\) \\(\\text{AC}^0\\) circuit of size \\( s(n) \\). Suppose \\( f_n \\) requires monotone circuits of size \\( \\Omega(s(n)^\\epsilon)",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 2
-    },
-    "timestamp": "2026-03-28T23:47:05.354293"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DualNormBottleneckForAC0XOR**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $s$. Let $\\|\\hat{f}\\|_1 = \\sum_{S \\subseteq [n]} |\\hat{f}(S)|$ denote the Fourier $L_1$-norm (spectral norm) of $f$. Then,",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:48:49.003345"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonUniformTC0SeparationViaAffineCircuits**\nSTATEMENT: Let $\\{C_n\\}$ be a non-uniform family of Boolean circuits over the basis $\\{\\wedge, \\vee, \\neg\\}$ with depth $d = O(\\log n)$ and size $s = 2^{o(n)}$. Then, for sufficiently large $n$, there exists a function $f_n: \\{0,1\\}^n \\to",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 3,
-      "A": 6
-    },
-    "timestamp": "2026-03-28T23:51:32.863598"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **StableDegreeAmplificationViaNoiseSensitivity**\n\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $S$. Let $\\mathcal{N}_\\rho$ denote the noise operator with parameter $\\rho \\in (0, 1)$, defined on the F",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-28T23:52:45.483177"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **LiftingWithModularConstraintsForResolutionWidth**\nSTATEMENT:\nLet \\( \\phi \\) be an unsatisfiable \\( k \\)-CNF formula over \\( n \\) variables with resolution width \\( w(\\phi) \\geq \\Omega(n) \\). For a prime \\( p \\geq 2 \\), define the lifted formula \\( \\phi_p \\) over variables \\( X \\ti",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 3,
-      "A": 4
-    },
-    "timestamp": "2026-03-28T23:54:56.806228"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DepthThreeCompressionViaSubspaceShattering**\nSTATEMENT: Let $C$ be a depth-three Boolean circuit over the basis $\\{\\land, \\lor, \\neg\\}$ with $n$ inputs, $m$ gates, and bottom fan-in at most $d$. There exists a subspace $V \\subseteq \\mathbb{F}_2^n$ of codimension $O(d \\log m)$ such",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-28T23:58:22.112903"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **StructuredSparseFourierAC0**\n\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $S$. Let $\\hat{f}(\\alpha) = \\mathbb{E}_x[f(x)\\chi_\\alpha(x)]$ denote the Fourier coefficients of $f$. There exists a unive",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-29T00:00:21.276836"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **RandomRestrictionPreservesRankLowerBoundForAC0**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by an \\( \\mathsf{AC}^0 \\) circuit of depth \\( d \\) and size \\( s \\), and let \\( M \\) be the \\( 2^{n/2} \\times 2^{n/2} \\) communication matrix of \\( f \\) (",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T00:01:24.141427"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SubcubicSizeBoundForAC0WithMod3GatesViaThresholdDegree**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a depth-\\( d \\) \\( \\mathsf{AC}^0 \\) circuit augmented with \\( \\text{MOD}_3 \\) gates (denoted \\( \\mathsf{AC}^0[\\text{MOD}_3] \\)). If \\( f \\) has",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T00:03:19.947817"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SubcriticalHybridLowerBounds**\nSTATEMENT: For every sufficiently large $n$, there exists a function $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\mathsf{P}$ such that for every $d \\leq n^{1/2 - \\epsilon}$, the number of monomials of degree at most $d$ in any polynomial representation of $f_n$",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 8,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:04:14.712911"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **AffineInvariantDegreeReduction**\nSTATEMENT: Let $n$ be a prime power and let $\\mathbb{F}_n$ be the finite field of order $n$. Let $P: \\mathbb{F}_n^n \\to \\mathbb{F}_n$ be a polynomial of degree $d$ where $2 \\le d < n$. If $P$ is invariant under the action of the affine group $AGL(n",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:07:46.114722"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseApproximationForMKt**\nSTATEMENT: For every $\\epsilon > 0$ and integer $k \\geq 1$, there exists a constant $C = C(\\epsilon, k)$ such that any Boolean function $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ with $\\mathsf{AC}^0$ circuit size at most $C \\cdot n^{\\epsilon}$ can be $\\epsilon$-appro",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 5,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:11:02.750662"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ModPCorrelationGapForDepthThree**\n\nSTATEMENT: Let $n$ be a sufficiently large integer and let $p$ be a prime such that $p \\equiv 1 \\pmod 3$. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the modulo-3 function defined by $f_n(x) = 1$ if $\\sum x_i \\equiv 0 \\pmod 3$, and $0$ otherwise. Let $\\m",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:12:55.541764"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **KarchmerWigdersonGamesForNonDeterministicCircuits**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function. Suppose there exists a nondeterministic Boolean circuit \\( C \\) of size \\( s \\) and depth \\( d \\) computing \\( f \\). Then, the Karchmer-Wigderson game complexi",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 7,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-29T00:14:35.594397"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SuccinctNondeterministicPlanarCircuitLowerBound**\nSTATEMENT: For every sufficiently large integer $n$, there exists a Boolean function $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\mathsf{P}$ such that any nondeterministic planar circuit computing $f_n$ requires size at least $n^{1.1}$, where",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:16:53.474284"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **RandomProjectionPreservesAC0HardnessViaMultiSwitchingLemmas**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function requiring \\( \\mathsf{AC}^0 \\) circuits of size \\( 2^{\\Omega(n^{1/d})} \\) for some constant \\( d \\geq 1 \\). For a random projection \\( \\rho: \\{0,1\\}^n ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T00:18:02.312603"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseCorrelationGapForDepthTwoModP**\n\nSTATEMENT: Let $p$ be an odd prime and $n$ be a sufficiently large integer. Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be the parity function on $n$ bits, defined by $f(x) = (-1)^{\\sum x_i}$. Let $\\mathcal{C}_{n, d, s}$ be the class of Boolean function",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:20:14.782493"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SuccinctTseitinLowerBoundsViaDualProofComplexity**\nSTATEMENT: For every sufficiently large integer $n$, there exists a family of unsatisfiable propositional formulas $\\{\\phi_n\\}$ in $n$ variables, such that:\n- Each $\\phi_n$ has size $O(n)$,\n- The Tseitin contradiction encoding of ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:22:32.486982"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **LiftingLowerBoundsViaNonUniformRandomizedReductions**\n\nSTATEMENT:\nLet \\( f:\\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function with **deterministic** decision tree complexity \\( D(f) = \\Omega(n) \\), and let \\( g:\\{0,1\\}^m \\to \\{0,1\\} \\) be a function with **randomized** query complexit",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-29T00:24:14.470195"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **BoundedDepthCorrelationWithParityViaFourierDecay**\n\nSTATEMENT: Let $d \\geq 2$ be a fixed integer and $\\epsilon > 0$. There exists a constant $\\delta = \\delta(d, \\epsilon) > 0$ such that for all sufficiently large $n$, if $C: \\{0,1\\}^n \\to \\{0,1\\}$ is a Boolean function computed by",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T00:27:13.883778"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonUniformTC0LowerBoundViaRazborovSwitching**\nSTATEMENT: Let \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function that computes the majority function on \\( n \\) variables. For every sufficiently large \\( n \\), any non-uniform \\( \\mathbf{TC}^0 \\) circuit (i.e., constant-depth, poly",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T00:31:42.581568"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DisjointSupportModPCorrelationDecay**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $f: \\{0,1\\}^n \\to \\mathbb{F}_p$ be a polynomial of degree $d$ over $\\mathbb{F}_p$. Suppose the variables $\\{x_1, \\dots, x_n\\}$ can be partitioned into $k$ disjoint sets $S_1, \\dots, S_k$ such th",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:33:59.825608"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NarrowResolutionWidthLowerBoundViaLifting**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^{n} \\to \\{0,1\\} \\) be a Boolean function computed by a circuit of depth \\( d \\) and size \\( s \\), where \\( d = O(\\log n) \\). Suppose \\( f \\) has high *block sensitivity* (i.e., \\( bs(f) = \\Omega(n^\\epsilon) ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T00:36:57.612207"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseApproximationResistanceForSymmetricFunctions**\nSTATEMENT: Let \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a symmetric Boolean function and \\( \\epsilon > 0 \\). If \\( f \\) is \\( \\epsilon \\)-approximation-resistant, then for any \\( k \\leq (1 - \\epsilon) \\log n \\), the \\( k \\)-junta appro",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:40:20.231301"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **AffineInvariantDegreeReductionObstruction**\n\nSTATEMENT: Let $p$ be a prime and $n, d, k$ be integers with $d < p$. Let $f: \\mathbb{F}_p^n \\to \\mathbb{F}_p$ be a polynomial of total degree $d$. Suppose there exists a set of $k$ linearly independent affine forms $L_1, \\dots, L_k \\in",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-29T00:42:45.306091"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DepthThreeExactLearningResistance**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function in $\\mathsf{AC}^0_3$ (depth-3 circuits) with $n^{o(1)}$ gates. Then, for any $\\epsilon > 0$, the number of queries required to learn $f$ exactly under the uniform distribution using",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 9,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:45:44.026170"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ModPCorrelationDecayUnderSparseAffineRestrictions**\n\nSTATEMENT: Let $p > 2$ be a fixed prime. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0[p]$ circuit of depth $d$ and size $S$. Let $\\rho$ be a random restriction that fixes $n - m$ variables",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 1,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:47:26.258324"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DepthTwoThresholdCorrelationWithRandomRestrictions**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a depth-2 linear threshold circuit (i.e., an intersection or union of halfspaces) with \\( s \\) gates, where \\( s = n^{O(1)} \\). For every \\( \\epsil",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 10
-    },
-    "timestamp": "2026-03-29T00:49:01.734879"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseDualPseudoRandomness**\nSTATEMENT: Let \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function that is hard for depth-\\( d \\) circuits with \\( \\mathsf{size}(f) \\leq n^{1.1} \\). Then, there exists a pseudorandom distribution \\( \\mathcal{D} \\) over \\( \\{0,1\\}^n \\) with support siz",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T00:51:55.632178"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparsePolynomialObstructionToAC0ModP**\n\nSTATEMENT: Let $p$ be a fixed prime and $d \\geq 2$ be a fixed integer. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be a sequence of Boolean functions computable by $\\mathsf{AC}^0$ circuits of depth $d$ and size $S(n) = 2^{(\\log n)^{o(1)}}$. Let $\\tilde",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-29T00:54:35.654391"
-  },
-  {
     "approach": "CONJECTURE_NAME: **NarrowAC0LiftingViaRandomizedCommunicationComplexity**\n\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a **depth-\\( d \\)** \\( \\mathsf{AC}^0 \\) circuit of size \\( s \\geq n \\), and let \\( \\mu \\) be a product distribution over \\( \\{0,1\\}^{2n} \\) (i.e",
     "reason": "Falsified by adversarial critic",
     "barrier_profile": {
@@ -1998,5 +1578,425 @@
       "A": 8
     },
     "timestamp": "2026-03-29T08:22:16.714564"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NarrowCNFSparsification**\nSTATEMENT: For every Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ that can be expressed as a CNF formula with $m$ clauses, each of width at most $k$, there exists a function $g: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\text{AC}^0$ such that $\\Pr_{x \\sim \\{0,1\\}^n}[f(x)",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T08:26:59.922267"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **LiftingWithNonCommutativeGadgets**\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function requiring super-polynomial monotone circuit size. Let \\( G: \\{0,1\\}^b \\to \\{0,1\\} \\) be a non-commutative gadget (i.e., a function whose communication matrix is not block-diagona",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T08:29:44.419713"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SparseFourierAC0Gap**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\text{AC}^0$ circuit of depth $d$ and size $s$. Let $\\hat{f}(\\alpha) = \\mathbb{E}_{x}[f(x)(-1)^{\\alpha \\cdot x}]$ denote its Fourier coefficients over the Boolean cube. Then, fo",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T08:32:24.752375"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **FractalCircuitLowerBound**\nSTATEMENT: For every $d \\leq n^{1/4}$, there exists a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\mathsf{P}$ that cannot be computed by $\\mathsf{AC}^0$ circuits of depth $d$ with $2^{o(n^{3/4})}$ wires, where the function $f$ is explicitly construct",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 3,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T08:35:59.894295"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **LiftingForNonDeterministicQueryComplexityWithPartialGadgets**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function, and let \\( \\text{NDQC}(f) \\) denote its non-deterministic query complexity (the minimum number of queries needed by a non-deterministic decision tree",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T08:38:34.681474"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **CorrelatedParityAC0Gap**\nSTATEMENT: Let $n$ be a positive integer and let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\text{AC}^0$ circuit of depth $d$ and size $S$. Let $\\text{PARITY}_n(x) = \\bigoplus_{i=1}^n x_i$. If there exists a constant $\\epsilon > 0$ ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 6
+    },
+    "timestamp": "2026-03-29T08:42:17.822942"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SuccinctDAGOracleSeparation**\nSTATEMENT: For every $k \\in \\mathbb{N}$, there exists a language $L_k \\in \\text{NP}$ such that $L_k$ cannot be computed by any polynomial-size $k$-uniform circuit family over a succinct Dominated Access Graph (DAG) oracle, where the oracle answers que",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 3,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T08:45:38.113327"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **DepthSeparationViaMatrixRankGrowth**\n\nSTATEMENT:\nLet \\( \\mathcal{C} \\) be the class of Boolean functions \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) computable by unbounded fan-in circuits of depth \\( d = O(\\log n) \\) and size \\( S = n^{O(1)} \\). For every \\( f \\in \\mathcal{C} \\), there exists",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T08:49:14.710429"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **DisjunctiveQueryAmplification**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function and let $g: \\{0,1\\}^k \\to \\{0,1\\}$ be a fixed \"gadget\" function with deterministic query complexity $D(g) = d$. Let $F = f \\circ g^n$ denote the composed function where $f$ acts on $n$ ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 6
+    },
+    "timestamp": "2026-03-29T08:51:53.417907"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **LowDegreePolyApproximation**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function in $\\text{P}$. Then, for any $\\epsilon > 0$, there exists a polynomial $p: \\mathbb{R}^n \\to \\mathbb{R}$ of degree at most $d = O(n^{1/3})$ such that $\\mathbb{E}_{x \\in \\{0,1\\}^n}[|p(x) - f",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T08:55:30.190304"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneCircuitHierarchyCollapse**\nSTATEMENT:\nLet \\( \\mathcal{M}_d \\) denote the class of Boolean functions \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) computable by monotone circuits of depth \\( d \\) and size \\( 2^{n^{o(1)}} \\). For every \\( d \\geq 2 \\), there exists a function \\( f \\in \\math",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-29T08:58:18.901452"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SymmetricXorHardness**\nSTATEMENT: Let $n$ be an even integer. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be the parity function $f(x) = x_1 \\oplus x_2 \\oplus \\dots \\oplus x_n$. Let $\\mathcal{C}_{sym}$ be the class of Boolean circuits where every gate computes a symmetric function of its input",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:02:02.768524"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **TensorCircuitSparsity**\nSTATEMENT: For any Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ computable by a depth-$d$ $\\text{AC}^0$ circuit with $s$ gates, there exists a restriction $\\rho$ (setting each input bit to 0, 1, or $*$ with probability 1/3 each) such that the restricted func",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:05:28.485330"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SubcubicSizeMonotoneCNFResilience**\n\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a monotone Boolean function computed by a CNF formula of size \\( s \\leq n^{3-\\epsilon} \\) for some constant \\( \\epsilon > 0 \\). Then, there exists a polynomial-time algorithm that, given any CNF",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T09:08:54.940252"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneKneserDegreeGap**\n\nSTATEMENT: Let $n, k$ be integers with $n \\geq 2k+1$. Let $KG_{n,k}$ denote the Kneser graph whose vertices are $k$-subsets of $\\{1, \\dots, n\\}$ and edges connect disjoint sets. Let $f_{n,k}: \\{0,1\\}^{\\binom{n}{k}} \\to \\{0,1\\}$ be the monotone Boolean fu",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:12:33.917066"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SparsePfaffianCircuitLowerBound**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function in $\\text{P}$. If $f$ can be represented as the Pfaffian of a $2n \\times 2n$ skew-symmetric matrix with algebraic entries of sparsity $s(n) = O(n^{1.5})$, then the circuit complexity ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:17:18.119419"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneKrwGap**\n\nSTATEMENT: Let $f, g: \\{0,1\\}^n \\to \\{0,1\\}$ be two monotone Boolean functions. Let $h: \\{0,1\\}^{2n} \\to \\{0,1\\}$ be their composition defined by $h(x, y) = f(x) \\land g(y)$. Let $C_m^+(f)$ denote the minimum size (number of gates) of a monotone circuit computing",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T09:19:58.723842"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NonUniformNc1Sparsity**\nSTATEMENT: For every integer $k \\geq 1$, there exists a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\text{NC}^1$ such that any depth-$k$ $\\text{AC}^0$ circuit computing $f$ has size at least $2^{\\Omega(\\sqrt{n})}$, and this lower bound holds for all suf",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:23:36.298229"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **RandomRestrictionKernelPreservation**\n\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a depth-\\( d \\) \\( \\text{AC}^0 \\) circuit \\( C \\) of size \\( s \\geq n \\). For a random restriction \\( \\rho \\) leaving \\( n^{1/(d-1)} \\log^{-2} n \\) variables uns",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-29T09:26:23.995063"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneKRWCompositionGap**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ and $g: \\{0,1\\}^m \\to \\{0,1\\}$ be two monotone Boolean functions. Let $h = f \\circ g$ be their composition defined on $nm$ variables. Let $L_{mon}(F)$ denote the size of the smallest monotone circuit computing $",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:29:12.822523"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NonMonotoneSOSRefutation**\nSTATEMENT: For any unsatisfiable Boolean formula $\\phi$ in $n$ variables and size $s$, there exists a degree-$d$ Sum-of-Squares (SOS) refutation of $\\phi$ where $d = O(\\sqrt{n \\log s}))$. Moreover, this refutation can be found in time $2^{O(\\sqrt{n \\log ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T09:32:31.511365"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **DepthSeparationViaRandomizedSymmetrization**\n\nSTATEMENT:\nLet \\( \\mathcal{C}_d \\) denote the class of Boolean functions \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) computable by depth-\\( d \\) circuits of size \\( 2^{n^{o(1)}} \\). For every \\( d \\geq 2 \\), there exists a randomized symmetrization",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T09:35:35.014257"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **AdaptiveQueryDepthSeparation**\nSTATEMENT: Let $n$ be a power of 2. Let $\\mathcal{A}_{k}$ denote the class of Boolean functions $f: \\{0,1\\}^n \\to \\{0,1\\}$ computable by an adaptive decision tree of depth $k = (\\log n)^2$. Let $\\mathcal{N}_{d}$ denote the class of functions computab",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 6
+    },
+    "timestamp": "2026-03-29T09:39:35.485527"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SparseMaxCSPHardness**\nSTATEMENT: For every constant $\\epsilon > 0$, there exists a constant $\\delta > 0$ such that the following holds. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function that is a maximization version of a Constraint Satisfaction Problem (Max-CSP) with the prop",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 3
+    },
+    "timestamp": "2026-03-29T09:43:58.691157"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **LiftingWithOrthogonalRestrictions**\n\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function that is **not** in \\( \\text{AC}^0[\\oplus] \\) (i.e., requires super-polynomial-size \\( \\text{AC}^0 \\) circuits with parity gates). Let \\( \\mathcal{R} \\) be a family of **orthog",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T09:46:45.638854"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneSwitchingNormGap**\n\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a monotone Boolean function. Let $\\mathsf{size}_{mon}(f)$ denote the size of the smallest monotone Boolean circuit computing $f$, and let $\\|f\\|_{SW}$ denote the \"Switching Norm\" of $f$, defined as the minimu",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T09:50:02.734631"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SparsePseudoRandomOracle**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function in $\\mathsf{Circuit}[s]$ with $s = n^{O(1)}$. There exists a pseudo-random oracle $\\mathcal{O}$ such that with high probability over $\\mathcal{O}$, the function $f^{\\mathcal{O}}(x) = f(x \\op",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 6
+    },
+    "timestamp": "2026-03-29T09:54:32.585177"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **PartialDerivativeHierarchyLowerBound**\n\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a polynomial-size circuit of depth \\( d \\geq 3 \\). For every \\( k \\leq \\frac{n}{4} \\), define the *partial derivative hierarchy* at level \\( k \\) as\n\\[\n\\mathsf{",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 3,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T09:57:17.572152"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **AffineInvariantDegreeAmplification**\n\nSTATEMENT: Let $p \\in \\mathbb{F}_2[x_1, \\dots, x_n]$ be a multilinear polynomial representing a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$. Let $\\mathcal{A}_n$ be the group of affine transformations on $\\mathbb{F}_2^n$. Define the \"affine-rob",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T10:00:12.103587"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **TensorRankNonMalleableCodes**\nSTATEMENT: For any $\\delta > 0$, there exists an explicit family of error-correcting codes $\\mathcal{C}: \\{0,1\\}^k \\to \\{0,1\\}^n$ with $n \\leq k^{1+\\delta}$, such that the tensor rank of any codeword $c \\in \\mathcal{C}$ is at least $(1 - \\delta) \\cdot",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:02:52.737895"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SubcubicFormulaInductionGap**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^{3^n} \\to \\{0,1\\} \\) be the Boolean function defined inductively as follows:\n- \\( f_0(x) = x \\),\n- \\( f_{k+1}(x,y,z) = f_k(x) \\oplus f_k(y) \\oplus f_k(z) \\) for \\( x,y,z \\in \\{0,1\\}^{3^k} \\).\n\nThen, for every \\( k \\geq",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T10:05:50.490564"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **StableRankAmplification**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function. Let $\\mathsf{rk}_{\\epsilon}(M_f)$ denote the $\\epsilon$-approximate rank of the communication matrix $M_f$ associated with $f$ (where $M_f[x,y] = f(x \\wedge y)$). Let $\\mathsf{deg}_{\\epsilon",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T10:07:39.069141"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **DepthThreeExactLearning**\nSTATEMENT: Let $\\mathcal{C}_d$ be the class of depth-3, $n$-variate Boolean circuits with fan-in at most $d$. For any $\\epsilon > 0$, there exists an algorithm that, given oracle access to $f: \\{0,1\\}^n \\to \\{0,1\\}$, runs in time $2^{O(n^{1/2 + \\epsilon})",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:10:58.477712"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **LogDepthXorCorrelationDecay**\n\nSTATEMENT: Let $n$ be a positive integer and let $k = (\\log n)^{0.9}$. Let $\\mathcal{C}_{n, d, s}$ denote the class of Boolean circuits over $\\{0,1\\}^n$ with depth $d$, size $s$, and unbounded fan-in AND/OR/NOT gates. Let $f \\in \\mathcal{C}_{n, \\log ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:14:27.137201"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **ThresholdFormulaLiftingLemma**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a **de Morgan formula** of size \\( s \\geq n \\). For any constant \\( \\delta > 0 \\), there exists a **threshold function** \\( \\text{THR}_k \\) (where \\( k = \\Theta(\\log n) ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 3,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T10:16:48.910888"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **AlgebraicSensitivityAugmentation**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function with algebraic sensitivity $\\mathsf{as}(f) \\geq k$. Then, for any $\\epsilon > 0$, there exists a restriction $\\rho$ that fixes at most $n^{\\epsilon}$ variables such that the restrict",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 3,
+      "N": 3,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:21:28.039620"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **LogDepthXorRigidityGap**\nSTATEMENT: Let $n = 2^k$. Let $H_n \\in \\{0,1\\}^{n \\times n}$ be the Hadamard matrix (where $(H_n)_{i,j} = (-1)^{i \\cdot j}$). Let $\\mathsf{rk}_{\\mathbb{F}_2}(M, s)$ denote the minimum rank over $\\mathbb{F}_2$ of a matrix obtained by changing at most $s$ en",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-29T10:23:33.378942"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NarrowCircuitWidthLowerBound**\nSTATEMENT: For every integer $n > 2$, there exists a Boolean function $f_n : \\{0,1\\}^n \\to \\{0,1\\}$ in $\\mathsf{AC}^0$ such that any depth-3 circuit with fan-in at most $n^{\\omega(1)}$ computing $f_n$ has width at least $n^{1 + \\delta}$ for some $\\de",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 6
+    },
+    "timestamp": "2026-03-29T10:26:18.977315"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneKrwInterpolationGap**\n\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a monotone Boolean function. Let $CC_{mon}(f)$ denote the minimum size of a monotone circuit computing $f$, and let $CC(f)$ denote the minimum size of any (non-monotone) circuit computing $f$. Define the K",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 3,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:28:31.167565"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **MonotoneCircuitLiftingForRandomGraphs**\n\nSTATEMENT:\nLet \\( G = (V, E) \\) be an Erd\u0151s\u2013R\u00e9nyi random graph on \\( n \\) vertices with edge probability \\( p = \\frac{1}{2} \\). Let \\( \\text{CLIQUE}(G, k) \\) be the Boolean function that outputs 1 iff \\( G \\) contains a clique of size \\( k ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 3,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T10:30:23.897839"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SparsePfaffianCircuitLowerBound**\nSTATEMENT: Let $\\{f_n\\}$ be a sequence of Boolean functions $f_n: \\{0,1\\}^{n} \\to \\{0,1\\}$ computed by polynomial-size circuits over the basis $\\{\\land, \\lor, \\lnot\\}$. If the Pfaffian complexity of $f_n$ is $2^{\\Omega(n)}$ for all sufficiently la",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:34:37.637524"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SymmetricDegreeTwoNullityGap**\n\nSTATEMENT: Let $n \\geq 1$ be an integer. Let $\\mathcal{S}_n$ denote the vector space of symmetric $n \\times n$ matrices over $\\mathbb{F}_2$ with zero diagonal. For any matrix $A \\in \\mathcal{S}_n$, let $f_A: \\{0,1\\}^n \\to \\{0,1\\}$ be the quadratic B",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-29T10:36:45.602348"
   }
 ]
