@@ -1,0 +1,175 @@
+{
+  "session_id": "swarm_v29_20260328_182457",
+  "duration_seconds": 5136.598419904709,
+  "cycles_completed": 15,
+  "total_verified": 0,
+  "total_barrier_killed": 0,
+  "total_falsified": 45,
+  "log": [
+    {
+      "cycle": 1,
+      "timestamp": "2026-03-28T18:25:13.025354",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed 3; all falsified; none verified or trivial; no compile failures. Next cycle."
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-03-28T18:29:56.283857",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed 3, all falsified, none verified or trivial. Next cycle."
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-03-28T18:37:08.673837",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Barrier killed: 0. Falsified: 3. Verified: 0. Failed compile: 0. Next: Try again."
+    },
+    {
+      "cycle": 4,
+      "timestamp": "2026-03-28T18:42:36.291876",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed 3, all falsified, none verified or trivial. No compile failures. Next cycle."
+    },
+    {
+      "cycle": 5,
+      "timestamp": "2026-03-28T18:47:58.243161",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Barrier killed: 0. Falsified: 3. Verified: 0. Trivial: 0. Failed compile: 0. Next: Continue testing."
+    },
+    {
+      "cycle": 6,
+      "timestamp": "2026-03-28T18:53:29.917153",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3. Next: More tests."
+    },
+    {
+      "cycle": 7,
+      "timestamp": "2026-03-28T18:59:38.113736",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3. Next: Continue testing."
+    },
+    {
+      "cycle": 8,
+      "timestamp": "2026-03-28T19:04:07.281192",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Barrier killed: 0. Falsified: 3. Verified: 0. Trivial: 0. Failed compile: 0. Next: Investigate falsified proposals."
+    },
+    {
+      "cycle": 9,
+      "timestamp": "2026-03-28T19:10:18.163485",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Barrier killed: 0. Falsified: 3. Verified: 0. Trivial: 0. Failed compile: 0. Next: Investigate falsified proposals."
+    },
+    {
+      "cycle": 10,
+      "timestamp": "2026-03-28T19:17:15.880396",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3. Verified: 0. Failed compile: 0. Next: Propose more."
+    },
+    {
+      "cycle": 11,
+      "timestamp": "2026-03-28T19:21:17.740014",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3, failed compile: 0. Next: retry falsified."
+    },
+    {
+      "cycle": 12,
+      "timestamp": "2026-03-28T19:27:12.847068",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3. Verified: 0. Next: Continue testing."
+    },
+    {
+      "cycle": 13,
+      "timestamp": "2026-03-28T19:34:42.857833",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3; Barrier killed: 0; Falsified: 3; Verified: 0; Trivial: 0; Failed compile: 0. Next: Investigate falsified proposals."
+    },
+    {
+      "cycle": 14,
+      "timestamp": "2026-03-28T19:41:09.089927",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3. Verified: 0. Next: Retry falsified."
+    },
+    {
+      "cycle": 15,
+      "timestamp": "2026-03-28T19:45:49.207773",
+      "proposals": 3,
+      "barrier_killed": 0,
+      "falsified": 3,
+      "verified": 0,
+      "trivial": 0,
+      "failed_compile": 0,
+      "scribe_summary": "Proposed: 3. Falsified: 3. Verified: 0. Next: Try again."
+    }
+  ]
+}
