@@ -1,1 +1,330 @@
-[]
+[
+  {
+    "name": "swarm_v30_c2_beta_1774835268",
+    "statement": "**CONJECTURE_NAME:** **TimeHierarchyTheorem_Deterministic_Tight**\n\n**STATEMENT:**\nLet \\( t_1, t_2 : \\mathbb{N} \\to \\mathbb{N} \\) be time-constructible functions such that:\n\\[ t_2(n) \\log t_2(n) = o(t_1(n)). \\]\nThen,\n\\[ \\mathrm{DTIME}(t_1(n)) \\subsetneq \\mathrm{DTIME}(t_2(n)). \\]\n\n**PROOF_SKETCH:**\n1. **Diagonalization:** Construct a universal Turing machine \\( U \\) that simulates any \\( t_2(n) \\)-time TM on input \\( x \\) within \\( O(t_2(|x|) \\log t_2(|x|)) \\) time (via efficient simulation, e.g.",
+    "approach": "beta",
+    "timestamp": "2026-03-29T18:47:48.364544",
+    "code_hash": "85524e9552fbd4a2",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c4_beta_1774837449",
+    "statement": "**CONJECTURE_NAME:** **Savitch_Theorem_Space_Deterministic_Nondeterministic**\n\n**STATEMENT:**\nLet \\( s : \\mathbb{N} \\to \\mathbb{N} \\) be a space-constructible function such that \\( s(n) \\geq \\log n \\). Then,\n\\[\n\\mathbf{NSPACE}(s(n)) \\subseteq \\mathbf{DSPACE}(s(n)^2).\n\\]\nIn other words, any language decidable by a nondeterministic Turing machine using \\( O(s(n)) \\) space is decidable by a deterministic Turing machine using \\( O(s(n)^2) \\) space.\n\n**PROOF_SKETCH:**\n1. **Graph Representation:** Mod",
+    "approach": "beta",
+    "timestamp": "2026-03-29T19:24:09.726169",
+    "code_hash": "67ebb54a1aaccdf7",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c5_gamma_1774837924",
+    "statement": "CONJECTURE_NAME: Pigeonhole_Injection_Bound\nSTATEMENT: Let $n, m \\in \\mathbb{N}$. If there exists an injective function $f: \\{1, \\dots, n\\} \\to \\{1, \\dots, m\\}$, then $n \\leq m$.\nPROOF_SKETCH: Proceed by induction on $n$. \nBase case ($n=0$): The empty set maps to any set, and $0 \\leq m$ holds for all $m \\in \\mathbb{N}$.\nInductive step: Assume the statement holds for $n=k$. Consider an injection $f: \\{1, \\dots, k+1\\} \\to \\{1, \\dots, m\\}$. Restrict $f$ to the domain $\\{1, \\dots, k\\}$; this is an i",
+    "approach": "gamma",
+    "timestamp": "2026-03-29T19:32:04.495298",
+    "code_hash": "725cb0116c605bc5",
+    "difficulty": 1
+  },
+  {
+    "name": "train_pow_two_ge_one_1774842562",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:49:22.917825",
+    "code_hash": "2a74937ce8f3c097",
+    "difficulty": 1
+  },
+  {
+    "name": "train_mono_comp_strict_1774842623",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:50:23.837392",
+    "code_hash": "c3e6ad9ab364787d",
+    "difficulty": 1
+  },
+  {
+    "name": "train_de_morgan_not_and_1774842701",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:51:41.576038",
+    "code_hash": "47ffae8ffa655b99",
+    "difficulty": 1
+  },
+  {
+    "name": "train_finset_union_comm_1774842727",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:52:07.569059",
+    "code_hash": "e65d612e94a84724",
+    "difficulty": 2
+  },
+  {
+    "name": "train_disjoint_compl_1774842746",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:52:26.190488",
+    "code_hash": "c17a8ce8b2297d26",
+    "difficulty": 2
+  },
+  {
+    "name": "train_list_length_append_1774842789",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:53:09.150671",
+    "code_hash": "88ca6a81a0ef33d0",
+    "difficulty": 2
+  },
+  {
+    "name": "train_finset_union_comm_1774842808",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:53:28.810992",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 3
+  },
+  {
+    "name": "train_nat_pow_pos_1774842826",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:53:46.538078",
+    "code_hash": "889a814686b35418",
+    "difficulty": 3
+  },
+  {
+    "name": "train_nat_add_comm_1774842866",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:54:26.550814",
+    "code_hash": "c20f409cbb87f152",
+    "difficulty": 3
+  },
+  {
+    "name": "train_bool_not_not_1774842885",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:54:45.440298",
+    "code_hash": "75be7d722c809480",
+    "difficulty": 4
+  },
+  {
+    "name": "train_exp_monotone_1774842924",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:55:24.037643",
+    "code_hash": "71e3d0f6b0a88ff3",
+    "difficulty": 4
+  },
+  {
+    "name": "train_even_or_odd_1774843084",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:58:04.812035",
+    "code_hash": "aa9a2a73b7a8c608",
+    "difficulty": 4
+  },
+  {
+    "name": "train_injective_card_le_1774843126",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:58:46.531672",
+    "code_hash": "5819ec8d3a6a84a3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774843185",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T20:59:45.912856",
+    "code_hash": "4f8b883199f5f38c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774843409",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:03:29.272151",
+    "code_hash": "40908caac517ac8c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774843429",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:03:49.876915",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774843597",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:06:37.870047",
+    "code_hash": "fe206f42fab3e06b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774843629",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:07:09.841962",
+    "code_hash": "75be7d722c809480",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774843665",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:07:45.764674",
+    "code_hash": "cab8f73c8d6c11fd",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774843718",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:08:38.153640",
+    "code_hash": "5819ec8d3a6a84a3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774843799",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:09:59.457443",
+    "code_hash": "40908caac517ac8c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774843832",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:10:32.910028",
+    "code_hash": "40908caac517ac8c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774843858",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:10:58.168668",
+    "code_hash": "508e9a234110384d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774843890",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:11:30.789068",
+    "code_hash": "c20f409cbb87f152",
+    "difficulty": 5
+  },
+  {
+    "name": "train_fintype_pigeonhole_1774843965",
+    "statement": "If f maps a larger Fintype to a smaller one, f is not injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:12:45.074177",
+    "code_hash": "192d1b2465e0ed39",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774844094",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:14:54.735227",
+    "code_hash": "ecd24335f146d58d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774844202",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:16:42.918031",
+    "code_hash": "602f4588c663b4b1",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774844237",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:17:17.466314",
+    "code_hash": "d27ecce29f7bb866",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774844280",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:18:00.593177",
+    "code_hash": "c53eb8ae89b3652c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774844318",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:18:38.200819",
+    "code_hash": "75be7d722c809480",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774844336",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:18:56.423854",
+    "code_hash": "a58098fd8f1412f2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774844376",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:19:36.023170",
+    "code_hash": "f50168236153a584",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774844419",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:20:19.649102",
+    "code_hash": "508e9a234110384d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774844493",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:21:33.708141",
+    "code_hash": "ce558009f571a4e4",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774844511",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:21:51.580630",
+    "code_hash": "84b9a936e3efb0c7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774844553",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:22:33.363197",
+    "code_hash": "ef359ffedb40ce25",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774844571",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:22:51.872500",
+    "code_hash": "d27ecce29f7bb866",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774844589",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:23:09.973525",
+    "code_hash": "7f3974bb1a29b15e",
+    "difficulty": 5
+  }
+]
