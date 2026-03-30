@@ -734,5 +734,285 @@
     "timestamp": "2026-03-29T22:22:27.712004",
     "code_hash": "9212a437d3e711bc",
     "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774848272",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:24:32.268996",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774848316",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:25:16.667554",
+    "code_hash": "1c683ba6031bdea9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774848335",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:25:35.984389",
+    "code_hash": "1a2d74449431520e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774848377",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:26:17.879605",
+    "code_hash": "802675ac182a247c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774848420",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:27:00.147403",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774848495",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:28:15.272639",
+    "code_hash": "bbdb391aa86615a9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774848583",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:29:43.444841",
+    "code_hash": "97da7332c5b390d5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774848638",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:30:38.224359",
+    "code_hash": "0d262fa69d1ba88a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774848664",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:31:04.601364",
+    "code_hash": "e7bd83250c8d62b1",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774848709",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:31:49.358276",
+    "code_hash": "802675ac182a247c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774848727",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:32:07.377759",
+    "code_hash": "97da7332c5b390d5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774848744",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:32:24.702982",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774848792",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:33:12.343513",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774848865",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:34:25.934495",
+    "code_hash": "4ea60d25a2d4c2ab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774848900",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:35:00.902739",
+    "code_hash": "e4871eddd4b6d4ab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774849028",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:37:08.573808",
+    "code_hash": "1dd6c7c0788b56bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774849113",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:38:33.562424",
+    "code_hash": "f5247acbbff4d951",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774849386",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:43:06.751822",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774849627",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:47:07.618547",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774849664",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:47:44.282321",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774849683",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:48:03.144685",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774849701",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:48:21.925052",
+    "code_hash": "0d262fa69d1ba88a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774849736",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:48:56.673969",
+    "code_hash": "2fa6469ace7f8396",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774849866",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:51:06.646997",
+    "code_hash": "5e0c7d3cc11db7d8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774850075",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:54:35.570801",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774850111",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:55:11.116560",
+    "code_hash": "b5b60da8716e86a0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774850424",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:00:24.633789",
+    "code_hash": "7b8593787a9562ec",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774850458",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:00:58.295121",
+    "code_hash": "5ff12c3b3badd9da",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774850598",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:03:18.984680",
+    "code_hash": "e5290b28fda4f16e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774850643",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:04:03.129870",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774850663",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:04:23.588201",
+    "code_hash": "51fa9343bf40fdb5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774850823",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:07:03.048695",
+    "code_hash": "5e0c7d3cc11db7d8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774850842",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:07:22.400901",
+    "code_hash": "5becbc1d9303da5d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774851076",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:11:16.432096",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774851098",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:11:38.313915",
+    "code_hash": "5ff12c3b3badd9da",
+    "difficulty": 5
   }
 ]
