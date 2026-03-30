@@ -1814,5 +1814,317 @@
     "timestamp": "2026-03-30T01:31:06.267379",
     "code_hash": "3c915bc15a591854",
     "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774859582",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:33:02.753256",
+    "code_hash": "c07d74fa175fa1bb",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774859762",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:36:02.956703",
+    "code_hash": "333ac261cc9f6f73",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774859834",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:37:14.589328",
+    "code_hash": "352775b12d1feb8f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774859913",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:38:33.513276",
+    "code_hash": "0b29f37470c588b4",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774859932",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:38:52.957119",
+    "code_hash": "52cde6a0e93567dc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774859951",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:39:11.056319",
+    "code_hash": "1fd482ef09251556",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774859980",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:39:40.538121",
+    "code_hash": "4e412bf32a2aadb7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774859999",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:39:59.498599",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774860124",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:42:04.793129",
+    "code_hash": "c5a1a3aa4e8b7bf7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774860187",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:43:07.632934",
+    "code_hash": "4e412bf32a2aadb7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774860206",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:43:26.496836",
+    "code_hash": "c07d74fa175fa1bb",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774860248",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:44:08.463514",
+    "code_hash": "5e3696cd822a8782",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774860281",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:44:41.846460",
+    "code_hash": "89fb7a10c9a09483",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774860299",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:44:59.608208",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774860337",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:45:37.460417",
+    "code_hash": "5819ec8d3a6a84a3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774860369",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:46:09.191213",
+    "code_hash": "a33f4d974e89b08d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774860406",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:46:46.256935",
+    "code_hash": "9e7bdab24154011c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774860424",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:47:04.192044",
+    "code_hash": "f96b9068222683da",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774860518",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:48:38.427563",
+    "code_hash": "a9fbf9845bd11b51",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774860557",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:49:17.646956",
+    "code_hash": "67a809bc5e4d9e4c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774860697",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:51:37.043032",
+    "code_hash": "f96b9068222683da",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774860736",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:52:16.388554",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774860756",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:52:36.237297",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774860792",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:53:12.102892",
+    "code_hash": "9e7bdab24154011c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774860829",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:53:49.842682",
+    "code_hash": "2c8490120d5cd423",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774860949",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:55:49.937328",
+    "code_hash": "92a4197f07567015",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774860968",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:56:08.206056",
+    "code_hash": "8f8826456d2b6a50",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774860986",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:56:26.239390",
+    "code_hash": "5e3696cd822a8782",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774861022",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:57:02.847542",
+    "code_hash": "ab51fef0e78c8362",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774861060",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:57:40.023738",
+    "code_hash": "47ffae8ffa655b99",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774861078",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:57:58.419076",
+    "code_hash": "5819ec8d3a6a84a3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774861112",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:58:32.087864",
+    "code_hash": "ab51fef0e78c8362",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774861132",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:58:52.079303",
+    "code_hash": "e69a67c9164b659e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774861249",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:00:49.034774",
+    "code_hash": "3c824041026ec393",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774861461",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:04:21.644785",
+    "code_hash": "5e3696cd822a8782",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774861498",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:04:58.964902",
+    "code_hash": "2c8490120d5cd423",
+    "difficulty": 5
+  },
+  {
+    "name": "train_fintype_pigeonhole_1774861571",
+    "statement": "If f maps a larger Fintype to a smaller one, f is not injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:06:11.977967",
+    "code_hash": "4ea6affa959b571f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774861589",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:06:29.960281",
+    "code_hash": "8f8826456d2b6a50",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774861707",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:08:27.014479",
+    "code_hash": "66a392753e0b24c6",
+    "difficulty": 5
   }
 ]
