@@ -760,18 +760,44 @@ Repair this conjecture to survive the criticism."""}
 
 
 # --- Layer 3: Decomposer + Formalizer ---
-def run_decompose_and_formalize(proposal: dict, existing_library: str) -> Optional[str]:
+def run_decompose_and_formalize(proposal: dict, existing_library: str, difficulty: int = 5) -> Optional[str]:
     print("  [LAYER 3] Decomposer -- breaking into subgoals...")
+
+    # Step 3: Constrain decomposition based on difficulty
+    if difficulty <= 2:
+        constraint = """CONSTRAINTS:
+- Maximum 3 subgoals
+- Proof should be under 15 lines of Lean 4
+- Prefer using existing Mathlib lemmas over building from scratch
+- Do NOT propose multi-lemma architectures — one main theorem with a simple proof"""
+        decomp_tokens = 1500
+    elif difficulty <= 3:
+        constraint = """CONSTRAINTS:
+- Maximum 5 subgoals
+- Proof should be under 30 lines of Lean 4
+- Prefer simple tactics: simp, omega, ring, exact, apply
+- At most 1 auxiliary lemma"""
+        decomp_tokens = 2500
+    else:
+        constraint = """CONSTRAINTS:
+- Maximum 7 subgoals
+- Keep proof strategy concrete and achievable
+- At most 2 auxiliary lemmas"""
+        decomp_tokens = 4096
+
     decompose_msg = [
-        {"role": "system", "content": """You are a mathematical decomposer. Break the conjecture into:
-1. Required definitions
-2. Auxiliary lemmas needed
+        {"role": "system", "content": f"""You are a mathematical decomposer. Break the conjecture into:
+1. Required definitions (only if not in Mathlib)
+2. Auxiliary lemmas needed (minimize these)
 3. The main theorem statement
 4. Proof strategy as ordered subgoals
+
+{constraint}
+
 Keep it precise and formal. Output should be ready for Lean 4."""},
         {"role": "user", "content": f"Decompose:\n\n{proposal['text']}"}
     ]
-    decomposition = llm_call(MODELS["decomposer"], decompose_msg, temperature=0.4)
+    decomposition = llm_call(MODELS["decomposer"], decompose_msg, temperature=0.4, max_tokens=decomp_tokens)
     if not decomposition:
         print("    Decomposer FAILED")
         return None
@@ -788,8 +814,10 @@ RULES:
 - Import Mathlib (use `import Mathlib` at top)
 - Use Lean 4 syntax (NOT Lean 3)
 - Do NOT use `begin`/`end` -- use `by` tactic blocks
-- Every theorem MUST have a complete proof — NEVER use `sorry`, `admit`, or `Sorry`. Code with sorry will be REJECTED.
-- If proof is hard, prove a simpler version that still compiles
+- NEVER use `sorry`, `admit`, or `Sorry` — code with sorry will be REJECTED
+- If proof is hard, prove a SIMPLER version that still compiles
+- Keep code SHORT — under 30 lines preferred
+- Prefer simple tactics: simp, omega, ring, exact, apply, intro, cases
 - The code must be SELF-CONTAINED
 
 {existing_library}
@@ -815,12 +843,86 @@ Output ONLY Lean 4 code starting with `import Mathlib`."""},
 
 
 # --- Layer 5: Proof Search Workers ---
+def load_fix_patterns() -> str:
+    """Load successful fix patterns from past proof worker successes."""
+    fix_file = MEMORY_DIR / "fix_patterns.json"
+    if not fix_file.exists():
+        return ""
+    try:
+        patterns = json.loads(fix_file.read_text())
+        if not patterns:
+            return ""
+        lines = ["--- PAST SUCCESSFUL FIXES (learn from these) ---"]
+        for p in patterns[-5:]:  # last 5 successes
+            lines.append(f"\nError type: {p.get('error_type', 'unknown')}")
+            lines.append(f"Fix applied: {p.get('fix_summary', 'unknown')}")
+            if p.get('before_snippet'):
+                lines.append(f"Before: {p['before_snippet'][:200]}")
+            if p.get('after_snippet'):
+                lines.append(f"After: {p['after_snippet'][:200]}")
+        return "\n".join(lines)
+    except:
+        return ""
+
+
+def save_fix_pattern(error_msg: str, before_code: str, after_code: str):
+    """Save a successful fix for future proof worker context."""
+    fix_file = MEMORY_DIR / "fix_patterns.json"
+    patterns = []
+    if fix_file.exists():
+        try:
+            patterns = json.loads(fix_file.read_text())
+        except:
+            patterns = []
+
+    # Classify error type
+    error_type = "unknown"
+    error_lower = error_msg.lower()
+    if "unknown identifier" in error_lower or "unknown constant" in error_lower:
+        error_type = "unknown_identifier"
+    elif "type mismatch" in error_lower:
+        error_type = "type_mismatch"
+    elif "expected" in error_lower and "got" in error_lower:
+        error_type = "syntax_error"
+    elif "tactic" in error_lower:
+        error_type = "tactic_error"
+    elif "import" in error_lower:
+        error_type = "import_error"
+
+    patterns.append({
+        "error_type": error_type,
+        "error_snippet": error_msg[:300],
+        "fix_summary": f"Fixed {error_type} error",
+        "before_snippet": before_code[:300],
+        "after_snippet": after_code[:300],
+        "timestamp": datetime.datetime.now().isoformat(),
+    })
+    patterns = patterns[-20:]  # keep last 20
+    fix_file.write_text(json.dumps(patterns, indent=2))
+
+
 def run_proof_search(lean_code: str, error_msg: str, attempt: int) -> Optional[str]:
     print(f"  [LAYER 5] Proof Workers -- fix attempt {attempt}...")
+
+    fix_patterns = load_fix_patterns()
+
     fix_msg = [
-        {"role": "system", "content": """Fix this Lean 4 code so it compiles. Common issues:
-missing imports, wrong Mathlib API names, incorrect tactics, type mismatches.
-Output ONLY the complete fixed Lean 4 code."""},
+        {"role": "system", "content": f"""Fix this Lean 4 code so it compiles.
+
+COMMON ERROR PATTERNS AND FIXES:
+- "unknown identifier X": The Mathlib API name is wrong. Search for the correct name.
+  Common renames: Nat.lt_of_lt_of_le -> Nat.lt_of_lt_of_le, Set.subset -> Set.Subset
+- "type mismatch": Check expected vs actual types carefully. Use `show` to clarify types.
+- "tactic failed": Try alternative tactics. If `simp` fails, try `simp only [...]` or `exact?`.
+- "expected token": Syntax error. Check parentheses, colons, arrows.
+- When in doubt: simplify the proof. Replace complex tactics with `simp`, `omega`, `decide`, or `exact`.
+
+RULES:
+- NEVER introduce `sorry` or `admit`
+- Keep the fix minimal — change as little as possible
+- Output ONLY the complete fixed Lean 4 code
+
+{fix_patterns}"""},
         {"role": "user", "content": f"Fix:\n```lean\n{lean_code}\n```\nError:\n{error_msg[:2000]}"}
     ]
     calls = [
@@ -1144,14 +1246,20 @@ Keep the proof short and simple. Use the Mathlib hint."""}
 
         # Fix loop
         attempt = 0
+        last_error = output
+        original_code = lean_code
         while not success and attempt < MAX_FIX_ATTEMPTS:
             attempt += 1
             fixed = run_proof_search(lean_code, output, attempt)
             if fixed:
+                before_code = lean_code
                 lean_code = fixed
                 success, output = compile_lean(lean_code)
+                if success:
+                    save_fix_pattern(last_error, before_code, lean_code)
             else:
                 break
+            last_error = output
 
         if not success:
             print(f"  [FAILED] Compilation failed after {attempt+1} attempts")
@@ -1298,7 +1406,7 @@ def run_cycle(cycle: int, memory: SwarmMemory, session_log: list):
 
         # Decompose and Formalize
         existing = load_existing_theorems()
-        lean_code = run_decompose_and_formalize(proposal, existing)
+        lean_code = run_decompose_and_formalize(proposal, existing, difficulty=difficulty)
         if not lean_code:
             print(f"  [FAILED] Could not formalize")
             memory.add_failed(proposal["text"][:300], "Formalization failed", scores)
@@ -1310,14 +1418,19 @@ def run_cycle(cycle: int, memory: SwarmMemory, session_log: list):
         success, output = compile_lean(lean_code)
 
         attempt = 0
+        last_error = output
         while not success and attempt < MAX_FIX_ATTEMPTS:
             attempt += 1
             fixed = run_proof_search(lean_code, output, attempt)
             if fixed:
+                before_code = lean_code
                 lean_code = fixed
                 success, output = compile_lean(lean_code)
+                if success:
+                    save_fix_pattern(last_error, before_code, lean_code)
             else:
                 break
+            last_error = output
 
         if not success:
             print(f"  [FAILED] Lean compilation failed after {attempt+1} attempts")

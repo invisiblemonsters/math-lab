@@ -326,5 +326,413 @@
     "timestamp": "2026-03-29T21:23:09.973525",
     "code_hash": "7f3974bb1a29b15e",
     "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774844714",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:25:14.377498",
+    "code_hash": "7f3974bb1a29b15e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774844833",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:27:13.575134",
+    "code_hash": "0fdc35711a8cd02b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774844874",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:27:54.038515",
+    "code_hash": "2624b0fda99c2f4a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774844984",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:29:44.628219",
+    "code_hash": "a58098fd8f1412f2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774845148",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:32:28.607121",
+    "code_hash": "4a890c5c5bf59d5c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774845176",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:32:56.903912",
+    "code_hash": "ef359ffedb40ce25",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774845228",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:33:48.076016",
+    "code_hash": "87ade6cfac5ed013",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774845312",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:35:12.784804",
+    "code_hash": "1b9c09cd36740187",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774845358",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:35:58.147315",
+    "code_hash": "69ffce30efd1b2d5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774845429",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:37:09.719330",
+    "code_hash": "782bb7bb47a0577e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774845457",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:37:37.923357",
+    "code_hash": "e6700c51854e327a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774845566",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:39:26.177526",
+    "code_hash": "bc1e68ea4ebb7f02",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774845717",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:41:57.934741",
+    "code_hash": "e0e46870b24f663d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774845801",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:43:21.952071",
+    "code_hash": "f6f0f3e12025d000",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774845893",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:44:53.218946",
+    "code_hash": "5923fd12311c82ad",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774845973",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:46:13.723795",
+    "code_hash": "6d70b478f7bfde5b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774845996",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:46:36.041519",
+    "code_hash": "6c652cd145055acb",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774846134",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:48:54.198118",
+    "code_hash": "cab8f73c8d6c11fd",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774846152",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:49:12.376994",
+    "code_hash": "ef359ffedb40ce25",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774846312",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:51:52.958612",
+    "code_hash": "073a493c4b39503f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774846334",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:52:14.637842",
+    "code_hash": "dd6b465af19462ae",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774846477",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:54:37.712909",
+    "code_hash": "b01652ccb4bebbd5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774846510",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:55:10.194787",
+    "code_hash": "ef359ffedb40ce25",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774846570",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:56:10.795494",
+    "code_hash": "69ffce30efd1b2d5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774846615",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:56:55.356160",
+    "code_hash": "5923fd12311c82ad",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774846636",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:57:16.361202",
+    "code_hash": "073a493c4b39503f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774846674",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:57:54.191279",
+    "code_hash": "155c66e820e56b3d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774846727",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:58:47.936292",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774846752",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:59:12.728866",
+    "code_hash": "368d5c46fdfe9fd2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774846778",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T21:59:38.619320",
+    "code_hash": "c2c3f948a3008aca",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774846881",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:01:21.203722",
+    "code_hash": "1d5f3f11f459ea7f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774847014",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:03:34.096957",
+    "code_hash": "4efe67c57baeb774",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774847038",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:03:58.729392",
+    "code_hash": "7b9dc74ceadcd699",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774847119",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:05:19.421475",
+    "code_hash": "726d568d3c6c521d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774847146",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:05:46.410600",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774847175",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:06:15.898576",
+    "code_hash": "5ebc9f6bdaa2d07a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774847550",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:12:30.441220",
+    "code_hash": "47ffae8ffa655b99",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774847597",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:13:17.377177",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774847620",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:13:40.435753",
+    "code_hash": "c92b22d3f2c23a01",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774847639",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:13:59.262509",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774847674",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:14:34.123095",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774847693",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:14:53.516346",
+    "code_hash": "b9e920f3bcf2018f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774847728",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:15:28.843560",
+    "code_hash": "7a2e0ad8d10f3087",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774847804",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:16:44.983538",
+    "code_hash": "1d5f3f11f459ea7f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774847856",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:17:36.191776",
+    "code_hash": "5d2b2e0df4ae8fac",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774847877",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:17:57.476069",
+    "code_hash": "c20f409cbb87f152",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774847932",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:18:52.724793",
+    "code_hash": "b340c3e53d68a363",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774847953",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:19:13.233577",
+    "code_hash": "5ff12c3b3badd9da",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774848014",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:20:14.396875",
+    "code_hash": "204e0d30a256ebfb",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774848129",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:22:09.171880",
+    "code_hash": "ccf31f440e3336ea",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774848147",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T22:22:27.712004",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
   }
 ]
