@@ -2670,5 +2670,293 @@
     "timestamp": "2026-03-30T03:45:02.414558",
     "code_hash": "5aa5300433eb12fa",
     "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774867693",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:48:13.752373",
+    "code_hash": "d651f15609b98bab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774867814",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:50:14.362955",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774867875",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:51:15.317558",
+    "code_hash": "fb30701e841cc8ec",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774867892",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:51:32.249344",
+    "code_hash": "f54e244d2ce1a63e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774867910",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:51:50.055976",
+    "code_hash": "583d3c59c49515e9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774868077",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:54:37.203108",
+    "code_hash": "14e38afbd0112cfd",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774868097",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:54:57.830310",
+    "code_hash": "0acb99951770139c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774868135",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:55:35.248392",
+    "code_hash": "52e945fc79af5db6",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774868260",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:57:40.042297",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774868289",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:58:09.130786",
+    "code_hash": "774281620c0e9021",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774868352",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:59:12.989875",
+    "code_hash": "c8f775234aaa8ba3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774868414",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:00:14.073499",
+    "code_hash": "d651f15609b98bab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774868450",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:00:50.644045",
+    "code_hash": "c9a7a931e333535d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774868468",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:01:08.995987",
+    "code_hash": "318f20403ea3acb7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774868487",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:01:27.120057",
+    "code_hash": "c54be801753c2742",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774868680",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:04:40.678088",
+    "code_hash": "774281620c0e9021",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774868746",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:05:46.452169",
+    "code_hash": "1d4c2d9003b4f55f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774868783",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:06:23.232709",
+    "code_hash": "20506160bed7e218",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774868801",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:06:41.004569",
+    "code_hash": "c9a7a931e333535d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774869051",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:10:51.227265",
+    "code_hash": "c9a7a931e333535d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774869254",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:14:14.724676",
+    "code_hash": "e14357510a452e9b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774869412",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:16:52.714859",
+    "code_hash": "d22357e1d1ea7f24",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774869485",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:18:05.431505",
+    "code_hash": "d651f15609b98bab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774869549",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:19:09.202679",
+    "code_hash": "01ecb0c544d5ceee",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774869582",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:19:42.169931",
+    "code_hash": "9539ea1b995eed92",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774869621",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:20:21.929073",
+    "code_hash": "43e04aed945fcb0c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774869643",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:20:43.568425",
+    "code_hash": "407bb3bc73102e4e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774869661",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:21:01.839261",
+    "code_hash": "1d4c2d9003b4f55f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774869757",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:22:37.517431",
+    "code_hash": "73df51200ba5a40c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774869775",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:22:55.372552",
+    "code_hash": "fc8f6d3db174f9b2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774869792",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:23:12.946111",
+    "code_hash": "5dc5c8996570914c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774869870",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:24:30.590316",
+    "code_hash": "61471fb4c46304d7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774869891",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:24:51.515126",
+    "code_hash": "2f7da51ca8846400",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774869954",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:25:54.535444",
+    "code_hash": "63bc18eb45ed69d4",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774869991",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:26:31.714912",
+    "code_hash": "2f7da51ca8846400",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774870010",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T04:26:50.836460",
+    "code_hash": "f8e32680070bc77a",
+    "difficulty": 5
   }
 ]
