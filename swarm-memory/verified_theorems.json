@@ -1014,5 +1014,285 @@
     "timestamp": "2026-03-29T23:11:38.313915",
     "code_hash": "5ff12c3b3badd9da",
     "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774851706",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:21:46.004743",
+    "code_hash": "fc1226e3a612de4d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774851828",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:23:48.244432",
+    "code_hash": "5e0c7d3cc11db7d8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774851847",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:24:07.326402",
+    "code_hash": "2d9f94117f6a2e77",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774851890",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:24:50.686672",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774851924",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:25:24.956289",
+    "code_hash": "0396c96c6a5ecb86",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774851958",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:25:58.836341",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774852083",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:28:03.750510",
+    "code_hash": "99c17320f6edae5c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774852101",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:28:21.952814",
+    "code_hash": "7a010304ad64dc39",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774852208",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:30:08.815803",
+    "code_hash": "e3d08a9de5b40ad7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774852229",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:30:29.782015",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774852247",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:30:47.509811",
+    "code_hash": "07d990d3efc7b3a2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774852306",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:31:46.519736",
+    "code_hash": "1445825f2fc1abd3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774852324",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:32:04.889726",
+    "code_hash": "ce4bb6b2af2bd164",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774852520",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:35:20.489757",
+    "code_hash": "5e0c7d3cc11db7d8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774852538",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:35:38.035846",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774852582",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:36:22.875496",
+    "code_hash": "a5b01d735c3bac98",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774852907",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:41:47.031269",
+    "code_hash": "6d2922175dd524b3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774852950",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:42:30.466346",
+    "code_hash": "ce4bb6b2af2bd164",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774852967",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:42:47.623954",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774852987",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:43:07.544772",
+    "code_hash": "2d9f94117f6a2e77",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774853031",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:43:51.397584",
+    "code_hash": "07d990d3efc7b3a2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774853049",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:44:09.227843",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774853067",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:44:27.992843",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774853112",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:45:12.215768",
+    "code_hash": "6830e83c4bd0a9ae",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774853316",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:48:36.298673",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774853355",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:49:15.920629",
+    "code_hash": "49608bde8b03efa5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774853481",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:51:21.059271",
+    "code_hash": "6c3f8ddd9455d476",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774853732",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:55:32.071948",
+    "code_hash": "2d9f94117f6a2e77",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774853752",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:55:52.193653",
+    "code_hash": "91dd496591dffa1b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774853789",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:56:29.410459",
+    "code_hash": "d65e3786ff32c2bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774853807",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:56:47.560476",
+    "code_hash": "983ed6854a0e6544",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774853824",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:57:04.828171",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774853864",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:57:44.712816",
+    "code_hash": "71ce37712fa7c70d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774853882",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:58:02.150075",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774853918",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-29T23:58:38.115968",
+    "code_hash": "164f1e319aa996b5",
+    "difficulty": 5
   }
 ]

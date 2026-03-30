@@ -1,70 +1,6 @@
 [
   {
     "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (9.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\n\ntheorem pow_add (a b : \u2115) : 2^(a + b) = 2^a * 2^b := by\n  exact Nat.pow_add 2 a b",
-    "after_snippet": "import Mathlib\n\ntheorem my_pow_add (a b : \u2115) : 2^(a + b) = 2^a * 2^b := by\n  exact Nat.pow_add 2 a b",
-    "timestamp": "2026-03-29T22:01:21.201591"
-  },
-  {
-    "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (18s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\n\ntheorem exp_monotone (a b : \u2115) (h : a \u2264 b) : 2^a \u2264 2^b := by\n  apply Nat.pow_le_pow_right (by decide) 2\n  exact h",
-    "after_snippet": "import Mathlib\n\ntheorem exp_monotone (a b : \u2115) (h : a \u2264 b) : 2^a \u2264 2^b := by\n  apply Nat.pow_le_pow_right\n  \u00b7 decide\n  \u00b7 exact h",
-    "timestamp": "2026-03-29T22:03:34.094797"
-  },
-  {
-    "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (9.1s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\ntheorem de_morgan_not_and (P Q : Prop) : \u00ac(P \u2227 Q) \u2194 (\u00acP \u2228 \u00acQ) := by\n  exact not_and_or P Q",
-    "after_snippet": "import Mathlib\n\ntheorem de_morgan_not_and (P Q : Prop) : \u00ac(P \u2227 Q) \u2194 (\u00acP \u2228 \u00acQ) :=\n  not_and_or",
-    "timestamp": "2026-03-29T22:12:30.435862"
-  },
-  {
-    "error_type": "type_mismatch",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
-    "fix_summary": "Fixed type_mismatch error",
-    "before_snippet": "import Mathlib\n\ntheorem disjoint_compl (s : Set \u03b1) : Disjoint s s\u1d9c :=\nby exact disjoint_compl_right s",
-    "after_snippet": "import Mathlib\n\ntheorem disjoint_compl (s : Set \u03b1) : Disjoint s s\u1d9c := by\n  exact disjoint_compl_right",
-    "timestamp": "2026-03-29T22:15:28.842066"
-  },
-  {
-    "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.7s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\n\ntheorem pow_add (a b : \u2115) : 2^(a + b) = 2^a * 2^b := by\n  exact pow_add 2 a b",
-    "after_snippet": "import Mathlib\n\ntheorem my_pow_add (a b : \u2115) : 2^(a + b) = 2^a * 2^b := by\n  exact Nat.pow_add 2 a b",
-    "timestamp": "2026-03-29T22:16:44.982526"
-  },
-  {
-    "error_type": "unknown_identifier",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (7.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
-    "fix_summary": "Fixed unknown_identifier error",
-    "before_snippet": "import Mathlib\n\ntheorem nat_pow_pos (n : \u2115) : 2^n > 0 := by\n  apply Nat.pos_pow_of_pos\n  decide",
-    "after_snippet": "import Mathlib\n\ntheorem nat_pow_pos (n : \u2115) : 2^n > 0 := by\n  exact Nat.two_pow_pos n",
-    "timestamp": "2026-03-29T22:17:36.190871"
-  },
-  {
-    "error_type": "type_mismatch",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.0s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
-    "fix_summary": "Fixed type_mismatch error",
-    "before_snippet": "import Mathlib\n\ntheorem infinite_primes (n : \u2115) : n = 0 \u2192 \u2203 p, p > n \u2227 Nat.Prime p := by\n  intro h\n  exact Nat.exists_infinite_primes h",
-    "after_snippet": "import Mathlib\n\ntheorem infinite_primes (n : \u2115) : n = 0 \u2192 \u2203 p, p > n \u2227 Nat.Prime p := by\n  intro h\n  have : n = 0 := h\n  have : n < n + 1 := by omega\n  exact Nat.exists_infinite_primes (n + 1)",
-    "timestamp": "2026-03-29T22:20:14.393484"
-  },
-  {
-    "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\n\nopen BigStep.KnownLemmas\nopen SmallStep.KnownLemmas\n\ntheorem pow_two_ge_one (n : Nat) : 2^n >= 1 := by\n  apply Nat.one_le_pow; omega",
-    "after_snippet": "import Mathlib\n\ntheorem pow_two_ge_one (n : Nat) : 2^n >= 1 := by\n  apply Nat.one_le_pow\n  <;> norm_num",
-    "timestamp": "2026-03-29T22:25:16.666619"
-  },
-  {
-    "error_type": "import_error",
     "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
     "fix_summary": "Fixed import_error error",
     "before_snippet": "import Mathlib\n\ntheorem finset_union_comm {\u03b1 : Type*} (A B : Finset \u03b1) : A \u222a B = B \u222a A := by\n  exact Finset.union_comm A B",
@@ -158,5 +94,69 @@
     "before_snippet": "import Mathlib\n\ntheorem de_morgan_not_and (P Q : Prop) : (\u00ac (P \u2227 Q) \u2194 (\u00ac P \u2228 \u00ac Q)) := by\n  exact not_and_or P Q",
     "after_snippet": "import Mathlib\n\ntheorem de_morgan_not_and (P Q : Prop) : (\u00ac (P \u2227 Q) \u2194 (\u00ac P \u2228 \u00ac Q)) :=\n  not_and_or",
     "timestamp": "2026-03-29T23:07:03.047752"
+  },
+  {
+    "error_type": "unknown_identifier",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed unknown_identifier error",
+    "before_snippet": "import Mathlib\n\ntheorem disjoint_compl (\u03b1 : Type*) (s : Set \u03b1) : s \u2229 s\u1d9c = \u2205 := by\n  exact Set.disjoint_compl_right s\n\nend 1397 theorems/lemmas in Research.lean (38342 lines) ---\n\n-- END THEOREMS ---\n\n-- End of theorems list. The last theorem is `disjoint_compl` --",
+    "after_snippet": "import Mathlib\n\ntheorem disjoint_compl (\u03b1 : Type*) (s : Set \u03b1) : s \u2229 s\u1d9c = \u2205 := by\n  exact Set.inter_compl_self s",
+    "timestamp": "2026-03-29T23:21:46.003303"
+  },
+  {
+    "error_type": "unknown_identifier",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.5s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed unknown_identifier error",
+    "before_snippet": "import Mathlib\n\ntheorem list_length_append (A B : List \u03b1) : length (A ++ B) = length A + length B := by\n  rw [List.length_append]",
+    "after_snippet": "import Mathlib\n\ntheorem list_length_append {\u03b1 : Type*} (A B : List \u03b1) : (A ++ B).length = A.length + B.length := by\n  rw [List.length_append]",
+    "timestamp": "2026-03-29T23:25:24.955643"
+  },
+  {
+    "error_type": "type_mismatch",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed type_mismatch error",
+    "before_snippet": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  exact Bool.not_not b",
+    "after_snippet": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  cases b <;> rfl",
+    "timestamp": "2026-03-29T23:25:58.835421"
+  },
+  {
+    "error_type": "tactic_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.6s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed tactic_error error",
+    "before_snippet": "import Mathlib\n\ntheorem nat_strong_induction (P : \u2115 \u2192 Prop) (h0 : P 0) (h1 : \u2200 n, (\u2200 m, P m) \u2192 P (n + 1)) : \u2200 n, P n := by\n  intro n\n  induction n using Nat.strongRecOn with\n  | ind n ih =>\n    cases n with\n    | zero => exact h0\n    | succ n =>\n      apply h1\n      intro m hm\n      apply ih\n      e",
+    "after_snippet": "import Mathlib\n\ntheorem nat_strong_induction (P : \u2115 \u2192 Prop) (h0 : P 0) (h1 : \u2200 n, (\u2200 m, m < n \u2192 P m) \u2192 P n) : \u2200 n, P n := by\n  intro n\n  induction n using Nat.strongRecOn with\n  | ind n ih =>\n    cases n with\n    | zero => exact h0\n    | succ n =>\n      apply h1\n      intro m hm\n      apply ih m hm",
+    "timestamp": "2026-03-29T23:30:08.814747"
+  },
+  {
+    "error_type": "import_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (9.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed import_error error",
+    "before_snippet": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) (h : s.image f) : s.card \u2265 (s.image f).toFinset.card :=\n  by {\n  apply Finset.card_image_le\n}",
+    "after_snippet": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) :\n    s.card \u2265 (s.image f).card := by\n  apply Finset.card_image_le",
+    "timestamp": "2026-03-29T23:31:46.517578"
+  },
+  {
+    "error_type": "tactic_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.7s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed tactic_error error",
+    "before_snippet": "import Mathlib\n\ntheorem card_powerset (n : \u2115) (s : Finset \u2115) (hs : s.card = n) : \n    (s.powerset).card = 2 ^ n := by\n  rw [hs, Finset.card_powerset]",
+    "after_snippet": "import Mathlib\n\ntheorem card_powerset (n : \u2115) (s : Finset \u2115) (hs : s.card = n) : (s.powerset).card = 2 ^ n := by\n  rw [Finset.card_powerset, hs]",
+    "timestamp": "2026-03-29T23:49:15.919984"
+  },
+  {
+    "error_type": "import_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.6s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed import_error error",
+    "before_snippet": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) :\n    (s.image f).card \u2264 s.card := by\n  exact Finset.card_image_le s f",
+    "after_snippet": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) :\n    (s.image f).card \u2264 s.card :=\n  Finset.card_image_le",
+    "timestamp": "2026-03-29T23:51:21.058576"
+  },
+  {
+    "error_type": "import_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (8.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pa",
+    "fix_summary": "Fixed import_error error",
+    "before_snippet": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) :\n    (s.image f).card \u2264 s.card :=\n  Finset.card_image_le s f",
+    "after_snippet": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) : (s.image f).card \u2264 s.card := by\n  apply Finset.card_image_le",
+    "timestamp": "2026-03-29T23:58:38.115353"
   }
 ]
