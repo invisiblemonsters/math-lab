@@ -2126,5 +2126,285 @@
     "timestamp": "2026-03-30T02:08:27.014479",
     "code_hash": "66a392753e0b24c6",
     "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774861919",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:11:59.549864",
+    "code_hash": "3d18005fceb87e4d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774862027",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:13:47.356887",
+    "code_hash": "ed1f89139945d601",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774862082",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:14:42.113463",
+    "code_hash": "ed1f89139945d601",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774862122",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:15:22.777180",
+    "code_hash": "43e04aed945fcb0c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774862301",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:18:21.483173",
+    "code_hash": "ba265ca24130ef84",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774862320",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:18:40.692418",
+    "code_hash": "e69a67c9164b659e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774862383",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:19:43.601636",
+    "code_hash": "b580cac4ae9bf23e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774862613",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:23:33.020657",
+    "code_hash": "6a979a000b2e9b7e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774862631",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:23:51.111622",
+    "code_hash": "b580cac4ae9bf23e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774862820",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:27:00.576468",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774862838",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:27:18.206568",
+    "code_hash": "3d18005fceb87e4d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774862875",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:27:55.572198",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774862894",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:28:14.980663",
+    "code_hash": "edf9cdfc215e6884",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774862933",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:28:53.158583",
+    "code_hash": "2cd77cbc0fac9e11",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774862965",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:29:25.901502",
+    "code_hash": "a60a461bf1d72434",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774862984",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:29:44.959986",
+    "code_hash": "9723430f1b51933d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774863003",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:30:03.403899",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774863040",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:30:40.892662",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774863090",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:31:30.904689",
+    "code_hash": "61471fb4c46304d7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774863127",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:32:07.842797",
+    "code_hash": "61dd335364f3d042",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774863145",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:32:25.546103",
+    "code_hash": "3d18005fceb87e4d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774863164",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:32:44.830795",
+    "code_hash": "b580cac4ae9bf23e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774863318",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:35:18.824334",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774863336",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:35:36.505087",
+    "code_hash": "b580cac4ae9bf23e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774863410",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:36:50.264677",
+    "code_hash": "26cd4538e6d4226d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774863427",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:37:07.868067",
+    "code_hash": "3d18005fceb87e4d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774863492",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:38:12.396737",
+    "code_hash": "47ffae8ffa655b99",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774863529",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:38:49.041312",
+    "code_hash": "7715dec924cc3cf9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774863548",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:39:08.204127",
+    "code_hash": "3dafe899783981c7",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774863783",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:43:03.700636",
+    "code_hash": "61dd335364f3d042",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774863852",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:44:12.557985",
+    "code_hash": "4dfbcef2369ca137",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774864106",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:48:26.619890",
+    "code_hash": "397f7e5984bd9639",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774864125",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:48:45.082878",
+    "code_hash": "6d87657801f228a0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774864262",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:51:02.083206",
+    "code_hash": "61dd335364f3d042",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774864297",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:51:37.392884",
+    "code_hash": "38bad7270f70590c",
+    "difficulty": 5
   }
 ]
