@@ -1294,5 +1294,269 @@
     "timestamp": "2026-03-29T23:58:38.115968",
     "code_hash": "164f1e319aa996b5",
     "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774854036",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:00:36.601722",
+    "code_hash": "5ff12c3b3badd9da",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774854055",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:00:55.677138",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774854208",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:03:28.050745",
+    "code_hash": "07d990d3efc7b3a2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774854251",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:04:11.469285",
+    "code_hash": "0396c96c6a5ecb86",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774854389",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:06:29.828767",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774854493",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:08:13.142403",
+    "code_hash": "d651f15609b98bab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774854867",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:14:27.882661",
+    "code_hash": "8f8826456d2b6a50",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774855104",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:18:24.711625",
+    "code_hash": "4496dc4a7548a4e0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774855265",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:21:05.066767",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774855283",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:21:23.041109",
+    "code_hash": "bb24789e7165717f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774855359",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:22:39.518461",
+    "code_hash": "4ea60d25a2d4c2ab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774855378",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:22:58.138860",
+    "code_hash": "88b2dd6e6099cb2e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774855395",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:23:15.909563",
+    "code_hash": "90e1224196fb146b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774855533",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:25:33.817693",
+    "code_hash": "a60a461bf1d72434",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774855579",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:26:19.225861",
+    "code_hash": "4ea60d25a2d4c2ab",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774855597",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:26:37.397685",
+    "code_hash": "58732bd55d9d1d9a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774855661",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:27:41.500525",
+    "code_hash": "c69c75d5f3e850b0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774855764",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:29:24.812733",
+    "code_hash": "bb24789e7165717f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774855888",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:31:28.211042",
+    "code_hash": "d54981de69497048",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774855906",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:31:46.504189",
+    "code_hash": "fb6c0b3812cfcdf9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_infinite_primes_1774856069",
+    "statement": "For every natural number n, there exists a prime p > n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:34:29.945108",
+    "code_hash": "76b36652e4620967",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774856105",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:35:05.372939",
+    "code_hash": "d54981de69497048",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774856162",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:36:02.635260",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774856180",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:36:20.229542",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774856221",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:37:01.789864",
+    "code_hash": "4496dc4a7548a4e0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774856337",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:38:57.736987",
+    "code_hash": "a41adf0b29e43898",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774856467",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:41:07.066510",
+    "code_hash": "a84db6d869f91cde",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774856503",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:41:43.373956",
+    "code_hash": "e4a88dac51a61990",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774856542",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:42:22.881902",
+    "code_hash": "4496dc4a7548a4e0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774856585",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:43:05.749276",
+    "code_hash": "fb30701e841cc8ec",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774856620",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:43:40.203837",
+    "code_hash": "2306afa04253ee9c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774856637",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:43:57.401027",
+    "code_hash": "86326eee691002d8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774856655",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:44:15.970890",
+    "code_hash": "1cbab094b3c144cf",
+    "difficulty": 5
   }
 ]

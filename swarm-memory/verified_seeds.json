@@ -1,152 +1,152 @@
 [
   {
-    "name": "bool_not_not",
-    "code": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  cases b <;> rfl",
-    "timestamp": "2026-03-29T23:25:58.841658"
-  },
-  {
-    "name": "card_powerset",
-    "code": "import Mathlib\n\ntheorem card_powerset (n : \u2115) (s : Finset \u03b1) : (s.powerset).card = 2 ^ s.card := by\n  rw [Finset.card_powerset]",
-    "timestamp": "2026-03-29T23:28:03.756345"
-  },
-  {
-    "name": "exp_monotone",
-    "code": "import Mathlib\n\ntheorem exp_monotone (a b : \u2115) (h : a \u2264 b) : 2 ^ a \u2264 2 ^ b := by {\n  apply Nat.pow_le_pow_right (by norm_num) h\n}",
-    "timestamp": "2026-03-29T23:28:21.956951"
-  },
-  {
-    "name": "nat_strong_induction",
-    "code": "import Mathlib\n\ntheorem nat_strong_induction (P : \u2115 \u2192 Prop) (h0 : P 0) (h1 : \u2200 n, (\u2200 m, m < n \u2192 P m) \u2192 P n) : \u2200 n, P n := by\n  intro n\n  induction n using Nat.strongRecOn with\n  | ind n ih =>\n    cases n with\n    | zero => exact h0\n    | succ n =>\n      apply h1\n      intro m hm\n      apply ih m hm",
-    "timestamp": "2026-03-29T23:30:08.821602"
-  },
-  {
-    "name": "double_complement",
-    "code": "import Mathlib\n\ntheorem double_complement {\u03b1 : Type*} (S : Set \u03b1) : S\u1d9c\u1d9c = S := by\n  exact compl_compl S",
-    "timestamp": "2026-03-29T23:30:29.785682"
-  },
-  {
-    "name": "subset_trans_sets",
-    "code": "import Mathlib\n\ntheorem subset_trans_sets {\u03b1 : Type*} (A B C : Set \u03b1) (h1 : A \u2286 B) (h2 : B \u2286 C) : A \u2286 C :=\n  Set.Subset.trans h1 h2",
-    "timestamp": "2026-03-29T23:30:47.513590"
-  },
-  {
-    "name": "card_image_le",
-    "code": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) :\n    s.card \u2265 (s.image f).card := by\n  apply Finset.card_image_le",
-    "timestamp": "2026-03-29T23:31:46.523884"
-  },
-  {
-    "name": "nat_pow_pos",
-    "code": "import Mathlib\n\ntheorem nat_pow_pos (n : \u2115) : 2 ^ n > 0 := by\n  positivity",
-    "timestamp": "2026-03-29T23:32:04.893459"
-  },
-  {
-    "name": "de_morgan_not_and",
-    "code": "import Mathlib\n\ntheorem de_morgan_not_and (P Q : Prop) : (\u00ac (P \u2227 Q) \u2194 (\u00ac P \u2228 \u00ac Q)) :=\n  not_and_or",
-    "timestamp": "2026-03-29T23:35:20.493254"
-  },
-  {
-    "name": "bool_not_not",
-    "code": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  cases b <;> rfl",
-    "timestamp": "2026-03-29T23:35:38.041195"
-  },
-  {
-    "name": "pow_two_ge_one",
-    "code": "import Mathlib\n\ntheorem pow_two_ge_one (n : \u2115) : 2 ^ n \u2265 1 := by\n  apply Nat.one_le_pow\n  exact Nat.zero_lt_two",
-    "timestamp": "2026-03-29T23:36:22.881968"
-  },
-  {
-    "name": "nat_strong_induction",
-    "code": "import Mathlib\n\ntheorem nat_strong_induction (P : \u2115 \u2192 Prop) (h0 : P 0) (h1 : \u2200 n, (\u2200 m, m < n \u2192 P m) \u2192 P n) : \u2200 n, P n := by\n  intro n\n  induction n using Nat.strongRecOn with\n  | ind n ih => exact h1 n (fun m hm => ih m hm)",
-    "timestamp": "2026-03-29T23:41:47.039588"
-  },
-  {
-    "name": "nat_pow_pos",
-    "code": "import Mathlib\n\ntheorem nat_pow_pos (n : \u2115) : 2 ^ n > 0 := by\n  positivity",
-    "timestamp": "2026-03-29T23:42:30.472361"
-  },
-  {
-    "name": "bool_not_not",
-    "code": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  cases b <;> rfl",
-    "timestamp": "2026-03-29T23:42:47.635547"
-  },
-  {
-    "name": "injective_card_le",
-    "code": "import Mathlib\n\ntheorem injective_card_le (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Injective f) : n \u2264 m := by\n  have : Fintype.card (Fin n) \u2264 Fintype.card (Fin m) :=\n    Fintype.card_le_of_injective f hf\n  simpa [Fintype.card_fin] using this",
-    "timestamp": "2026-03-29T23:43:07.549987"
-  },
-  {
-    "name": "subset_trans_sets",
-    "code": "import Mathlib\n\ntheorem subset_trans_sets {\u03b1 : Type*} (A B C : Set \u03b1) (h1 : A \u2286 B) (h2 : B \u2286 C) : A \u2286 C :=\n  Set.Subset.trans h1 h2",
-    "timestamp": "2026-03-29T23:43:51.405347"
+    "name": "list_length_append",
+    "code": "import Mathlib\n\ntheorem list_length_append {\u03b1 : Type*} (A B : List \u03b1) : (A ++ B).length = A.length + B.length := by\n  rw [List.length_append]",
+    "timestamp": "2026-03-30T00:04:11.475506"
   },
   {
     "name": "nat_add_comm",
     "code": "import Mathlib\n\ntheorem nat_add_comm (a b : \u2115) : a + b = b + a := by\n  exact Nat.add_comm a b",
-    "timestamp": "2026-03-29T23:44:09.236321"
+    "timestamp": "2026-03-30T00:06:29.834018"
   },
   {
-    "name": "bool_not_not",
-    "code": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  cases b <;> rfl",
-    "timestamp": "2026-03-29T23:44:27.996947"
+    "name": "disjoint_compl",
+    "code": "import Mathlib\n\ntheorem disjoint_compl {\u03b1 : Type*} (s : Set \u03b1) : Disjoint s s\u1d9c := by\n  rw [Set.disjoint_iff_inter_eq_empty]\n  rw [Set.inter_compl_self]",
+    "timestamp": "2026-03-30T00:08:13.148848"
   },
   {
-    "name": "mono_comp_strict",
-    "code": "import Mathlib\n\ntheorem mono_comp_strict {\u03b1 \u03b2 \u03b3 : Type*} [LinearOrder \u03b1] [LinearOrder \u03b2] [LinearOrder \u03b3]\n  (f : \u03b2 \u2192 \u03b3) (g : \u03b1 \u2192 \u03b2) (h : StrictMono f) (h' : StrictMono g) :\n  StrictMono (f \u2218 g) :=\nStrictMono.comp h h'",
-    "timestamp": "2026-03-29T23:45:12.225837"
+    "name": "comp_injective",
+    "code": "import Mathlib\n\ntheorem comp_injective {\u03b1 \u03b2 \u03b3 : Type*} (f : \u03b2 \u2192 \u03b3) (g : \u03b1 \u2192 \u03b2)\n    (hf : Function.Injective f) (hg : Function.Injective g) :\n    Function.Injective (f \u2218 g) := by\n  exact Function.Injective.comp hf hg",
+    "timestamp": "2026-03-30T00:14:27.887563"
+  },
+  {
+    "name": "disjoint_compl",
+    "code": "import Mathlib\n\ntheorem disjoint_compl {\u03b1 : Type*} (s : Set \u03b1) : Disjoint s (s\u1d9c) := by\n  rw [Set.disjoint_iff_inter_eq_empty]\n  rw [Set.inter_compl_self]",
+    "timestamp": "2026-03-30T00:18:24.715251"
   },
   {
     "name": "double_complement",
     "code": "import Mathlib\n\ntheorem double_complement {\u03b1 : Type*} (S : Set \u03b1) : S\u1d9c\u1d9c = S := by\n  exact compl_compl S",
-    "timestamp": "2026-03-29T23:48:36.303692"
+    "timestamp": "2026-03-30T00:21:05.074167"
   },
   {
-    "name": "card_powerset",
-    "code": "import Mathlib\n\ntheorem card_powerset (n : \u2115) (s : Finset \u2115) (hs : s.card = n) : (s.powerset).card = 2 ^ n := by\n  rw [Finset.card_powerset, hs]",
-    "timestamp": "2026-03-29T23:49:15.925212"
+    "name": "surjective_card_ge",
+    "code": "import Mathlib\n\ntheorem surjective_card_ge (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Surjective f) : n \u2265 m := by\n  have := Fintype.card_le_of_surjective f hf\n  simpa [Fintype.card_fin] using this",
+    "timestamp": "2026-03-30T00:21:23.045852"
   },
   {
-    "name": "card_image_le",
-    "code": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) :\n    (s.image f).card \u2264 s.card :=\n  Finset.card_image_le",
-    "timestamp": "2026-03-29T23:51:21.063367"
-  },
-  {
-    "name": "injective_card_le",
-    "code": "import Mathlib\n\ntheorem injective_card_le (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Injective f) : n \u2264 m := by\n  have : Fintype.card (Fin n) \u2264 Fintype.card (Fin m) :=\n    Fintype.card_le_of_injective f hf\n  simpa [Fintype.card_fin] using this",
-    "timestamp": "2026-03-29T23:55:32.077651"
-  },
-  {
-    "name": "mono_comp_strict",
-    "code": "import Mathlib\n\ntheorem mono_comp_strict {\u03b1 \u03b2 \u03b3 : Type*} [LinearOrder \u03b1] [LinearOrder \u03b2] [LinearOrder \u03b3]\n  (f : \u03b2 \u2192 \u03b3) (g : \u03b1 \u2192 \u03b2) (h : StrictMono f) (h' : StrictMono g) :\n  StrictMono (f \u2218 g) := by\n  apply StrictMono.comp h h'",
-    "timestamp": "2026-03-29T23:55:52.200044"
+    "name": "pow_add",
+    "code": "import Mathlib\n\ntheorem my_pow_add (a b : \u2115) : 2 ^ (a + b) = 2 ^ a * 2 ^ b := by\n  rw [Nat.pow_add]",
+    "timestamp": "2026-03-30T00:22:39.522406"
   },
   {
     "name": "empty_subset",
-    "code": "import Mathlib\n\ntheorem empty_subset (\u03b1 : Type*) (s : Set \u03b1) : \u2205 \u2286 s :=\n  Set.empty_subset s\n\n-- The proof is complete as the lemma Set.empty_subset directly proves the statement.\n-- No additional proof is required beyond invoking the correct Mathlib lemma.",
-    "timestamp": "2026-03-29T23:56:29.418499"
+    "code": "import Mathlib\n\ntheorem empty_subset (\u03b1 : Type*) (s : Set \u03b1) : \u2205 \u2286 s :=\nby apply Set.empty_subset",
+    "timestamp": "2026-03-30T00:22:58.142858"
   },
   {
-    "name": "de_morgan_not_and",
-    "code": "import Mathlib\n\ntheorem de_morgan_not_and (P Q : Prop) : \n  \u00ac(P \u2227 Q) \u2194 (\u00acP \u2228 \u00acQ) := \nby apply not_and_or",
-    "timestamp": "2026-03-29T23:56:47.565624"
+    "name": "pow_two_ge_one",
+    "code": "import Mathlib\n\ntheorem pow_two_ge_one (n : \u2115) : 2^n >= 1 := by\n  apply Nat.one_le_pow\n  exact Nat.zero_lt_two",
+    "timestamp": "2026-03-30T00:23:15.914431"
+  },
+  {
+    "name": "pow_two_ge_one",
+    "code": "import Mathlib\n\ntheorem pow_two_ge_one (n : \u2115) : 2^n \u2265 1 := by\n  apply Nat.one_le_pow\n  exact Nat.zero_lt_two",
+    "timestamp": "2026-03-30T00:25:33.824200"
+  },
+  {
+    "name": "pow_add",
+    "code": "import Mathlib\n\ntheorem my_pow_add (a b : \u2115) : 2 ^ (a + b) = 2 ^ a * 2 ^ b := by\n  rw [Nat.pow_add]",
+    "timestamp": "2026-03-30T00:26:19.230697"
+  },
+  {
+    "name": "empty_subset",
+    "code": "import Mathlib\n\ntheorem empty_subset {\u03b1 : Type*} (s : Set \u03b1) : \u2205 \u2286 s :=\n  Set.empty_subset s",
+    "timestamp": "2026-03-30T00:26:37.406183"
+  },
+  {
+    "name": "disjoint_compl",
+    "code": "import Mathlib\n\ntheorem disjoint_compl {\u03b1 : Type*} (s : Set \u03b1) : Disjoint s (s\u1d9c) := by\n  rw [Set.disjoint_iff_inter_eq_empty]\n  rw [Set.inter_compl_self]\n\ntheorem test_disjoint_compl :\n  \u2200 (\u03b1 : Type*) (s : Set \u03b1), Disjoint s (s\u1d9c) := by\n  intro \u03b1 s\n  exact disjoint_compl s",
+    "timestamp": "2026-03-30T00:27:41.505167"
+  },
+  {
+    "name": "surjective_card_ge",
+    "code": "import Mathlib\n\ntheorem surjective_card_ge (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Surjective f) : n \u2265 m := by\n  have := Fintype.card_le_of_surjective f hf\n  simpa [Fintype.card_fin] using this",
+    "timestamp": "2026-03-30T00:29:24.818146"
+  },
+  {
+    "name": "pow_add",
+    "code": "import Mathlib\n\ntheorem my_pow_add (a b : \u2115) : 2^(a + b) = 2^a * 2^b := by rw [Nat.pow_add]",
+    "timestamp": "2026-03-30T00:31:28.220816"
+  },
+  {
+    "name": "subset_trans_sets",
+    "code": "import Mathlib\n\ntheorem subset_trans_sets {\u03b1 : Type*} (A B C : Set \u03b1) (h1 : A \u2286 B) (h2 : B \u2286 C) : A \u2286 C := by\n  exact Set.Subset.trans h1 h2",
+    "timestamp": "2026-03-30T00:31:46.509705"
+  },
+  {
+    "name": "infinite_primes",
+    "code": "import Mathlib\n\ntheorem infinite_primes (n : \u2115) (h : n > 0) : \u2203 p, n \u2264 p \u2227 Nat.Prime p := by\n  apply Nat.exists_infinite_primes",
+    "timestamp": "2026-03-30T00:34:29.953865"
+  },
+  {
+    "name": "pow_add",
+    "code": "import Mathlib\n\ntheorem my_pow_add (a b : \u2115) : 2^(a + b) = 2^a * 2^b := by rw [Nat.pow_add]",
+    "timestamp": "2026-03-30T00:35:05.378932"
+  },
+  {
+    "name": "finset_union_comm",
+    "code": "import Mathlib\n\ntheorem finset_union_comm {\u03b1 : Type*} [DecidableEq \u03b1] (A B : Finset \u03b1) : A \u222a B = B \u222a A := by\n  exact Finset.union_comm A B",
+    "timestamp": "2026-03-30T00:36:02.642468"
+  },
+  {
+    "name": "nat_add_comm",
+    "code": "import Mathlib\n\ntheorem nat_add_comm (a b : \u2115) : a + b = b + a := by\n  exact Nat.add_comm a b",
+    "timestamp": "2026-03-30T00:36:20.235307"
+  },
+  {
+    "name": "disjoint_compl",
+    "code": "import Mathlib\n\ntheorem disjoint_compl {\u03b1 : Type*} (s : Set \u03b1) : Disjoint s (s\u1d9c) := by\n  rw [Set.disjoint_iff_inter_eq_empty]\n  rw [Set.inter_compl_self]",
+    "timestamp": "2026-03-30T00:37:01.794298"
   },
   {
     "name": "bool_not_not",
-    "code": "import Mathlib\n\ntheorem bool_not_not (b : Bool) : !!b = b := by\n  cases b <;> rfl",
-    "timestamp": "2026-03-29T23:57:04.832882"
+    "code": "import Mathlib\n\ntheorem bool_not_not : \u2200 (b : Bool), \u00ac\u00acb = b := by\n  intro b\n  cases b <;> simp\n\n-- Alternative solution using the hint:\ntheorem bool_not_not_alt (b : Bool) : \u00ac\u00acb = b := by\n  cases b <;> simp\n\n-- This is theoretically the same proof, but fully explicit:\ntheorem bool_not_not_full : \u2200 (b : Bool), (\u00ac\u00acb) = b := by\n  intro b\n  cases b <;> simp",
+    "timestamp": "2026-03-30T00:38:57.743975"
+  },
+  {
+    "name": "finset_union_comm",
+    "code": "import Mathlib\n\ntheorem finset_union_comm {\u03b1 : Type*} [DecidableEq \u03b1] (A B : Finset \u03b1) : A \u222a B = B \u222a A := by\n  exact Finset.union_comm A B",
+    "timestamp": "2026-03-30T00:41:07.074941"
+  },
+  {
+    "name": "empty_subset",
+    "code": "import Mathlib\n\ntheorem empty_subset_univ {\u03b1 : Type*} (s : Set \u03b1) : \u2205 \u2286 s := by\n  exact Set.empty_subset s",
+    "timestamp": "2026-03-30T00:41:43.382456"
+  },
+  {
+    "name": "disjoint_compl",
+    "code": "import Mathlib\n\ntheorem disjoint_compl {\u03b1 : Type*} (s : Set \u03b1) : Disjoint s (s\u1d9c) := by\n  rw [Set.disjoint_iff_inter_eq_empty]\n  rw [Set.inter_compl_self]",
+    "timestamp": "2026-03-30T00:42:22.885842"
   },
   {
     "name": "injective_card_le",
-    "code": "import Mathlib\n\ntheorem injective_card_le (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Injective f) : n \u2264 m := by\n  have := Fintype.card_le_of_injective f hf\n  simpa [Fintype.card_fin] using this",
-    "timestamp": "2026-03-29T23:57:44.717201"
+    "code": "import Mathlib\n\ntheorem injective_card_le (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Injective f) : n \u2264 m := by\n  rw [\u2190 Fintype.card_fin n, \u2190 Fintype.card_fin m]\n  apply Fintype.card_le_of_injective f hf",
+    "timestamp": "2026-03-30T00:43:05.752927"
   },
   {
-    "name": "even_or_odd",
-    "code": "import Mathlib\n\ntheorem even_or_odd (n : \u2115) : Even n \u2228 Odd n := by\n  exact Nat.even_or_odd n",
-    "timestamp": "2026-03-29T23:58:02.156621"
+    "name": "injective_card_le",
+    "code": "import Mathlib\n\ntheorem injective_card_le (n m : \u2115) (f : Fin n \u2192 Fin m) (hf : Function.Injective f) :\n    n \u2264 m := by\n  rw [\u2190 Fintype.card_fin n, \u2190 Fintype.card_fin m]\n  apply Fintype.card_le_of_injective f hf",
+    "timestamp": "2026-03-30T00:43:40.207808"
   },
   {
-    "name": "card_image_le",
-    "code": "import Mathlib\n\ntheorem card_image_le {\u03b1 \u03b2 : Type*} [DecidableEq \u03b2] (s : Finset \u03b1) (f : \u03b1 \u2192 \u03b2) : (s.image f).card \u2264 s.card := by\n  apply Finset.card_image_le",
-    "timestamp": "2026-03-29T23:58:38.119882"
+    "name": "empty_subset",
+    "code": "import Mathlib\n\ntheorem empty_subset {\u03b1 : Type*} (s : Set \u03b1) : \u2205 \u2286 s := by\n  exact Set.empty_subset s",
+    "timestamp": "2026-03-30T00:43:57.405190"
+  },
+  {
+    "name": "nat_pow_pos",
+    "code": "import Mathlib\n\ntheorem nat_pow_pos (n : \u2115) : 0 < 2^n := by\n  exact (by positivity)",
+    "timestamp": "2026-03-30T00:44:15.974969"
   }
 ]
