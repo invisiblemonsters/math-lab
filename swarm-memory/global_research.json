@@ -1,15 +1,15 @@
 {
-  "total_cycles": 603,
-  "total_verified": 402,
+  "total_cycles": 630,
+  "total_verified": 433,
   "total_rejected_barrier": 0,
-  "total_falsified": 1098,
+  "total_falsified": 1130,
   "total_trivial": 15,
-  "session_count": 38,
-  "difficulty_level": 5,
-  "consecutive_verified": 387,
-  "consecutive_failed": 0,
-  "total_repairs": 10,
+  "session_count": 39,
+  "difficulty_level": 2,
+  "consecutive_verified": 0,
+  "consecutive_failed": 8,
+  "total_repairs": 63,
   "total_repair_successes": 0,
   "total_natural_filtered": 0,
-  "mode": "compile_training"
+  "mode": "separation"
 }

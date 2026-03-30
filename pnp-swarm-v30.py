@@ -1171,9 +1171,9 @@ def run_compile_training_cycle(cycle: int, memory: SwarmMemory, session_log: lis
         "verified": 0, "trivial": 0, "failed_compile": 0,
     }
 
-    # Pick theorems we haven't verified yet
+    # Pick theorems we haven't verified yet (match by substring since stored names have train_ prefix + hash suffix)
     verified_names = {t.get("name", "") for t in memory.verified_theorems}
-    available = [t for t in TRAINING_THEOREMS if t["name"] not in verified_names]
+    available = [t for t in TRAINING_THEOREMS if not any(t["name"] in vn for vn in verified_names)]
     if not available:
         print("  [DONE] All training theorems verified! Switching to separation mode.")
         memory.global_state["mode"] = "separation"

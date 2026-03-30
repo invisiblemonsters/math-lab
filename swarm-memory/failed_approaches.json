@@ -1,385 +1,5 @@
 [
   {
-    "approach": "CONJECTURE_NAME: **RandomProjectionPreservesAC0LowerBounds**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be an explicit Boolean function (e.g., parity or majority) that requires depth-\\(d\\) AC\u2070 circuits of size \\( \\exp(n^{\\Omega(1/d)}) \\). Let \\( \\rho \\) be a random projection from \\( \\{0,1\\}^",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T11:49:36.784706"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **AffineRestrictionDegreePreservation**\nSTATEMENT: Let $n$ be a sufficiently large integer and let $k = \\lfloor n^{1/3} \\rfloor$. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the explicit Boolean function defined by the mod-3 inner product on $k$ disjoint blocks of variables (specifically, $",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T11:51:11.385201"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparsePolyThresholdSensitivity**\nSTATEMENT: For every sufficiently large integer $n$, there exists an explicit Boolean function $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ in $\\mathsf{AC}^0$ such that for any depth-3 arithmetic circuit $C$ over $\\mathbb{F}_2$ with $s = O(n^{1.1})$ gates, the thr",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T11:53:44.540900"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ParityForcingCircuitComplexityLemma**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be an explicit Boolean function that is **not** computable by any \\( AC^0 \\) circuit of size \\( 2^{n^{o(1)}} \\). Then, for every \\( \\epsilon > 0 \\) and every \\( k = \\omega(1) \\), there exists a",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 1,
-      "N": 3,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T11:55:03.664776"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DualSparsityAmplification**\n\nSTATEMENT: Let $n$ be a sufficiently large integer and let $k = \\lfloor n^{1/4} \\rfloor$. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function such that its Fourier spectrum is supported entirely on coefficients of degree at most $k$ (i.e., $\\hat{f}(S)",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T11:56:12.980814"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SubcubeTolerantCircuitLowerBound**\nSTATEMENT: Let \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function that is \\( \\epsilon \\)-far from any function computable by a \\( CNF \\) formula with \\( s \\) clauses, where \\( \\epsilon = 1/2 - o(1) \\). Then, for any \\( 0 < \\delta < 1 \\), the",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T11:57:57.146062"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonUniformLiftingFromLowDegreeExtensions**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be an explicit Boolean function (e.g., a function in \\(\\mathbf{P}\\) or \\(\\mathbf{NP}\\)) with **block sensitivity** \\( bs(f) = \\Omega(n^\\alpha) \\) for some constant \\( \\alpha > 0 \\). Let \\( \\m",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T12:00:27.406197"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ModPCorrelationBound**\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. For any sufficiently large $n$, let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the function computing the parity of the input modulo $p$ (i.e., $f_n(x) = (\\sum x_i) \\pmod p$). Let $\\mathcal{C}_{n, d}$ be the class o",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:02:19.115597"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DualWitnessSynthesisBarrier**\nSTATEMENT: Let $\\{f_n\\}$ be a family of Boolean functions in $\\mathsf{ACC}^0$ with $n$ variables. If there exists a polynomial-size, constant-depth circuit $C_n$ computing $f_n$ with $\\mathsf{quasilinear}$ sparsity in each layer, then for infinitely m",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:04:08.637356"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SymmetricThresholdRankLowerBound**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be the *symmetric threshold function* defined by \\( f_n(x) = 1 \\) iff \\( \\sum_{i=1}^n x_i \\geq t \\) for some fixed \\( t = \\Theta(n) \\).\nFor any field \\( \\mathbb{F} \\) of characteristic \\( 0 \\), le",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 1
-    },
-    "timestamp": "2026-03-29T12:05:02.054337"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **BoundedDepthCorrelationDecay**\n\nSTATEMENT: Let $n$ be a sufficiently large integer and let $k = \\lfloor (\\log n)^{2} \\rfloor$. Let $f_n: \\{0,1\\}^n \\to \\{-1, 1\\}$ be the explicit Boolean function defined by the parity of the first $k$ bits, i.e., $f_n(x) = (-1)^{\\sum_{i=1}^k x_i}$.",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:06:46.237429"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **TensorRankLowerBound**\nSTATEMENT: Let \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function in \\( \\mathsf{AC}^0 \\) with depth \\( d \\). Then, the tensor rank of the communication matrix of \\( f_n \\) is at least \\( \\Omega(n^{1/2^{d}}) \\).\nPROOF_SKETCH: Utilize a recursive partitio",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:08:55.522075"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **PartialDerivativeSparsityLowerBoundForACC0**\n\nSTATEMENT:\nLet \\( \\mathcal{C} \\) be a Boolean circuit of depth \\( d \\) and size \\( s \\) computing a function \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) in \\( \\mathsf{ACC}^0 \\). Let \\( \\tilde{f} : \\mathbb{F}_2^n \\to \\mathbb{F}_2 \\) be the multilin",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 2
-    },
-    "timestamp": "2026-03-29T12:11:26.288627"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SymmetricGateCorrelationBound**\nSTATEMENT: Let $n$ be a sufficiently large integer. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the Parity function ($f_n(x) = \\bigoplus_{i=1}^n x_i$). Let $C_n$ be any Boolean circuit of depth 2 with the following structure: the output gate is a symmetric ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 6
-    },
-    "timestamp": "2026-03-29T12:14:00.496856"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseApproximationResistance**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function that is $(\\epsilon, \\delta)$-approximately resistant to $s$-sparse polynomials, i.e., for any polynomial $P$ of sparsity at most $s$, $\\mathbb{E}_{x \\sim \\{0,1\\}^n}[(-1)^{f(x)}P(x)] \\le",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:17:17.723149"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ModPCorrelationOrthogonality**\n\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the Mod-$p$ function, which outputs $1$ if and only if $\\sum_{i=1}^n x_i \\equiv 0 \\pmod p$. Let $\\mathcal{C}_{n, d, s}$ be the class of Boolean circuits of dep",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:18:14.438331"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **DepthSeparationViaRandomRestrictionsOnProductGates**\n\nSTATEMENT:\nLet \\( d, m, n \\) be positive integers with \\( m = \\lfloor n^{1/(2d)} \\rfloor \\). Let \\( \\mathcal{C} \\) be a depth-\\( d \\) Boolean circuit over \\( n \\) variables with unbounded fan-in AND/OR/NOT gates, augmented with",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T12:19:43.952541"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NarrowCNFSparsityLemma**\nSTATEMENT: Let \\( \\mathcal{C} \\) be a Boolean formula in Conjunctive Normal Form (CNF) with \\( n \\) variables, \\( m \\) clauses, and each clause contains at most \\( k = O(\\log n) \\) literals. If \\( \\mathcal{C} \\) computes a function that is not in \\( \\maths",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 3,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:23:08.197325"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **StructuredSubspaceParityImmunity**\n\nSTATEMENT: Let $n$ be a sufficiently large integer and let $k = \\lfloor (\\log n)^2 \\rfloor$. Let $\\mathcal{L}_k$ denote the collection of all affine subspaces of $\\mathbb{F}_2^n$ with dimension at most $k$. For any Boolean function $f: \\mathbb{F",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T12:25:27.994500"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **LiftingLowerBoundViaProbabilisticRank**\n\nSTATEMENT:\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function that requires \\( \\mathsf{AC}^0 \\) circuits of size \\( \\Omega(2^{n^\\epsilon}) \\) for some \\( \\epsilon > 0 \\). Let \\( G \\) be a gadget (a two-party function) with \\( \\text{ra",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-29T12:27:00.907125"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparsePolynomialIdentityTesting**\nSTATEMENT: Let \\( f(x_1, \\ldots, x_n) \\) be a polynomial over \\( \\mathbb{F}_2 \\) of degree \\( d \\leq n^{1/3} \\) that is computable by an \\( \\mathsf{AC}^0 \\) circuit of size \\( s \\leq 2^{n^{1/4}} \\). If \\( f \\) has at most \\( 2^{n^{1/2}} \\) monomia",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:31:08.770790"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **RestrictionPreservedDerandomizationComplexity**\n\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computable by a polynomial-size circuit of depth \\( d \\). Suppose there exists a deterministic algorithm \\( \\mathcal{A} \\) that, given \\( f_n \\) (as a circuit) a",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T12:33:05.732512"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ModpCorrelationDecayUnderRestriction**\n\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be the Boolean function computing the parity of the input bits modulo $q$ (i.e., $f(x) = (\\sum x_i) \\pmod q$). Let $\\mathcal{C}$ be a Boolean circuit of dep",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:35:07.969305"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SubcubeProjectionSensitivity**\nSTATEMENT: Let \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function with sensitivity \\( s(f) \\geq \\log^2 n \\). Then, for any \\( k \\leq n/2 \\), the number of subcubes of dimension \\( k \\) in the hypercube \\( \\{0,1\\}^n \\) on which \\( f \\) is constant i",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 5,
-      "A": 6
-    },
-    "timestamp": "2026-03-29T12:38:23.664079"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **KarchmerWigdersonGapForRandomFunctions**\nSTATEMENT:\nLet \\( n \\in \\mathbb{N} \\) be sufficiently large, and let \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a uniformly random Boolean function. Then, with probability at least \\( 1 - 2^{-n/4} \\), the following holds:\nFor every pair of disjoint ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T12:39:57.290656"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **BoundedDepthFourierTailDecay**\n\nSTATEMENT: Let $d \\geq 2$ be a fixed integer. Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be a Boolean function computable by an unbounded fan-in circuit of depth $d$ and size $S$ over the basis $\\{\\text{AND}, \\text{OR}, \\text{NOT}\\}$. Let $\\hat{f}(S)$ denote ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-29T12:42:04.269298"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SuccinctThresholdCircuitLowerBound**\nSTATEMENT: For any integer \\( n \\geq 2 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) in \\( \\mathsf{P} \\) such that any depth-3 threshold circuit computing \\( f \\) requires \\( \\Omega(n^{3/2}) \\) gates, assuming the Exponenti",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T12:44:50.839179"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **LogRankAmplificationForAC0Xor**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $s$. Let $M_f$ be the $2^n \\times 2^n$ communication matrix defined by $M_f[x, y] = (-1)^{f(x \\oplus y)}$, where $\\oplus$ ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:45:51.118044"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ProgressiveRandomRestrictionCollapse**\n**STATEMENT:**\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a circuit \\( C \\) of size \\( s \\geq n \\) and depth \\( d \\geq 2 \\). For \\( 0 < \\epsilon < 1 \\), define a *progressive random restriction* \\( \\rho \\) as follow",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T12:47:43.526558"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NarrowCNFCircuitLowerBound**\nSTATEMENT: For any integer $n \\geq 3$, there exists a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ computable by a polynomial-size $3$-CNF formula such that any depth-$3$ $\\mathsf{AC}^0$ circuit computing $f$ requires size at least $2^{\\Omega(n^{1/2})}$",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:49:46.325335"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ParityBarrierViaLiftingWithBiasedGadgets**\n**STATEMENT:**\nLet \\( \\text{PAR}_n : \\{0,1\\}^n \\to \\{0,1\\} \\) denote the parity function on \\( n \\) bits. For any constant \\( \\epsilon \\in (0, 1/2) \\), define the *biased gadget* \\( g_\\epsilon : \\{0,1\\}^2 \\to \\{0,1\\} \\) as \\( g_\\epsilon(x",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-29T12:50:57.777131"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **AC0ParityDegreeAmplification**\n\nSTATEMENT: Let $n \\geq 1$ and let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $S$. Let $\\tilde{f}: \\{-1, 1\\}^n \\to \\{-1, 1\\}$ be the corresponding polynomial representation where $x",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-29T12:52:39.357888"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparsePseudoRandomGenerator**\nSTATEMENT: Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by a circuit of size $s$ and depth $d$. There exists a pseudo-random generator $G: \\{0,1\\}^{n^{\\epsilon}} \\to \\{0,1\\}^n$ with seed length $n^{\\epsilon}$ for $\\epsilon = \\Omega(",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:56:22.968366"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **RestrictedKWGamesForAC0PrimeModulus**\nSTATEMENT:\nLet \\( p \\) be a fixed prime, and let \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by an \\( \\mathsf{AC}^0 \\) circuit of depth \\( d \\) and size \\( s \\leq 2^{n^{1/(2d)}} \\). Then there exists a constant \\( \\epsilon =",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T12:58:22.917461"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseFourierConcentrationForSmallCircuits**\n\nSTATEMENT: Let $n \\in \\mathbb{N}$ and let $C$ be a Boolean circuit of size $s$ and depth $d$ over the basis $\\{\\land, \\lor, \\neg\\}$ with unbounded fan-in. Let $f: \\{0,1\\}^n \\to \\{-1, 1\\}$ be the function computed by $C$, viewed as a re",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T13:00:31.620747"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonUniformMKTPreimageEntropy**\nSTATEMENT: For every $\\epsilon > 0$, there exists a family of Boolean functions $\\{f_n : \\{0,1\\}^n \\to \\{0,1\\}\\}_{n \\in \\mathbb{N}}$ such that:\n1. Each $f_n$ has $(1 - \\epsilon)$-entropy preimage in the sense that for at least $(1 - \\epsilon) \\cdot 2",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 8,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T13:02:57.534366"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SublinearWidthBranchingProgramLowerBoundViaLocality**\n\n**STATEMENT:**\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function such that:\n1. \\( f \\) is computable in deterministic time \\( O(n \\log n) \\) on a Turing machine, and\n2. For every subset \\( S \\subseteq [n] \\) of size \\( ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T13:05:07.945854"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ModPCircuitCorrelationDecay**\n\nSTATEMENT: Let $p$ and $q$ be distinct primes. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be the Mod$_q$ function (outputting 1 iff $\\sum x_i \\equiv 0 \\pmod q$). Let $C$ be any Boolean circuit of depth $d$ and size $s$ composed of unbounded fan-in AND, OR, and M",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T13:07:09.675311"
-  },
-  {
     "approach": "CONJECTURE_NAME: **TensorRankLowerBoundForFormulaSize**\nSTATEMENT: For any Boolean formula \u03a6 of size s, the tensor rank of the associated 3-dimensional tensor T_\u03a6 over the reals is at least \u03a9(log s / log log s).\nPROOF_SKETCH: Utilize a recursive decomposition of the formula into subformulas, applyin",
     "reason": "Falsified by adversarial critic",
     "barrier_profile": {
@@ -2050,5 +1670,397 @@
       "killed": false
     },
     "timestamp": "2026-03-29T20:45:24.067683"
+  },
+  {
+    "approach": "/--\n**CONJECTURE_NAME:** **GCT_Tensor_Rank_Lower_Bound**\n\n**STATEMENT:**\nLet \\( n \\geq 1 \\) be an integer and consider the polynomial \\( f_n(x) = \\prod_{i=1}^{n} (x_i + 1) \\in \\mathbb{C}[x_1, \\ldots, x_n] \\). We conjecture that the tensor rank of the \\( n \\)-dimensional tensor associated with \\( f_n",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T06:13:01.519176"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Exponential_Lower_Bound_for_Extended_Pigeonhole**\n\n**STATEMENT:**\nLet \\( n \\in \\mathbb{N} \\), and let \\( \\text{PHP}^m_n \\) denote the *extended pigeonhole principle* formula asserting that there is no injective function from \\( \\{1, \\dots, n+1\\} \\) to \\(",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:19:54.132599"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Frege_Tseitin_Exponential_LowerBound\nSTATEMENT: Let $G_n$ be a sequence of 3-regular expander graphs with $n$ vertices, and let $T_n$ be the Tseitin tautology associated with $G_n$ (asserting that no assignment of bits to edges satisfies the parity constraints at every vertex for an",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:25:18.825850"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Surjective_Pigeonhole_Frege_Lower_Bound**\nSTATEMENT: For all integers \\( n \\geq 1 \\), every Frege proof of the Surjective Pigeonhole Principle (\\( \\text{SHP}_n \\)) has size at least \\( 2^{n^{\\epsilon}} \\) for some \\( \\epsilon > 0 \\), where \\( \\text{SHP}_n \\) is the statement that ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 3,
+      "A": 6
+    },
+    "timestamp": "2026-03-30T06:32:44.182494"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Proof_Size_Separation_for_Hard_Pigeonhole_Principle**\nSTATEMENT:\nLet \\( \\text{PHP}_n^m \\) be the *weak pigeonhole principle* formula asserting that no injective function exists from \\( m \\) pigeons to \\( n \\) holes, with \\( m = 2n \\). For every Frege proof system \\( \\mathcal",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 3,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:38:42.907933"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Extended_Frege_Tseitin_Expander_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and expansion constant $\\alpha > 0$. Let $Tseitin(G_n)$ be the Tseitin tautology over $G_n$ with odd parity constraints. There exists ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T06:43:52.800856"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Non-Commutative_Cutting_Planes_Exponential_Lower_Bound**\n\n**STATEMENT:**\nLet \\( \\{T_n\\} \\) be a sequence of tautologies derived from the non-commutative polynomial identity testing (NC-PIT) problem over \\( \\mathbb{Z}[x_1, x_2, \\ldots, x_n] \\), where each \\( T_n \\) asserts the ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:50:47.286407"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Separation_via_Iterated_Majority_Tautologies**\n\n**STATEMENT:**\nLet \\( \\text{MAJ}_k^n \\) denote the *iterated majority* tautology over \\( n \\) variables with depth \\( k \\), defined recursively as:\n- \\( \\text{MAJ}_0^n(x_1, \\dots, x_n) = x_1 \\lor \\dots \\lor",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:56:14.154927"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Frege_Tseitin_Graph_Oddness_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and expansion constant $\\epsilon > 0$. Let $Tseitin(G_n, \\mathbf{1})$ denote the Tseitin tautology on $G_n$ with all edge charges set to 1",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 6
+    },
+    "timestamp": "2026-03-30T07:01:28.996704"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Lower_Bound_via_Iterated_Parity_Tautologies**\n\n---\n\n### **STATEMENT:**\nLet \\( \\text{PARITY}_k^n \\) denote the *iterated parity tautology* on \\( n \\) variables, defined as follows:\n1. For \\( k = 1 \\), \\( \\text{PARITY}_1^n \\) is the standard parity tautolo",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T07:10:59.299015"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Surjective_Pigeonhole_Exponential_Frege_Lower_Bound**  \nSTATEMENT: Let \\( \\text{Surj-PHP}_n^m \\) denote the *surjective pigeonhole principle* tautology, which states that for any function \\( f: [n] \\to [m] \\), if \\( m < n \\), then \\( f \\) is not surjective. For all integers \\( n \\",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 1,
+      "A": 1
+    },
+    "timestamp": "2026-03-30T07:18:40.624642"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Frege_Tseitin_GenUSG_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of undirected graphs where $G_n$ has $n$ vertices and is a $(\\delta, \\epsilon)$-unique games expander (defined below). Let $T_n$ be the Tseitin tautology over $G_n$ with parity constraint 1 (m",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:23:44.390534"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Non-Commutative_Cutting_Planes_Exponential_Lower_Bound_v2**\nSTATEMENT: Let \\( \\{T_n\\} \\) be a sequence of tautologies derived from the non-commutative (NC) variant of the Pigeonhole Principle (NC-PHP) over free semigroups, where each \\( T_n \\) asserts that there is no injective fu",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 4,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T07:31:02.700019"
+  },
+  {
+    "approach": "/--\nCONJECTURE_NAME: **Non-Commutative_Polynomial_Identity_Lower_Bound**\nSTATEMENT: For any sequence of non-commutative polynomial identity (PI) tautologies \\(\\{T_n\\}\\) over \\(n\\) variables, where each \\(T_n\\) expresses the non-triviality of the \\(n\\)-th Weyl algebra, every Extended Frege proof of \\",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T07:37:27.919752"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Mod_p_Tseitin_Tautologies**\n\n**STATEMENT:**\nLet \\( p \\) be a fixed odd prime, and let \\( \\{G_n\\} \\) be a sequence of \\( d \\)-regular expander graphs (for some constant \\( d \\geq 3 \\)) with \\( n \\) vertices and \\( \\Omega(n) \\) edge expansion. Let ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:43:03.476098"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Monotone_Resolution_Width_Gap_Clique**\n\nSTATEMENT:\nLet $G_n$ be a sequence of graphs on $n$ vertices where $G_n$ is the disjoint union of $k = \\lfloor \\sqrt{n} \\rfloor$ cliques, each of size $k$ (so $n \\approx k^2$). Let $\\text{CLIQUE}_{n, k+1}(G_n)$ be the propositional formula a",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:48:06.060141"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Depth-3_Circuit_Lower_Bound_via_Pseudo-Random_Generator_Hardness**\nSTATEMENT: For any sequence of depth-3 arithmetic circuits $\\{C_n\\}$ over the real numbers, computing the permanent of an $n \\times n$ matrix requires circuits of size at least $2^{\\Omega(n)}$, assuming the existen",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 6,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T07:56:16.473002"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Depth_d_Frege_Lower_Bound_via_Recursive_Majority_Thresholds**\n\nSTATEMENT: Let $d \\geq 1$ be a fixed integer. Let $\\text{MAJ}_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the majority function on $n$ variables (where $n$ is odd). Let $\\phi_n$ be the tautology asserting the logical equivalence betw",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:00:57.436592"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Width_Expander_Clique_Coloring_Lower_Bound**\n\n**STATEMENT:**\nLet \\( G_n \\) be an expander graph on \\( n \\) vertices with constant degree \\( d \\geq 3 \\), girth \\( \\Omega(\\log n) \\), and expansion \\( h(G_n) = \\Omega(1) \\). Define the *Clique-Coloring Tautology* \\( \\text{CC",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:08:08.079859"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Symmetric_Frege_Lower_Bound_Mod_p_Tseitin**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and edge expansion constant $\\alpha > 0$ independent of $n$. Let $\\text{TS}(G_n, \\vec{1})$ denote ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T08:13:36.548011"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_ChromaticTseitin_ExponentialLowerBound**\n\n**STATEMENT:**  \nLet $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular graphs with chromatic number $\\chi(G_n) = \\Omega(\\log n)$. The Tseitin tautology over $G_n$ requires Frege proofs of exponential size in $n$.\n\n**PROOF_SKETC",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:20:42.865662"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **CP_Matrix_Tseitin_Lower_Bound**\nSTATEMENT: Let $\\{G_n\\}$ be a sequence of expander graphs with $n$ vertices and constant degree. The Cutting Planes (CP) proof system requires proofs of exponential size (in $n$) to refute the Tseitin tautologies $\\tau(G_n)$. Specifically, for any c",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T08:29:23.373357"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Width_Expander_Parity_Principle_Lower_Bound**\n\nSTATEMENT:\nLet $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of $d$-regular expander graphs on $n$ vertices (for fixed $d \\geq 3$) with spectral expansion $\\lambda(G_n) \\leq \\lambda_0 < d$, and let $\\text{PARITY}_n$ be the parity p",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 7,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T08:34:31.169214"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Lower_Bound_on_Extended_Frege_via_Polynomial_Threshold_Functions**\n\nSTATEMENT: \nLet $\\{f_n\\}_{n \\in \\mathbb{N}}$ be a sequence of polynomial threshold functions (PTFs) of degree at most $d$ that compute the negated pigeonhole principle (PHP) over $n$ elements. Then, any Extended F",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:42:24.285751"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Cutting_Planes_Rank_Gap_Mod_p_Tseitin**\n\nSTATEMENT:\nLet $p \\geq 3$ be a fixed prime. Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of $d$-regular expander graphs on $n$ vertices with expansion constant $\\alpha > 0$. Let $T_n$ be the Tseitin tautology over $G_n$ with total charge ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:47:33.770689"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Resolution_Width_Gap_for_Ramsey_Coloring_Tautologies**\n\n**STATEMENT:**\nLet \\( R(k) \\) denote the Ramsey number for \\( k \\)-cliques, and let \\( n = R(k) - 1 \\). Define the *Ramsey Coloring Tautology* \\( \\text{RCT}_{k,n} \\) as the CNF formula encoding the statement:\n*\"There exis",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:53:56.549242"
+  },
+  {
+    "approach": "/--\nCONJECTURE_NAME: **Cutting_Planes_Tseitin_Expansion_Gap**\nSTATEMENT: Let $\\{G_n\\}$ be a sequence of 3-regular expander graphs with $n$ vertices and girth $\\Omega(\\log n)$. The Cutting Planes (CP) refutation length of the Tseitin tautology $\\text{TSEITIN}(G_n, s)$, for a fixed sink $s$, requires ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 6
+    },
+    "timestamp": "2026-03-30T09:00:57.409636"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Width_Gap_for_Modular_Hyperplane_Tseitin**\n\n**STATEMENT:**\nLet \\( p \\geq 2 \\) be a fixed prime, and let \\( \\{G_n\\}_{n \\in \\mathbb{N}} \\) be a sequence of connected, \\( d \\)-regular expander graphs (for constant \\( d \\geq 3 \\)) with \\( n \\) vertices, where \\( n \\) is chos",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:06:57.978007"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Cutting_Planes_Rank_Gap_for_Mod_p_Tseitin_on_Cycles**\n\nSTATEMENT:\nLet $p \\geq 3$ be a fixed prime. Let $G_n$ be the cycle graph $C_n$ on $n$ vertices (where $n$ is odd to ensure unsatisfiability of the parity constraint). Let $\\mathcal{T}(G_n, \\mathbf{1})$ denote the Tseitin tauto",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:13:59.486008"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NonCommutativeCuttingPlanesRank**\nSTATEMENT: For the language of arithmetic circuits over the ring $\\mathbb{Z}[X]/(X^2)$, the Cutting Planes (CP) rank of the tautology $T_n$ derived from the $n \\times n$ non-commutative polynomial identity testing (PIT) problem is at least $2^{\\Om",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-30T09:21:24.132514"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Width_Gap_for_Block_Sparse_Tseitin_Tautologies**\n\n---\n\n### **STATEMENT:**\nLet \\( d, k \\geq 2 \\) be fixed constants. Let \\( \\{G_n\\}_{n \\in \\mathbb{N}} \\) be a sequence of \\( d \\)-regular graphs where:\n1. \\( G_n \\) has \\( n \\) vertices and is partitioned into \\( \\Theta(n /",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:27:27.466135"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Cutting_Planes_Mod_p_Rank_Gap_on_Cycles**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $C_n$ denote the cycle graph on $n$ vertices where $n$ is odd. Let $\\text{TS}_{p}(C_n, \\mathbf{1})$ be the Tseitin tautology asserting that there exists an assignment of values $x_e \\in \\{0,",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:33:31.983977"
+  },
+  {
+    "approach": "### **CONJECTURE_NAME:** **Monotone_Circuit_Lower_Bound_for_Clique_vs_Independent_Set**\n### **STATEMENT:**\nFor any integer \\( n \\geq 3 \\), any monotone Boolean circuit computing the function \\( f(x) = \\text{CLIQUE}_n(x) \\wedge \\text{IND-SET}_n(x) \\) requires at least \\( 2^{n/2} \\) gates, where \\( \\t",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T09:44:36.967973"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Ajtai_Miltersen_Lower_Bound_for_Sparse_Polynomials**\n\n**STATEMENT:**\nLet \\( \\mathbb{F} \\) be a finite field, and let \\( f \\colon \\mathbb{F}^n \\to \\mathbb{F} \\) be a polynomial of degree \\( d \\) (in each variable) such that \\( f \\) depends on at most \\( k \\) monomials (i.e., \\(",
+    "reason": "Formalization failed",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T09:45:24.456956"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Sipser_Lautemann_BPP_in_Sigma2**\n\nSTATEMENT: Let $\\text{BPP}$ be the class of languages decidable by a probabilistic polynomial-time Turing machine with error probability at most $2^{-n}$. Let $\\Sigma_2^P = \\text{NP}^{\\text{NP}}$ be the second level of the polynomial hierarchy. Th",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T09:47:02.406910"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Ajtai_Lower_Bound_for_Parity_in_AC0**\n**STATEMENT:**\nFor every fixed constant \\( d \\geq 1 \\), there exists an \\( \\epsilon > 0 \\) such that any depth-\\( d \\) circuit of size \\( 2^{n^\\epsilon} \\) over the basis \\(\\{ \\wedge, \\vee, \\neg \\}\\) computing the parity function \\( \\oplus",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T09:55:16.999160"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0  \n**STATEMENT:**  \nFor every integer \\( d \\geq 1 \\), there exists an integer \\( n_0 \\) such that for all \\( n \\geq n_0 \\), the Parity function on \\( n \\) variables cannot be computed by an \\( \\text{AC}^0 \\) circuit of depth \\( d \\) and size at most \\( 2^{n^{1/(d-1)",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:03:27.988224"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0_Furst_Saxe_Sipser\nSTATEMENT: Let $\\text{PARITY}_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the function computing the sum of inputs modulo 2. For any constant depth $d \\geq 1$, there exists a constant $\\epsilon_d > 0$ such that for all sufficiently large $n$, any Boolean circuit",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:10:18.699196"
   }
 ]

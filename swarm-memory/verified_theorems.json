@@ -3214,5 +3214,253 @@
     "timestamp": "2026-03-30T05:22:27.690168",
     "code_hash": "16153be5064f411b",
     "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774873489",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:24:49.336370",
+    "code_hash": "0fb148594dfa2b21",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774873687",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:28:07.270712",
+    "code_hash": "2280c8b269bfee60",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774873723",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:28:43.423964",
+    "code_hash": "39d7867d880ec95c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_surjective_card_ge_1774873741",
+    "statement": "If f : Fin n -> Fin m is surjective, then n >= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:29:01.828825",
+    "code_hash": "2280c8b269bfee60",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774873969",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:32:49.052867",
+    "code_hash": "53ee624e9b4df3ee",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774873987",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:33:07.277323",
+    "code_hash": "3d18005fceb87e4d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774874045",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:34:05.831426",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774874066",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:34:26.809010",
+    "code_hash": "39d7867d880ec95c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774874085",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:34:45.025539",
+    "code_hash": "36f626ed4c209e59",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774874121",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:35:21.571102",
+    "code_hash": "bc48071235db7ff8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774874288",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:38:08.512551",
+    "code_hash": "c1680748e5e43fff",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774874328",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:38:48.102598",
+    "code_hash": "a78f9c093444d045",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774874350",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:39:10.562101",
+    "code_hash": "963f68900578ad4b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774874625",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:43:45.305784",
+    "code_hash": "01bcb73db2969846",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774874671",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:44:31.571429",
+    "code_hash": "99f949cc3cfb8937",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774874704",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:45:04.875444",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774874726",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:45:26.367106",
+    "code_hash": "bc48071235db7ff8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774874751",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:45:51.535896",
+    "code_hash": "5ff12c3b3badd9da",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774874790",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:46:30.120128",
+    "code_hash": "c1680748e5e43fff",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774874812",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:46:52.350378",
+    "code_hash": "bf100c2d04bffd8d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774875084",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:51:24.840618",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774875129",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:52:09.808610",
+    "code_hash": "39d7867d880ec95c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774875170",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:52:50.369677",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774875281",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:54:41.583923",
+    "code_hash": "01bcb73db2969846",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774875320",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:55:20.321390",
+    "code_hash": "07d990d3efc7b3a2",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774875367",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:56:07.100203",
+    "code_hash": "2306afa04253ee9c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_cantor_no_surjection_1774875597",
+    "statement": "There is no surjection from a type A to Set A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T05:59:57.603873",
+    "code_hash": "c1680748e5e43fff",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774875619",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T06:00:19.724125",
+    "code_hash": "92fbca6d8f8ad881",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_strong_induction_1774875728",
+    "statement": "If P(0) and (forall n, (forall m < n, P m) -> P n), then forall n, P n.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T06:02:08.453325",
+    "code_hash": "00acac3385ca4363",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774875768",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T06:02:48.928840",
+    "code_hash": "ef1100894c2a86a8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_injective_card_le_1774875790",
+    "statement": "If f : Fin n -> Fin m is injective, then n <= m.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T06:03:10.677441",
+    "code_hash": "fb30701e841cc8ec",
+    "difficulty": 5
   }
 ]
