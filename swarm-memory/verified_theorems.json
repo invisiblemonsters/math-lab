@@ -3464,27 +3464,27 @@
     "difficulty": 5
   },
   {
-    "name": "swarm_v30_c5_gamma_1774895417",
-    "statement": "CONJECTURE_NAME: Pigeonhole_Principle_Functional_Form\nSTATEMENT: Let $n, m \\in \\mathbb{N}$ with $n > m$. For any function $f: \\{1, \\dots, n\\} \\to \\{1, \\dots, m\\}$, there exist distinct indices $i, j \\in \\{1, \\dots, n\\}$ such that $f(i) = f(j)$.\nPROOF_SKETCH: Assume for contradiction that $f$ is injective (i.e., $f(i) = f(j) \\implies i = j$). If $f$ is injective, then the image of $f$, denoted $\\text{Im}(f)$, must have cardinality equal to the domain, so $|\\text{Im}(f)| = n$. However, by definiti",
+    "name": "swarm_v30_c6_gamma_1774898053",
+    "statement": "CONJECTURE_NAME: Pigeonhole_No_Injection_Larger_to_Smaller\nSTATEMENT: For any natural numbers $n$ and $m$, if there exists an injective function $f: \\text{Fin}(n) \\to \\text{Fin}(m)$, then $n \\leq m$.\nPROOF_SKETCH: We proceed by induction on $m$. \nBase case: If $m=0$, then $\\text{Fin}(m)$ is empty. An injective function into an empty set implies the domain $\\text{Fin}(n)$ must also be empty, so $n=0$, satisfying $0 \\leq 0$.\nInductive step: Assume the statement holds for $m$. Consider an injection",
     "approach": "gamma",
-    "timestamp": "2026-03-30T11:30:17.328637",
-    "code_hash": "8f1a6d835ff592fc",
+    "timestamp": "2026-03-30T12:14:13.664413",
+    "code_hash": "a43252e8ab561d84",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c9_beta_1774898170",
-    "statement": "CONJECTURE_NAME: **Finite_Function_Non_Compression**\n\n**STATEMENT:**\nLet \\( n, m \\in \\mathbb{N} \\) with \\( m < n \\). There does not exist an injective function\n\\[ f : \\{0, 1\\}^n \\to \\{0, 1\\}^m. \\]\n\n**PROOF_SKETCH:**\n1. The domain \\( \\{0, 1\\}^n \\) has cardinality \\( 2^n \\).\n2. The codomain \\( \\{0, 1\\}^m \\) has cardinality \\( 2^m \\).\n3. Since \\( m < n \\), \\( 2^m < 2^n \\).\n4. By the pigeonhole principle, any function from a larger finite set to a smaller one cannot be injective.\n5. Thus, no such in",
-    "approach": "beta",
-    "timestamp": "2026-03-30T12:16:10.904880",
-    "code_hash": "f04d3b8a34bf2515",
+    "name": "swarm_v30_c7_gamma_1774898751",
+    "statement": "CONJECTURE_NAME: Counting_Boolean_Functions\nSTATEMENT: For every natural number $n$, the total number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ contains exactly $2^n$ distinct input vectors (since there are $n$ bits, each with 2 possibilities).\n2. A Boolean function is defined by assigning an output value ($0$ or $1$) to each of these $2^n$ inputs.\n3. Since the choice of output for each input is independent and bi",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T12:25:51.980721",
+    "code_hash": "21448001daaf6723",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c15_gamma_1774902809",
-    "statement": "CONJECTURE_NAME: Finite_Set_Injection_Bound\nSTATEMENT: Let $A$ and $B$ be finite sets with cardinalities $|A| = n$ and $|B| = m$. If there exists an injective function $f: A \\to B$, then $n \\leq m$.\nPROOF_SKETCH: We proceed by induction on $n$. \nBase case: If $n=0$, then $0 \\leq m$ holds for any non-negative integer $m$.\nInductive step: Assume the statement holds for all sets of size $k$. Consider sets $A, B$ with $|A|=k+1$ and $|B|=m$, and an injection $f: A \\to B$. Pick an element $a \\in A$. S",
-    "approach": "gamma",
-    "timestamp": "2026-03-30T13:33:29.662783",
-    "code_hash": "944de8ffc16a6700",
+    "name": "swarm_v30_c14_alpha_1774903440",
+    "statement": "/-\nCONJECTURE_NAME: **Pigeonhole_No_Injection_Larger_to_Smaller**\nSTATEMENT: For any natural numbers $n$ and $m$, if there exists an injective function $f: \\text{Fin } n \\to \\text{Fin } m$, then $n \\leq m$. \nPROOF_SKETCH: Assume for contradiction that $n > m$. By the pigeonhole principle, an injection from a larger set to a smaller one cannot exist because at least two distinct elements from the domain would map to the same element in the codomain, violating injectivity. This leads to a contradi",
+    "approach": "alpha",
+    "timestamp": "2026-03-30T13:44:00.712037",
+    "code_hash": "66dde5d67841fbfe",
     "difficulty": 1
   }
 ]

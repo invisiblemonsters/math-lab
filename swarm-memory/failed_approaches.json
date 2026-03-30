@@ -1,65 +1,5 @@
 [
   {
-    "approach": "CONJECTURE_NAME: **SparseDualWitnessForMKTP**\nSTATEMENT: For every sufficiently large $n$, the Minimum Time-Bounded Turing Problem (MKTP) on inputs of length $n$ does not have a witness set $W \\subseteq \\{0,1\\}^n$ that is both $\\mathsf{Sparse}(n^{1-\\epsilon})$ and computable by $\\mathsf{AC}^0$ circu",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T13:59:10.858582"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **PartialDerivativeRankLowerBoundForLowDepthCircuits**\n\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by an \\(\\mathsf{AC}^0\\) circuit of depth \\(d\\) and size \\(s = n^{O(1)}\\). Define the *partial derivative matrix* \\( M_f \\in \\mathbb{F}_2^{2^n \\times ",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 5,
-      "A": 1
-    },
-    "timestamp": "2026-03-29T14:00:51.981931"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **SparseFourierAC0ParityCorrelation**\n\nSTATEMENT: Let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be a Boolean function computable by an $\\mathsf{AC}^0$ circuit of depth $d$ and size $S$. Let $\\widehat{f_n}(s) = \\mathbb{E}_{x}[f_n(x)(-1)^{s \\cdot x}]$ denote the Fourier coefficients of $f_n$ (mapp",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-29T14:02:29.216525"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonUniformMKTPvsSuccinctNondet**\nSTATEMENT: For every sufficiently large $n$, the Minimum Time-Bounded Turing Problem (MKTP) on inputs of length $n$ cannot be computed by $\\mathsf{Succinct\\text{-}Nondet}$ circuits of size $2^{n^{1-\\epsilon}}$ for some $\\epsilon > 0$, where $\\maths",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 8,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-29T14:05:01.992574"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **ThresholdCompositionRankGrowth**\nSTATEMENT:\nLet \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function computed by a depth-\\( d \\) threshold circuit \\( C \\) of size \\( s \\). Let \\( \\text{rank}_{1/2}(f) \\) denote the rank of the \\( 2^n \\times 2^n \\) communication matrix \\( M_{f}(x,y",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 3,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-29T14:06:24.407253"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **StructuredSparseDualWitnessForParity**\n\nSTATEMENT: Let $n$ be a positive integer and let $f_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the parity function ($f_n(x) = \\bigoplus_{i=1}^n x_i$). Let $\\mathcal{C}_{n, d, s}$ be the class of Boolean circuits with $n$ inputs, depth $d$, size at most $s",
-    "reason": "Falsified by adversarial critic",
-    "barrier_profile": {
-      "R": 2,
-      "N": 2,
-      "A": 5
-    },
-    "timestamp": "2026-03-29T14:08:14.526326"
-  },
-  {
     "approach": "CONJECTURE_NAME: **DepthThreeSymmetricGateLowerBound**\nSTATEMENT: For any integer \\( n \\geq 3 \\), any depth-3 arithmetic circuit over \\(\\mathbb{F}_2\\) with \\( \\text{poly}(n) \\) gates computing the \\( n \\)-variable symmetric polynomial \\( f(x_1, \\ldots, x_n) = \\sum_{i=1}^{n} \\prod_{j=1}^{i} x_j \\) mu",
     "reason": "Falsified by adversarial critic",
     "barrier_profile": {
@@ -1432,328 +1372,308 @@
     "timestamp": "2026-03-29T20:45:24.067683"
   },
   {
-    "approach": "/--\n**CONJECTURE_NAME:** **GCT_Tensor_Rank_Lower_Bound**\n\n**STATEMENT:**\nLet \\( n \\geq 1 \\) be an integer and consider the polynomial \\( f_n(x) = \\prod_{i=1}^{n} (x_i + 1) \\in \\mathbb{C}[x_1, \\ldots, x_n] \\). We conjecture that the tensor rank of the \\( n \\)-dimensional tensor associated with \\( f_n",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-30T06:13:01.519176"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Exponential_Lower_Bound_for_Extended_Pigeonhole**\n\n**STATEMENT:**\nLet \\( n \\in \\mathbb{N} \\), and let \\( \\text{PHP}^m_n \\) denote the *extended pigeonhole principle* formula asserting that there is no injective function from \\( \\{1, \\dots, n+1\\} \\) to \\(",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 5,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:19:54.132599"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Frege_Tseitin_Exponential_LowerBound\nSTATEMENT: Let $G_n$ be a sequence of 3-regular expander graphs with $n$ vertices, and let $T_n$ be the Tseitin tautology associated with $G_n$ (asserting that no assignment of bits to edges satisfies the parity constraints at every vertex for an",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:25:18.825850"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Surjective_Pigeonhole_Frege_Lower_Bound**\nSTATEMENT: For all integers \\( n \\geq 1 \\), every Frege proof of the Surjective Pigeonhole Principle (\\( \\text{SHP}_n \\)) has size at least \\( 2^{n^{\\epsilon}} \\) for some \\( \\epsilon > 0 \\), where \\( \\text{SHP}_n \\) is the statement that ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 3,
-      "A": 6
-    },
-    "timestamp": "2026-03-30T06:32:44.182494"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Frege_Proof_Size_Separation_for_Hard_Pigeonhole_Principle**\nSTATEMENT:\nLet \\( \\text{PHP}_n^m \\) be the *weak pigeonhole principle* formula asserting that no injective function exists from \\( m \\) pigeons to \\( n \\) holes, with \\( m = 2n \\). For every Frege proof system \\( \\mathcal",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 3,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:38:42.907933"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Extended_Frege_Tseitin_Expander_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and expansion constant $\\alpha > 0$. Let $Tseitin(G_n)$ be the Tseitin tautology over $G_n$ with odd parity constraints. There exists ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-30T06:43:52.800856"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Non-Commutative_Cutting_Planes_Exponential_Lower_Bound**\n\n**STATEMENT:**\nLet \\( \\{T_n\\} \\) be a sequence of tautologies derived from the non-commutative polynomial identity testing (NC-PIT) problem over \\( \\mathbb{Z}[x_1, x_2, \\ldots, x_n] \\), where each \\( T_n \\) asserts the ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:50:47.286407"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Separation_via_Iterated_Majority_Tautologies**\n\n**STATEMENT:**\nLet \\( \\text{MAJ}_k^n \\) denote the *iterated majority* tautology over \\( n \\) variables with depth \\( k \\), defined recursively as:\n- \\( \\text{MAJ}_0^n(x_1, \\dots, x_n) = x_1 \\lor \\dots \\lor",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:56:14.154927"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Frege_Tseitin_Graph_Oddness_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and expansion constant $\\epsilon > 0$. Let $Tseitin(G_n, \\mathbf{1})$ denote the Tseitin tautology on $G_n$ with all edge charges set to 1",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-30T07:01:28.996704"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Lower_Bound_via_Iterated_Parity_Tautologies**\n\n---\n\n### **STATEMENT:**\nLet \\( \\text{PARITY}_k^n \\) denote the *iterated parity tautology* on \\( n \\) variables, defined as follows:\n1. For \\( k = 1 \\), \\( \\text{PARITY}_1^n \\) is the standard parity tautolo",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T07:10:59.299015"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Surjective_Pigeonhole_Exponential_Frege_Lower_Bound**  \nSTATEMENT: Let \\( \\text{Surj-PHP}_n^m \\) denote the *surjective pigeonhole principle* tautology, which states that for any function \\( f: [n] \\to [m] \\), if \\( m < n \\), then \\( f \\) is not surjective. For all integers \\( n \\",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 1,
-      "A": 1
-    },
-    "timestamp": "2026-03-30T07:18:40.624642"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Frege_Tseitin_GenUSG_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of undirected graphs where $G_n$ has $n$ vertices and is a $(\\delta, \\epsilon)$-unique games expander (defined below). Let $T_n$ be the Tseitin tautology over $G_n$ with parity constraint 1 (m",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T07:23:44.390534"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Non-Commutative_Cutting_Planes_Exponential_Lower_Bound_v2**\nSTATEMENT: Let \\( \\{T_n\\} \\) be a sequence of tautologies derived from the non-commutative (NC) variant of the Pigeonhole Principle (NC-PHP) over free semigroups, where each \\( T_n \\) asserts that there is no injective fu",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 4,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T07:31:02.700019"
-  },
-  {
-    "approach": "/--\nCONJECTURE_NAME: **Non-Commutative_Polynomial_Identity_Lower_Bound**\nSTATEMENT: For any sequence of non-commutative polynomial identity (PI) tautologies \\(\\{T_n\\}\\) over \\(n\\) variables, where each \\(T_n\\) expresses the non-triviality of the \\(n\\)-th Weyl algebra, every Extended Frege proof of \\",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-30T07:37:27.919752"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Mod_p_Tseitin_Tautologies**\n\n**STATEMENT:**\nLet \\( p \\) be a fixed odd prime, and let \\( \\{G_n\\} \\) be a sequence of \\( d \\)-regular expander graphs (for some constant \\( d \\geq 3 \\)) with \\( n \\) vertices and \\( \\Omega(n) \\) edge expansion. Let ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T07:43:03.476098"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Monotone_Resolution_Width_Gap_Clique**\n\nSTATEMENT:\nLet $G_n$ be a sequence of graphs on $n$ vertices where $G_n$ is the disjoint union of $k = \\lfloor \\sqrt{n} \\rfloor$ cliques, each of size $k$ (so $n \\approx k^2$). Let $\\text{CLIQUE}_{n, k+1}(G_n)$ be the propositional formula a",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T07:48:06.060141"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Depth-3_Circuit_Lower_Bound_via_Pseudo-Random_Generator_Hardness**\nSTATEMENT: For any sequence of depth-3 arithmetic circuits $\\{C_n\\}$ over the real numbers, computing the permanent of an $n \\times n$ matrix requires circuits of size at least $2^{\\Omega(n)}$, assuming the existen",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 6,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T07:56:16.473002"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Depth_d_Frege_Lower_Bound_via_Recursive_Majority_Thresholds**\n\nSTATEMENT: Let $d \\geq 1$ be a fixed integer. Let $\\text{MAJ}_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the majority function on $n$ variables (where $n$ is odd). Let $\\phi_n$ be the tautology asserting the logical equivalence betw",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:00:57.436592"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Width_Expander_Clique_Coloring_Lower_Bound**\n\n**STATEMENT:**\nLet \\( G_n \\) be an expander graph on \\( n \\) vertices with constant degree \\( d \\geq 3 \\), girth \\( \\Omega(\\log n) \\), and expansion \\( h(G_n) = \\Omega(1) \\). Define the *Clique-Coloring Tautology* \\( \\text{CC",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:08:08.079859"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Symmetric_Frege_Lower_Bound_Mod_p_Tseitin**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and edge expansion constant $\\alpha > 0$ independent of $n$. Let $\\text{TS}(G_n, \\vec{1})$ denote ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-30T08:13:36.548011"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Frege_ChromaticTseitin_ExponentialLowerBound**\n\n**STATEMENT:**  \nLet $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular graphs with chromatic number $\\chi(G_n) = \\Omega(\\log n)$. The Tseitin tautology over $G_n$ requires Frege proofs of exponential size in $n$.\n\n**PROOF_SKETC",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:20:42.865662"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **CP_Matrix_Tseitin_Lower_Bound**\nSTATEMENT: Let $\\{G_n\\}$ be a sequence of expander graphs with $n$ vertices and constant degree. The Cutting Planes (CP) proof system requires proofs of exponential size (in $n$) to refute the Tseitin tautologies $\\tau(G_n)$. Specifically, for any c",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-30T08:29:23.373357"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Frege_Width_Expander_Parity_Principle_Lower_Bound**\n\nSTATEMENT:\nLet $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of $d$-regular expander graphs on $n$ vertices (for fixed $d \\geq 3$) with spectral expansion $\\lambda(G_n) \\leq \\lambda_0 < d$, and let $\\text{PARITY}_n$ be the parity p",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 7,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T08:34:31.169214"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Lower_Bound_on_Extended_Frege_via_Polynomial_Threshold_Functions**\n\nSTATEMENT: \nLet $\\{f_n\\}_{n \\in \\mathbb{N}}$ be a sequence of polynomial threshold functions (PTFs) of degree at most $d$ that compute the negated pigeonhole principle (PHP) over $n$ elements. Then, any Extended F",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:42:24.285751"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Cutting_Planes_Rank_Gap_Mod_p_Tseitin**\n\nSTATEMENT:\nLet $p \\geq 3$ be a fixed prime. Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of $d$-regular expander graphs on $n$ vertices with expansion constant $\\alpha > 0$. Let $T_n$ be the Tseitin tautology over $G_n$ with total charge ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:47:33.770689"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Resolution_Width_Gap_for_Ramsey_Coloring_Tautologies**\n\n**STATEMENT:**\nLet \\( R(k) \\) denote the Ramsey number for \\( k \\)-cliques, and let \\( n = R(k) - 1 \\). Define the *Ramsey Coloring Tautology* \\( \\text{RCT}_{k,n} \\) as the CNF formula encoding the statement:\n*\"There exis",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:53:56.549242"
-  },
-  {
-    "approach": "/--\nCONJECTURE_NAME: **Cutting_Planes_Tseitin_Expansion_Gap**\nSTATEMENT: Let $\\{G_n\\}$ be a sequence of 3-regular expander graphs with $n$ vertices and girth $\\Omega(\\log n)$. The Cutting Planes (CP) refutation length of the Tseitin tautology $\\text{TSEITIN}(G_n, s)$, for a fixed sink $s$, requires ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-30T09:00:57.409636"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Width_Gap_for_Modular_Hyperplane_Tseitin**\n\n**STATEMENT:**\nLet \\( p \\geq 2 \\) be a fixed prime, and let \\( \\{G_n\\}_{n \\in \\mathbb{N}} \\) be a sequence of connected, \\( d \\)-regular expander graphs (for constant \\( d \\geq 3 \\)) with \\( n \\) vertices, where \\( n \\) is chos",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T09:06:57.978007"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Cutting_Planes_Rank_Gap_for_Mod_p_Tseitin_on_Cycles**\n\nSTATEMENT:\nLet $p \\geq 3$ be a fixed prime. Let $G_n$ be the cycle graph $C_n$ on $n$ vertices (where $n$ is odd to ensure unsatisfiability of the parity constraint). Let $\\mathcal{T}(G_n, \\mathbf{1})$ denote the Tseitin tauto",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T09:13:59.486008"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonCommutativeCuttingPlanesRank**\nSTATEMENT: For the language of arithmetic circuits over the ring $\\mathbb{Z}[X]/(X^2)$, the Cutting Planes (CP) rank of the tautology $T_n$ derived from the $n \\times n$ non-commutative polynomial identity testing (PIT) problem is at least $2^{\\Om",
+    "approach": "**CONJECTURE_NAME:** **Non-Commutative_Cutting_Planes_Lower_Bound**\n\n**STATEMENT:**\nFor any integer \\( n \\geq 1 \\), the treewidth-\\( n \\) Tseitin tautology \\( T_n \\) requires Cutting Planes (CP) proofs of length at least \\( 2^{n^{1 - o(1)}} \\). Specifically, there exists a family of unsatisfiable fo",
     "reason": "Falsified (repair failed)",
     "barrier_profile": {
       "R": 5,
       "N": 2,
       "A": 5
     },
-    "timestamp": "2026-03-30T09:21:24.132514"
+    "timestamp": "2026-03-30T06:11:35.788954"
   },
   {
-    "approach": "**CONJECTURE_NAME:** **Frege_Width_Gap_for_Block_Sparse_Tseitin_Tautologies**\n\n---\n\n### **STATEMENT:**\nLet \\( d, k \\geq 2 \\) be fixed constants. Let \\( \\{G_n\\}_{n \\in \\mathbb{N}} \\) be a sequence of \\( d \\)-regular graphs where:\n1. \\( G_n \\) has \\( n \\) vertices and is partitioned into \\( \\Theta(n /",
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Length_Exponential_Separation_for_Orthogonal_Constraints**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be a sound and complete Frege proof system for propositional logic over the basis \\( \\{\\land, \\lor, \\neg\\} \\). For every \\( n \\in \\mathbb{N} \\), define the *orthogonal ",
     "reason": "Falsified (repair failed)",
     "barrier_profile": {
       "R": 5,
       "N": 2,
       "A": 2
     },
-    "timestamp": "2026-03-30T09:27:27.466135"
+    "timestamp": "2026-03-30T06:21:18.413960"
   },
   {
-    "approach": "CONJECTURE_NAME: **Cutting_Planes_Mod_p_Rank_Gap_on_Cycles**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $C_n$ denote the cycle graph on $n$ vertices where $n$ is odd. Let $\\text{TS}_{p}(C_n, \\mathbf{1})$ be the Tseitin tautology asserting that there exists an assignment of values $x_e \\in \\{0,",
+    "approach": "CONJECTURE_NAME: Frege_Tseitin_Exponential_LowerBound\nSTATEMENT: Let $\\mathcal{F}$ be a standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. There exists a constant $c > 0$ and a sequence of graphs $\\{G_n\\}_{n \\in \\mathbb{N}}$ (where $G_n$ has $n$ vertices and bounded degree) such tha",
     "reason": "Falsified (repair failed)",
     "barrier_profile": {
       "R": 5,
       "N": 2,
       "A": 2
     },
-    "timestamp": "2026-03-30T09:33:31.983977"
+    "timestamp": "2026-03-30T06:26:48.588652"
   },
   {
-    "approach": "### **CONJECTURE_NAME:** **Monotone_Circuit_Lower_Bound_for_Clique_vs_Independent_Set**\n### **STATEMENT:**\nFor any integer \\( n \\geq 3 \\), any monotone Boolean circuit computing the function \\( f(x) = \\text{CLIQUE}_n(x) \\wedge \\text{IND-SET}_n(x) \\) requires at least \\( 2^{n/2} \\) gates, where \\( \\t",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Lifting_From_Resolution**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be a Frege proof system over the basis \\( \\{\\land, \\lor, \\neg\\} \\), and let \\( \\tau_n \\) be the Tseitin tautology over a connected expander graph \\( G_n \\) of bounded degree and \\( n \\) vert",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-30T06:34:08.584481"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **NonCommutativeGCTviaProofComplexity**\n\n**STATEMENT:**\nLet $F$ be a non-commutative polynomial ring over $\\mathbb{F}_2$. For any $n \\geq 1$, the Tseitin tautology $T_n$ requires Frege proofs of length at least $2^{n^{\\epsilon}}$ for some $\\epsilon > 0$ over the basis $\\{\\land, ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T06:39:54.798497"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Extended_Frege_PHP_SuperPolynomial_LowerBound\nSTATEMENT: Let $\\mathcal{EF}$ be any standard Extended Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. Let $PHP_n$ denote the propositional tautology encoding the Pigeonhole Principle for $n+1$ pigeons and $n$ holes (specifica",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T06:46:18.168935"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NonCommutativeGCTviaProofComplexityRev**\nSTATEMENT: Let $F$ be a non-commutative polynomial ring over $\\mathbb{F}_2$. For any $n \\geq 1$, the proof length of the $n$-variable Tseitin tautology in the Non-Commutative Cutting Planes (NCCP) proof system is at least $2^{\\Omega(n)}$. F",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 3,
+      "A": 5
+    },
+    "timestamp": "2026-03-30T06:53:11.597315"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Proof_Complexity_Gap_for_Iterated_Parity_Constraints**\n\n**STATEMENT:**\nLet \\(\\mathcal{F}\\) be a Frege proof system over the basis \\(\\{\\land, \\lor, \\neg\\}\\). For any \\(k \\geq 2\\), define the *iterated parity tautology* \\(\\mathrm{IPT}_k\\) over \\(n = 2^k\\) variables \\(x_1, \\dot",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:58:41.311430"
+  },
+  {
+    "approach": "CONJECTURE_NAME: NonCommutativeRank_Frege_LowerBound\nSTATEMENT: Let $\\mathcal{F}$ be any standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. Let $N \\in \\mathbb{N}$. Consider the tautology $T_N$ asserting that a specific $N \\times N$ matrix $M(x_1, \\dots, x_k)$ of linear forms over $\\",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:05:11.779628"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Tseitin_SuperPoly_LowerBound**\nSTATEMENT: For any integer \\( n \\geq 1 \\), let \\( \\text{Tseitin}_n \\) denote the Tseitin tautology over a planar graph \\( G_n \\) with treewidth at least \\( n \\). Then, the size of any Frege proof of \\( \\text{Tseitin}_n \\) is superpolynomial in ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:12:32.519120"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Exponential_Gap_for_Iterated_Matrix_Identities**\n\n---\n\n**STATEMENT:**\nLet \\(\\mathcal{F}\\) be a Frege proof system over the basis \\(\\{\\land, \\lor, \\neg\\}\\) (or any complete basis). For every \\(n \\in \\mathbb{N}\\), define the *iterated matrix identity tauto",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:19:53.205706"
+  },
+  {
+    "approach": "CONJECTURE_NAME: NonCommutativeRank_Frege_LowerBound_Tseitin\nSTATEMENT: Let $\\mathcal{F}$ be any standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. Let $G_n$ be a family of 3-regular expander graphs on $n$ vertices. Let $TS(G_n)$ be the Tseitin tautology associated with $G_n$ (encod",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:24:56.159150"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Resolution_Width_To_Frege_Size_Gap_Tseitin\nSTATEMENT: Let $\\mathcal{F}$ be any standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. For every integer $n \\geq 3$, let $G_n$ be the 3-regular expander graph on $n$ vertices, and let $\\text{TS}(G_n)$ be the corresponding T",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T07:33:51.622472"
+  },
+  {
+    "approach": "Okay, let's tackle this. The user wants a specific, formal conjecture in proof complexity that's novel and plausibly provable. They mentioned avoiding failed approaches and barriers like Natural Proofs. The example given was about Frege systems and Tseitin tautologies, but those were falsified.\n\nFir",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T07:38:30.103535"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Parity_Reasoning**\n\n**STATEMENT:**\nLet \\(\\mathcal{F}\\) be a Frege proof system over the basis \\(\\{\\land, \\lor, \\neg, \\oplus\\}\\) (where \\(\\oplus\\) is the parity connective). For every \\(n \\geq 1\\), let \\(\\text{PHP}_n^\\oplus\\) denote the *Parity Pi",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T07:46:45.239952"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Resolution_Width_Certified_Parity_Gap\nSTATEMENT: Let $n$ be an even integer and let $G$ be a 3-regular expander graph on $n$ vertices with expansion constant $\\alpha > 0$. Let $\\text{Tseitin}(G, \\mathbf{1})$ be the Tseitin tautology asserting that the sum of edge variables modulo 2 ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T07:53:33.974876"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **AlgPHP_Frege_Exponential_LowerBound**\n\n**STATEMENT:**\nFor each integer \\( n \\geq 1 \\), the *Algebraic Pigeonhole Tautology* \\( \\text{AlgPHP}_n \\) is defined over variables \\( x_{i,j} \\) (for \\( 1 \\leq i \\leq n+1 \\), \\( 1 \\leq j \\leq n \\)) as the conjunction of:\n1. **Pigeonhole",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:01:39.723367"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Hermitian_Identity_Frege_Exponential_LowerBound**  \n**STATEMENT:**  \nLet $\\{\\text{HIT}_n\\}$ be the family of *Hermitian Identity Tautologies* over $n$ variables, encoding the identity $\\sum_{i=1}^n x_i^2 = 1$ for $x_i \\in \\{0,1\\}$, formalized in a Frege system $\\mathcal{F}$ over t",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:10:27.776610"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **DepthThree_Frege_Parity_Exponential_LowerBound**\n\n**STATEMENT:**\nLet $\\mathcal{F}_3$ denote the depth-3 Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$ with unbounded fan-in, where the size of a proof is the total number of symbols. Let $\\text{PARITY}_n$ be the tautology",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:19:26.294717"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **AlgSurjPairing_Frege_Exponential_LowerBound**  \n**STATEMENT:**  \nFor each integer \\( n \\geq 1 \\), let \\( \\text{ASPT}_n \\) denote the *Algebraic Surjective Pairing Tautology*, which encodes that there is no surjective function \\( f: [n] \\times [n] \\to [n] \\) satisfying \\( f(i,j) = ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:28:02.670754"
+  },
+  {
+    "approach": "CONJECTURE_NAME: CuttingPlanes_Parity_ExpGap\nSTATEMENT: Let $n$ be an even integer. Let $\\text{PARITY}_n$ be the unsatisfiable system of linear inequalities over $\\{0,1\\}^n$ asserting that $\\sum_{i=1}^n x_i = n/2 + 1/2$ (which has no integer solution). Specifically, consider the CNF encoding of the ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T08:34:18.534377"
+  },
+  {
+    "approach": "Here\u2019s a novel conjecture in **proof complexity**, specifically targeting **Frege lower bounds** via a new combinatorial principle that evades known barriers:\n\n---\n\n### **CONJECTURE_NAME:** **Frege_Exponential_LowerBound_for_Threshold_Isomorphism_Principle**\n\n#### **STATEMENT:**\nLet \\( \\mathcal{F} \\",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T08:42:42.383152"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **ParityPigeonhole_Frege_Exponential_LowerBound**  \n\n**STATEMENT:**  \nFor each integer \\( n \\geq 1 \\), the *Parity-Pigeonhole Tautology* \\( \\text{PPT}_n \\) over variables \\( x_{i,j} \\) (for \\( 1 \\leq i, j \\leq n \\)) is defined by the clauses:  \n1. **Pigeonhole Constraints:** \\( ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:52:44.483351"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Modular_Counting**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be a Frege proof system over the standard basis \\( \\{ \\neg, \\land, \\lor \\} \\), and let \\( \\text{MOD}_k^n \\) denote the unsatisfiable \\( k \\)-modular counting principle on \\( n \\) variables ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:01:55.136975"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Oddtown_CuttingPlanes_Exponential_LowerBound**  \nSTATEMENT: For each integer \\( n \\geq 1 \\), the *Oddtown Tautology* \\( \\text{ODDTOWN}_n \\), which encodes the unsatisfiable assertion that there exists a family of more than \\( n \\) subsets of \\([n]\\) where each subset has odd size ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:10:16.870383"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SymmetricTseitin_CuttingPlanes_ExponentialLowerBound**\n\nSTATEMENT: \nFor every integer \\( n \\geq 2 \\), let \\( \\text{ST}_n \\) be the symmetric Tseitin tautology over a complete graph \\( K_n \\), which asserts that the sum of the edges incident to any vertex is even. Then, any Cutting",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:18:41.179701"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Exponential_SubsetSum_Threshold_LowerBound**\n\n**STATEMENT:**\nFor every sufficiently large integer \\( n \\), let \\( \\text{SST}_n \\) be the *Subset-Sum Threshold Tautology* defined as follows:\n- Input: A set \\( S = \\{a_1, \\dots, a_n\\} \\) of positive integers where \\( a_i \\i",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:24:39.282999"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Tseitin_Resolution_Width_Certified_Gap\nSTATEMENT: Let $G$ be a $d$-regular graph on $n$ vertices with expansion constant $h(G) > 0$ (an expander). Let $\\text{TS}_G$ be the unsatisfiable Tseitin tautology over $G$ with an odd charge distribution. There exists a constant $c > 0$ depen",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:30:29.997576"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Exponential_Coloring_Contradiction_LowerBound**\n\n**STATEMENT:**\nFor every integer \\( k \\geq 3 \\) and sufficiently large \\( n \\), let \\( \\phi_{k,n} \\) be the unsatisfiable propositional formula encoding the following combinatorial principle:\n*\"There exists a \\( k \\)-coloring ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T09:39:06.862740"
+  },
+  {
+    "approach": "CONJECTURE_NAME: RamseyClique_Frege_Exponential_LowerBound  \n**STATEMENT:**  \nFor every integer \\( n \\geq 6 \\), the *Ramsey-Clique Tautology* \\( \\text{RCT}_n \\), which asserts that every 2-coloring of the edges of the complete graph \\( K_n \\) contains a monochromatic triangle, requires Frege proofs ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:46:25.056204"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Sipser_Lautemann_BPP_in_Sigma2P  \nSTATEMENT: $\\mathbf{BPP} \\subseteq \\Sigma_2^P$. Specifically, for every language $L \\in \\mathbf{BPP}$, there exists a polynomial-time computable relation $R$ such that for all inputs $x$,  \n$x \\in L \\iff \\exists a \\forall b \\, R(x, a, b)$,  \nwhere $",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -1761,10 +1681,22 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T09:44:36.967973"
+    "timestamp": "2026-03-30T09:54:50.833317"
   },
   {
-    "approach": "**CONJECTURE_NAME:** **Ajtai_Miltersen_Lower_Bound_for_Sparse_Polynomials**\n\n**STATEMENT:**\nLet \\( \\mathbb{F} \\) be a finite field, and let \\( f \\colon \\mathbb{F}^n \\to \\mathbb{F} \\) be a polynomial of degree \\( d \\) (in each variable) such that \\( f \\) depends on at most \\( k \\) monomials (i.e., \\(",
+    "approach": "CONJECTURE_NAME: Smolensky_AC0q_Parity_LowerBound\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. For any depth $d \\geq 2$ and any size $S$, there exists a constant $\\epsilon > 0$ (depending on $p, q, d$) such that for sufficiently large $n$, any Boolean circuit $C$ of depth $d$ and size $S = ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:07:12.050129"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Ajtai_MonotoneCircuit_Exponential_LowerBound_for_SparseClique**\n\n**STATEMENT:**\nFor every integer \\( k \\geq 2 \\), let \\( \\text{CLIQUE}_{k,n} \\) be the monotone Boolean function on \\( \\binom{n}{2} \\) variables that outputs 1 if and only if the input graph (represented as an adj",
     "reason": "Formalization failed",
     "barrier_profile": {
       "R": 0,
@@ -1773,142 +1705,10 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T09:45:24.456956"
+    "timestamp": "2026-03-30T10:11:56.043578"
   },
   {
-    "approach": "CONJECTURE_NAME: **Sipser_Lautemann_BPP_in_Sigma2**\n\nSTATEMENT: Let $\\text{BPP}$ be the class of languages decidable by a probabilistic polynomial-time Turing machine with error probability at most $2^{-n}$. Let $\\Sigma_2^P = \\text{NP}^{\\text{NP}}$ be the second level of the polynomial hierarchy. Th",
-    "reason": "Intent mismatch",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T09:47:02.406910"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Ajtai_Lower_Bound_for_Parity_in_AC0**\n**STATEMENT:**\nFor every fixed constant \\( d \\geq 1 \\), there exists an \\( \\epsilon > 0 \\) such that any depth-\\( d \\) circuit of size \\( 2^{n^\\epsilon} \\) over the basis \\(\\{ \\wedge, \\vee, \\neg \\}\\) computing the parity function \\( \\oplus",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T09:55:16.999160"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0  \n**STATEMENT:**  \nFor every integer \\( d \\geq 1 \\), there exists an integer \\( n_0 \\) such that for all \\( n \\geq n_0 \\), the Parity function on \\( n \\) variables cannot be computed by an \\( \\text{AC}^0 \\) circuit of depth \\( d \\) and size at most \\( 2^{n^{1/(d-1)",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T10:03:27.988224"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0_Furst_Saxe_Sipser\nSTATEMENT: Let $\\text{PARITY}_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the function computing the sum of inputs modulo 2. For any constant depth $d \\geq 1$, there exists a constant $\\epsilon_d > 0$ such that for all sufficiently large $n$, any Boolean circuit",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T10:10:18.699196"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Resolution_Width_Lower_Bound_for_Random_CNF**\n\n**STATEMENT:**\nLet \\( \\Delta \\geq 4.5 \\) be a constant, and let \\( \\phi \\) be a random \\( k \\)-CNF formula on \\( n \\) variables with \\( m = \\Delta n \\) clauses, where \\( k \\geq 3 \\) is fixed. Then, for every \\( \\epsilon > 0 \\), wi",
-    "reason": "Intent mismatch",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T10:14:07.723940"
-  },
-  {
-    "approach": "CONJECTURE_NAME: FSS_Parity_Lower_Bound_AC0\nSTATEMENT: Let $d \\geq 1$ be a fixed integer. There exists a constant $\\epsilon_d > 0$ such that for all sufficiently large $n$, any Boolean circuit $C$ of depth $d$ computing the parity function $\\text{PARITY}_n: \\{0,1\\}^n \\to \\{0,1\\}$ must have size at l",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (76s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T10:21:39.113004"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Exponential_Resolution_Lower_Bound_Pigeonhole  \nSTATEMENT: For every natural number \\( n \\), any resolution refutation of the propositional pigeonhole principle \\( \\text{PHP}_n \\) requires at least \\( 2^{\\Omega(n)} \\) clauses.  \nPROOF_SKETCH: Use the width-length connection (Ben-Sas",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T10:28:45.236807"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Constant_Depth_Circuit_Size_Hierarchy**\n\n**STATEMENT:**\nFor every integer \\( d \\geq 1 \\), there exists a constant \\( \\epsilon_d > 0 \\) such that for all sufficiently large \\( n \\), there exists a Boolean function \\( f_n: \\{0,1\\}^n \\to \\{0,1\\} \\) computable by a circuit of dept",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (95s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T10:54:38.542290"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Shannon_Counting_Lower_Bound\nSTATEMENT: Let $n \\geq 1$. Let $\\mathcal{F}_n$ be the set of all Boolean functions $f: \\{0,1\\}^n \\to \\{0,1\\}$, so $|\\mathcal{F}_n| = 2^{2^n}$. Let $S(n, s)$ be the number of distinct Boolean functions on $n$ variables that can be computed by a Boolean ci",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (28s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T11:07:49.644278"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Oracle_Separation_P_NP  \nSTATEMENT: There exists an oracle \\( A \\) such that \\( \\textbf{P}^A \\neq \\textbf{NP}^A \\).  \nPROOF_SKETCH: Construct \\( A \\) via diagonalization against polynomial-time Turing machines. Enumerate all such machines and stage-wise define \\( A \\) to ensure a la",
-    "reason": "Formalization failed",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T11:10:32.911747"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Time_Hierarchy_Theorem\nSTATEMENT: Let $f, g: \\mathbb{N} \\to \\mathbb{N}$ be time-constructible functions such that $f(n) \\log f(n) = o(g(n))$. Then $\\text{DTIME}(f(n)) \\subsetneq \\text{DTIME}(g(n))$. Specifically, there exists a language $L$ decidable in $O(g(n))$ time that is not de",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.1s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T11:16:11.096331"
-  },
-  {
-    "approach": "/-\nCONJECTURE_NAME: **Diagonalization_Separation_EXP_P**\nSTATEMENT: For every time-constructible function \\( f : \\mathbb{N} \\to \\mathbb{N} \\) with \\( f(n) \\geq n \\) for all \\( n \\), there exists a language \\( L \\in \\textbf{EXP} \\) such that \\( L \\notin \\textbf{DTIME}(f(n)) \\).\n\nPROOF_SKETCH: Constru",
+    "approach": "CONJECTURE_NAME: Sipser_Lautemann_BPP_in_Sigma2P  \nSTATEMENT: For every language \\( L \\in \\mathbf{BPP} \\), \\( L \\) can be decided by a \\( \\Sigma_2^P \\) machine. Specifically, there exists a polynomial-time nondeterministic Turing machine \\( M \\) with an \\( \\mathsf{NP} \\) oracle such that \\( L = \\{ x",
     "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (14s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
@@ -1917,190 +1717,10 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T11:23:35.979082"
+    "timestamp": "2026-03-30T10:22:25.793373"
   },
   {
-    "approach": "**CONJECTURE_NAME:** **Cook_Levin_Theorem_NP_Completeness_SAT**\n\n**STATEMENT:**\nLet \\( \\text{SAT} \\) be the Boolean satisfiability problem: given a Boolean formula \\( \\phi \\) in conjunctive normal form (CNF) over \\( n \\) variables, decide whether there exists an assignment \\( \\alpha \\in \\{0,1\\}^n \\)",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T11:28:53.782068"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Pumping_Lemma_For_Regular_Languages  \nSTATEMENT: Let \\( L \\) be a regular language. There exists an integer \\( p \\geq 1 \\) such that every string \\( s \\in L \\) with \\( |s| \\geq p \\) can be divided into \\( s = xyz \\) (where \\( x, y, z \\) are strings) satisfying:  \n1. \\( |xy| \\leq p \\",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (107s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T11:47:46.101195"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Ladner_Theorem\nSTATEMENT: If $\\textbf{P} \\neq \\textbf{NP}$, then there exists a language $L \\in \\textbf{NP} \\setminus \\textbf{P}$ that is not $\\textbf{NP}$-complete.\nPROOF_SKETCH: Construct a language via a diagonalization argument that enforces $L$ to be in $\\textbf{NP}$, ensures $",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.0s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T11:57:22.410019"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Circuit_Size_Lower_Bound_For_Parity**\n\n**STATEMENT:**\nLet \\( n \\geq 1 \\). Let \\( \\text{PARITY}_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be the Boolean function defined by\n\\[\n\\text{PARITY}_n(x_1, \\dots, x_n) = x_1 \\oplus x_2 \\oplus \\dots \\oplus x_n,\n\\]\nwhere \\( \\oplus \\) denotes addition modul",
-    "reason": "Formalization failed",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:02:18.568764"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Sauer_Shelah_Lemma  \nSTATEMENT: Let \\( F \\) be a family of subsets of \\( \\{1, 2, \\ldots, n\\} \\) with VC dimension \\( d \\). Then,  \n\\[\n|F| \\leq \\sum_{i=0}^d \\binom{n}{i}\n\\]  \nPROOF_SKETCH: Induction on \\( n \\) and the VC dimension \\( d \\). For a set system shattering at least \\( d+1 ",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (17s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:06:47.064888"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Sipser_G\u00e1cs_Lautemann_Theorem_BPP_in_Sigma_2_Intersection_Pi_2**\n\nSTATEMENT:\nLet $\\mathbf{BPP}$ denote the class of languages decidable by probabilistic polynomial-time Turing machines with error probability at most $1/3$. Then:\n$$\n\\mathbf{BPP} \\subseteq \\Sigma^P_2 \\cap \\Pi^P_2,\n$",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (90s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:13:25.682533"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0\nSTATEMENT: For every depth $d \\geq 1$, there exists a constant $c_d > 0$ and an integer $N_d$ such that for all $n > N_d$, any Boolean circuit $C$ of depth $d$ and size $S < 2^{c_d n^{1/(d-1)}}$ cannot compute the parity function $\\text{PARITY}_n(x_1, \\dots, x_n) =",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (12s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:19:53.652489"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Equality_Communication_Complexity_Lower_Bound  \nSTATEMENT: The deterministic communication complexity of the equality function \\( \\text{EQ} \\), defined by \\( \\text{EQ}(x, y) = 1 \\) if \\( x = y \\) and \\( 0 \\) otherwise for \\( x, y \\in \\{0,1\\}^n \\), is at least \\( n \\).  \nPROOF_SKETCH",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (20s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:24:38.460208"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Sparse_Languages_Not_Universal**\n\nSTATEMENT:\nLet \\( S \\subseteq \\{0,1\\}^* \\) be a **sparse** language, i.e., there exists a polynomial \\( p(n) \\) such that for all \\( n \\in \\mathbb{N} \\),\n\\[ |S \\cap \\{0,1\\}^n| \\leq p(n). \\]\nThen, \\( S \\) is **not** Turing-complete for \\( \\mathbf{N",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.0s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:29:26.635630"
-  },
-  {
-    "approach": "/-\nCONJECTURE_NAME: **Shannon_Circuit_Lower_Bound**\nSTATEMENT: For any integer \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) such that every Boolean circuit computing \\( f \\) requires at least \\( 2^n / n \\) gates.\nPROOF_SKETCH: Use a counting argument. There are \\( 2",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (20s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:45:02.410844"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Time_Hierarchy_Theorem_Basic_Form**\n\n**STATEMENT:**\nLet \\( t_1, t_2: \\mathbb{N} \\to \\mathbb{N} \\) be time-constructible functions such that\n\\[\n\\lim_{n \\to \\infty} \\frac{t_1(n) \\log t_1(n)}{t_2(n)} = 0.\n\\]\nThen,\n\\[\n\\text{DTIME}(t_1(n)) \\subsetneq \\text{DTIME}(t_2(n)).\n\\]\n\n**PROOF_S",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T12:55:02.959886"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Time_Hierarchy_Theorem_Deterministic\nSTATEMENT: Let $f, g: \\mathbb{N} \\to \\mathbb{N}$ be time-constructible functions such that $f(n) \\log f(n) = o(g(n))$. Then, $\\text{DTIME}(f(n)) \\subsetneq \\text{DTIME}(g(n))$. Specifically, there exists a language $L$ decidable in $O(g(n))$ time",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:02:05.129897"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Composition_of_Polynomial_Time_Functions**  \nSTATEMENT: Let \\( f: \\{0,1\\}^* \\to \\{0,1\\}^* \\) and \\( g: \\{0,1\\}^* \\to \\{0,1\\}^* \\) be polynomial-time computable functions. Then the composition \\( h(x) = f(g(x)) \\) is also polynomial-time computable.  \n\nPROOF_SKETCH: If \\( f \\) runs",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (66s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:07:14.436978"
-  },
-  {
-    "approach": "/-\nCONJECTURE_NAME: **Diagonalization_Separation_PSPACE_EXP**\nSTATEMENT: There exists a language \\( L \\in \\text{EXP} \\) such that \\( L \\notin \\text{PSPACE} \\). Formally, for time-constructible function \\( t(n) = 2^n \\), the diagonalization language \\( L = \\{ \\langle M \\rangle \\mid M \\text{ is a } O(",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.1s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:19:10.598509"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Cantor_Diagonalization_Uncountability_Boolean_Functions**\n\nSTATEMENT:\nLet \\( n \\in \\mathbb{N} \\). The set \\( \\mathcal{F}_n = \\{ f \\mid f : \\{0,1\\}^n \\to \\{0,1\\} \\} \\) of all Boolean functions on \\( n \\) variables has cardinality \\( 2^{2^n} \\). Furthermore, for any countable sequen",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (95s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:31:11.633849"
-  },
-  {
-    "approach": "CONJECTURE_NAME: P_Closed_Under_Complement  \nSTATEMENT: For every language \\( L \\subseteq \\{0,1\\}^* \\), if \\( L \\in \\mathbf{P} \\), then \\( \\overline{L} \\in \\mathbf{P} \\).  \nPROOF_SKETCH: Given a polynomial-time Turing machine \\( M \\) deciding \\( L \\), construct \\( M' \\) that simulates \\( M \\) on inp",
+    "approach": "CONJECTURE_NAME: Razborov_Smolensky_AC0q_Parity_LowerBound\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. For any depth $d \\geq 2$ and any size $S$, if a Boolean circuit $C$ of depth $d$ and size $S$ consists of AND, OR, NOT, and MOD$_q$ gates, then the probability that $C(x)$ equals the Pari",
     "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
     "barrier_profile": {
       "R": 0,
@@ -2109,6 +1729,402 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T13:37:49.675018"
+    "timestamp": "2026-03-30T10:26:31.330181"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **AjtaiGurevich_MonotoneCircuit_AC0_Separation**\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be the **monotone s-t-connectivity** function on layered directed graphs with \\( n = 2^k \\) vertices per layer, defined as follows:\n- Input: Adjacency matrix of a directed graph \\( G \\)",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (52s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:31:13.227929"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **H\u00e5stad_AC0_And-Or_Approximation_Threshold**\nSTATEMENT:\nLet \\( \\text{AND}_m : \\{0,1\\}^m \\to \\{0,1\\} \\) be the \\( m \\)-bit AND function, and let \\( \\text{OR}_m \\) be the \\( m \\)-bit OR function. For every constant \\( \\epsilon > 0 \\) and depth \\( d \\geq 2 \\), there exists a constant ",
+    "reason": "Formalization failed",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:35:02.415329"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Razborov_Smolensky_AC0q_Parity_LowerBound\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. For any depth $d \\geq 2$ and any size $S$, if a Boolean circuit $C$ of depth $d$ and size $S$ consists of AND, OR, and MOD$_q$ gates (with unbounded fan-in), then the probability that $C(",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (23s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:41:00.127077"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Furst_Saxe_Sipser_AC0_Parity_LowerBound  \nSTATEMENT: For any depth \\( d \\geq 3 \\), the parity function on \\( n \\) variables cannot be computed by \\( \\text{AC}^0 \\) circuits of depth \\( d \\) and size \\( 2^{o(n)} \\).  \nPROOF_SKETCH: Use the method of approximations to show parity cann",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.5s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:44:31.165503"
+  },
+  {
+    "approach": "CONJECTURE_NAME: BenSassonWigderson_SizeWidth_Relation\nSTATEMENT: Let $\\phi$ be a CNF formula with $n$ variables, where each clause has width at most $k$. Let $w(\\phi)$ denote the minimum width of any clause appearing in any resolution refutation of $\\phi$ (defined as $\\infty$ if $\\phi$ is satisfiab",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:52:05.979979"
+  },
+  {
+    "approach": "Here is a well-known but technically involved result that fits the constraints:\n\n---\n\n**CONJECTURE_NAME:** **Impagliazzo_Kabanets_Wigderson_NaturalProofsBarrier_For_Permanent**\n\n**STATEMENT:**\nLet $\\mathcal{C}$ be the class of polynomial-size arithmetic circuits over $\\mathbb{Z}$. Suppose there exis",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (179s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:05:01.480615"
+  },
+  {
+    "approach": "/-\nCONJECTURE_NAME: **Shannon_Circuit_Lower_Bound**\nSTATEMENT: For any integer \\( n \\geq 1 \\), there exists a Boolean function \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) that cannot be computed by any Boolean circuit with fewer than \\( 2^n / n \\) gates.\nPROOF_SKETCH: Use a counting argument. There are \\( 2^{2^",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:12:04.723544"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Savitch_Theorem_PSPACE_Containment_in_NPSPACE_Squared**\n\n**STATEMENT:**\nFor any language \\( L \\), if \\( L \\in \\mathbf{PSPACE} \\), then \\( L \\in \\mathbf{NPSPACE} \\), and furthermore, there exists a deterministic Turing machine deciding \\( L \\) in space \\( O(s(n)^2) \\), where \\(",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:15:44.908455"
+  },
+  {
+    "approach": "/-\nCONJECTURE_NAME: **Time_Hierarchy_Theorem**\nSTATEMENT: For any time-constructible function \\( T : \\mathbb{N} \\to \\mathbb{N} \\), there exists a language \\( L \\) such that \\( L \\in \\mathbf{TIME}(T(n) \\log T(n)) \\) and \\( L \\notin \\mathbf{TIME}(T(n)/\\log T(n)) \\).\nPROOF_SKETCH: Use a diagonalization",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (26s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:24:31.727425"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Time_Hierarchy_Theorem\nSTATEMENT: For any time-constructible function $t: \\mathbb{N} \\to \\mathbb{N}$ such that $t(n) \\log t(n) = o(T(n))$, there exists a language $L$ decidable by a deterministic Turing machine in time $O(T(n))$ that is not decidable by any deterministic Turing mach",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (31s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:30:53.293155"
+  },
+  {
+    "approach": "Here\u2019s a precise, formalizable conjecture based on a well-known result in circuit complexity:\n\n---\n\n**CONJECTURE_NAME:** **Karp_Lipton_P_Has_Circuits_Iff_Sigma2P_Equals_Pi2P**\n\n**STATEMENT:**\nFor any language \\( L \\),\n\\( \\mathbf{P} \\subseteq \\mathbf{SIZE}[n^{O(1)}] \\) (i.e., every language in \\( \\ma",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:39:40.345210"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Counting_Lower_Bound\nSTATEMENT: For every integer $n \\geq 1$, there exists a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ such that any Boolean circuit computing $f$ requires at least $\\frac{2^n}{10n}$ gates (assuming a standard basis like $\\{\\text{AND}, \\text{OR}, \\text{NOT}",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (114s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:47:47.347682"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Cook_Levin_NP_Complete_SAT**\n\n**STATEMENT:**\nFor any language \\( L \\in \\mathbf{NP} \\), there exists a polynomial-time many-one reduction from \\( L \\) to the Boolean satisfiability problem (SAT). Formally:\n\\[\n\\forall L \\in \\mathbf{NP}, \\exists \\text{ poly-time computable } f : ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (18s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T11:53:49.796551"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Pigeonhole_Principle_Circuit_Lower_Bound**\n\n**STATEMENT:** \nFor any integer \\( n \\geq 1 \\), the Pigeonhole Principle (PHP) function on \\( n \\) pigeons and \\( n \\) holes, which outputs 1 if and only if two pigeons are assigned to the same hole, cannot be computed by any Boolean",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (28s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:07:05.391012"
+  },
+  {
+    "approach": "Here\u2019s a well-known, formalizable result in circuit complexity that avoids recent failed attempts and is amenable to Lean formalization:\n\n---\n\n**CONJECTURE_NAME:** **Parity_Not_In_AC0_3**\n**STATEMENT:**\nFor all constants \\( d \\geq 3 \\), the parity function \\( \\text{PARITY}_n : \\{0,1\\}^n \\to \\{0,1\\} ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:18:18.665665"
+  },
+  {
+    "approach": "Cycle 7, difficulty 1/5. Propose ONE specific mathematical conjecture or lemma.\n\nCONJECTURE_NAME: **Circuit_Lower_Bound_Shannon**\nSTATEMENT: For any positive integer \\( n \\), there exists a Boolean function \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) such that every circuit computing \\( f \\) requires at least \\",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (14s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:23:37.124295"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Parity_Function_Circuit_Lower_Bound**\n\n**STATEMENT:**\nFor every integer \\( n \\geq 1 \\), any Boolean circuit \\( C \\) computing the parity function \\( \\text{PARITY}_n : \\{0,1\\}^n \\to \\{0,1\\} \\), defined by\n\\[\n\\text{PARITY}_n(x_1, \\dots, x_n) = \\left( \\sum_{i=1}^n x_i \\right) \\mo",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (72s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:32:24.231530"
+  },
+  {
+    "approach": "/-\nCONJECTURE_NAME: **Shannon_Circuit_Lower_Bound**\nSTATEMENT: For every natural number $n$, there exists a Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ such that any Boolean circuit computing $f$ requires at least $2^n / n$ gates.\nPROOF_SKETCH: Use the probabilistic method: show that the number of B",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.5s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:35:49.592148"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Shannon_Circuit_Lower_Bound_Majority**\n\n**STATEMENT:**\nFor every integer \\( n \\geq 1 \\), the majority function \\( \\text{MAJ}_n : \\{0,1\\}^n \\to \\{0,1\\} \\), defined by\n\\[\n\\text{MAJ}_n(x_1, \\dots, x_n) = 1 \\iff \\sum_{i=1}^n x_i \\geq \\lceil n/2 \\rceil,\n\\]\nrequires Boolean circuits",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:37:22.946039"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Exponential_Circuit_Lower_Bound_Shannon\nSTATEMENT: For every natural number $n \\geq 1$, there exists a Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ such that any Boolean circuit (using AND, OR, NOT gates with fan-in 2) computing $f$ requires at least $\\frac{2^n}{10n}$ gates.\nPROOF_",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (33s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:42:49.566750"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Shannon_Counting_Exponential_Circuit_Lower_Bound**\n\n**STATEMENT:**\nFor every natural number \\( n \\geq 1 \\), the fraction of Boolean functions \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) that can be computed by a Boolean circuit of size at most \\( \\frac{2^n}{4n} \\) is strictly less than \\(",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:51:07.646443"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Time_Hierarchy_Theorem_Statement\nSTATEMENT: For any time-constructible function $t: \\mathbb{N} \\to \\mathbb{N}$, there exists a language $L$ decidable in $O(t(n) \\log t(n))$ time that is not decidable in $O(t(n))$ time. Specifically, $\\text{DTIME}(t(n)) \\subsetneq \\text{DTIME}(t(n) \\",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:54:46.204400"
+  },
+  {
+    "approach": "/-\nCONJECTURE_NAME: **Circuit_Unbounded_Fanin_Lower_Bound**\nSTATEMENT: For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) that cannot be computed by any Boolean circuit with unbounded fan-in gates and size \\( O(2^n / n) \\).\nPROOF_SKETCH: Utilize a",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (52s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T12:59:41.270421"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Circuit_Size_Lower_Bound_Shannon_Counting**\n\n**STATEMENT:**\nFor every natural number \\( n \\geq 1 \\), the minimum number of gates (AND, OR, NOT) required to compute *some* Boolean function \\( f : \\{0,1\\}^n \\to \\{0,1\\} \\) is at least \\( \\frac{2^n}{n} \\). Formally,\n\\[\n\\forall n \\",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:02:54.727705"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Counting_Lower_Bound\nSTATEMENT: For every integer $n \\geq 1$, there exists a Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ such that any Boolean circuit computing $f$ requires size at least $\\lceil \\frac{2^n}{n+1} \\rceil - 1$. (Here, circuit size is defined as the number of ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:08:34.311988"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Circuit_Counting_Bound\nSTATEMENT: For every natural number $n \\geq 1$, the number of distinct Boolean circuits with $n$ inputs, size at most $s$ (measured by the number of gates), and fan-in at most 2 over the basis $\\{\\text{AND}, \\text{OR}, \\text{NOT}\\}$ is strictly less th",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:16:32.230114"
+  },
+  {
+    "approach": "/-\nCONJECTURE_NAME: **Pigeonhole_Principle_Circuit_Lower_Bound**\nSTATEMENT: For every natural number $n \\geq 1$, any Boolean circuit $C$ that computes the pigeonhole principle function $\\text{PHP}_n^m$ (which outputs 1 if and only if the input has at least $n+1$ ones in the first $m$ bits, where $m ",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:18:42.614962"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Sipser_Function_In_NC1_Not_AC0**\n\nSTATEMENT:\nFor every natural number \\( n \\geq 1 \\),\nlet \\( S_n \\) be the Boolean function on \\( 2n \\log n \\) bits defined as follows:\n- The input is interpreted as a string of \\( n \\) blocks, each of length \\( 2 \\log n \\), representing \\( n \\) num",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:21:06.048362"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Circuit_Size_Upper_Bound_Trivial\nSTATEMENT: For every natural number $n$, every Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ can be computed by a Boolean circuit of size at most $O(2^n / n)$. Specifically, there exists a constant $C > 0$ such that for all $n \\geq 1$, any function o",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:23:31.020980"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Counting_Boolean_Functions\nSTATEMENT: For every natural number $n$, the cardinality of the set of all Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ has cardinality $2^n$ (by basic combinatorics of binary strings).\n2.",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (13s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:31:41.400232"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Circuit_Counting_Lemma  \nSTATEMENT: For any natural numbers \\( n \\) and \\( s \\), the number of distinct Boolean circuits with \\( n \\) inputs and size at most \\( s \\) is bounded by \\( (n + s)^{s + 1} \\). Consequently, for \\( s \\leq \\frac{2^n}{n + 1} \\), there exist Boolean fu",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:39:53.342069"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Counting_Lemma_Exact\nSTATEMENT: For any natural number $n \\geq 1$ and any natural number $s$, let $\\mathcal{C}_{n,s}$ be the set of distinct Boolean circuits with $n$ inputs, size at most $s$, and gates from the basis $\\{\\text{AND}, \\text{OR}, \\text{NOT}\\}$ (with fan-in 2 fo",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (103s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:53:07.865230"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Circuit_Counting_Bound\nSTATEMENT: For every natural number $n \\geq 1$, let $N(n, s)$ be the number of distinct Boolean circuits with $n$ inputs and at most $s$ gates (using AND, OR, NOT with fan-in 2). Then $N(n, s) \\leq 2^{O(s \\log s)}$. Specifically, there exists a constan",
+    "reason": "Formalization failed",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T13:58:36.391060"
   }
 ]
