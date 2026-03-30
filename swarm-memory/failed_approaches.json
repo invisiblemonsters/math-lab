@@ -1,5 +1,25 @@
 [
   {
+    "approach": "CONJECTURE_NAME: **SublinearWidthBranchingProgramLowerBoundViaLocality**\n\n**STATEMENT:**\nLet \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) be a Boolean function such that:\n1. \\( f \\) is computable in deterministic time \\( O(n \\log n) \\) on a Turing machine, and\n2. For every subset \\( S \\subseteq [n] \\) of size \\( ",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 3,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T13:05:07.945854"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **ModPCircuitCorrelationDecay**\n\nSTATEMENT: Let $p$ and $q$ be distinct primes. Let $f: \\{0,1\\}^n \\to \\{0,1\\}$ be the Mod$_q$ function (outputting 1 iff $\\sum x_i \\equiv 0 \\pmod q$). Let $C$ be any Boolean circuit of depth $d$ and size $s$ composed of unbounded fan-in AND, OR, and M",
+    "reason": "Falsified by adversarial critic",
+    "barrier_profile": {
+      "R": 2,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-29T13:07:09.675311"
+  },
+  {
     "approach": "CONJECTURE_NAME: **TensorRankLowerBoundForFormulaSize**\nSTATEMENT: For any Boolean formula \u03a6 of size s, the tensor rank of the associated 3-dimensional tensor T_\u03a6 over the reals is at least \u03a9(log s / log log s).\nPROOF_SKETCH: Utilize a recursive decomposition of the formula into subformulas, applyin",
     "reason": "Falsified by adversarial critic",
     "barrier_profile": {
@@ -1672,328 +1692,308 @@
     "timestamp": "2026-03-29T20:45:24.067683"
   },
   {
-    "approach": "/--\n**CONJECTURE_NAME:** **GCT_Tensor_Rank_Lower_Bound**\n\n**STATEMENT:**\nLet \\( n \\geq 1 \\) be an integer and consider the polynomial \\( f_n(x) = \\prod_{i=1}^{n} (x_i + 1) \\in \\mathbb{C}[x_1, \\ldots, x_n] \\). We conjecture that the tensor rank of the \\( n \\)-dimensional tensor associated with \\( f_n",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-30T06:13:01.519176"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Exponential_Lower_Bound_for_Extended_Pigeonhole**\n\n**STATEMENT:**\nLet \\( n \\in \\mathbb{N} \\), and let \\( \\text{PHP}^m_n \\) denote the *extended pigeonhole principle* formula asserting that there is no injective function from \\( \\{1, \\dots, n+1\\} \\) to \\(",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 5,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:19:54.132599"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Frege_Tseitin_Exponential_LowerBound\nSTATEMENT: Let $G_n$ be a sequence of 3-regular expander graphs with $n$ vertices, and let $T_n$ be the Tseitin tautology associated with $G_n$ (asserting that no assignment of bits to edges satisfies the parity constraints at every vertex for an",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:25:18.825850"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Surjective_Pigeonhole_Frege_Lower_Bound**\nSTATEMENT: For all integers \\( n \\geq 1 \\), every Frege proof of the Surjective Pigeonhole Principle (\\( \\text{SHP}_n \\)) has size at least \\( 2^{n^{\\epsilon}} \\) for some \\( \\epsilon > 0 \\), where \\( \\text{SHP}_n \\) is the statement that ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 3,
-      "A": 6
-    },
-    "timestamp": "2026-03-30T06:32:44.182494"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Frege_Proof_Size_Separation_for_Hard_Pigeonhole_Principle**\nSTATEMENT:\nLet \\( \\text{PHP}_n^m \\) be the *weak pigeonhole principle* formula asserting that no injective function exists from \\( m \\) pigeons to \\( n \\) holes, with \\( m = 2n \\). For every Frege proof system \\( \\mathcal",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 3,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:38:42.907933"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Extended_Frege_Tseitin_Expander_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and expansion constant $\\alpha > 0$. Let $Tseitin(G_n)$ be the Tseitin tautology over $G_n$ with odd parity constraints. There exists ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 4
-    },
-    "timestamp": "2026-03-30T06:43:52.800856"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Non-Commutative_Cutting_Planes_Exponential_Lower_Bound**\n\n**STATEMENT:**\nLet \\( \\{T_n\\} \\) be a sequence of tautologies derived from the non-commutative polynomial identity testing (NC-PIT) problem over \\( \\mathbb{Z}[x_1, x_2, \\ldots, x_n] \\), where each \\( T_n \\) asserts the ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:50:47.286407"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Separation_via_Iterated_Majority_Tautologies**\n\n**STATEMENT:**\nLet \\( \\text{MAJ}_k^n \\) denote the *iterated majority* tautology over \\( n \\) variables with depth \\( k \\), defined recursively as:\n- \\( \\text{MAJ}_0^n(x_1, \\dots, x_n) = x_1 \\lor \\dots \\lor",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T06:56:14.154927"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Frege_Tseitin_Graph_Oddness_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and expansion constant $\\epsilon > 0$. Let $Tseitin(G_n, \\mathbf{1})$ denote the Tseitin tautology on $G_n$ with all edge charges set to 1",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-30T07:01:28.996704"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Lower_Bound_via_Iterated_Parity_Tautologies**\n\n---\n\n### **STATEMENT:**\nLet \\( \\text{PARITY}_k^n \\) denote the *iterated parity tautology* on \\( n \\) variables, defined as follows:\n1. For \\( k = 1 \\), \\( \\text{PARITY}_1^n \\) is the standard parity tautolo",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T07:10:59.299015"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Surjective_Pigeonhole_Exponential_Frege_Lower_Bound**  \nSTATEMENT: Let \\( \\text{Surj-PHP}_n^m \\) denote the *surjective pigeonhole principle* tautology, which states that for any function \\( f: [n] \\to [m] \\), if \\( m < n \\), then \\( f \\) is not surjective. For all integers \\( n \\",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 1,
-      "A": 1
-    },
-    "timestamp": "2026-03-30T07:18:40.624642"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Frege_Tseitin_GenUSG_Lower_Bound\nSTATEMENT: Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of undirected graphs where $G_n$ has $n$ vertices and is a $(\\delta, \\epsilon)$-unique games expander (defined below). Let $T_n$ be the Tseitin tautology over $G_n$ with parity constraint 1 (m",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T07:23:44.390534"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Non-Commutative_Cutting_Planes_Exponential_Lower_Bound_v2**\nSTATEMENT: Let \\( \\{T_n\\} \\) be a sequence of tautologies derived from the non-commutative (NC) variant of the Pigeonhole Principle (NC-PHP) over free semigroups, where each \\( T_n \\) asserts that there is no injective fu",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 4,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T07:31:02.700019"
-  },
-  {
-    "approach": "/--\nCONJECTURE_NAME: **Non-Commutative_Polynomial_Identity_Lower_Bound**\nSTATEMENT: For any sequence of non-commutative polynomial identity (PI) tautologies \\(\\{T_n\\}\\) over \\(n\\) variables, where each \\(T_n\\) expresses the non-triviality of the \\(n\\)-th Weyl algebra, every Extended Frege proof of \\",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-30T07:37:27.919752"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Mod_p_Tseitin_Tautologies**\n\n**STATEMENT:**\nLet \\( p \\) be a fixed odd prime, and let \\( \\{G_n\\} \\) be a sequence of \\( d \\)-regular expander graphs (for some constant \\( d \\geq 3 \\)) with \\( n \\) vertices and \\( \\Omega(n) \\) edge expansion. Let ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T07:43:03.476098"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Monotone_Resolution_Width_Gap_Clique**\n\nSTATEMENT:\nLet $G_n$ be a sequence of graphs on $n$ vertices where $G_n$ is the disjoint union of $k = \\lfloor \\sqrt{n} \\rfloor$ cliques, each of size $k$ (so $n \\approx k^2$). Let $\\text{CLIQUE}_{n, k+1}(G_n)$ be the propositional formula a",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T07:48:06.060141"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Depth-3_Circuit_Lower_Bound_via_Pseudo-Random_Generator_Hardness**\nSTATEMENT: For any sequence of depth-3 arithmetic circuits $\\{C_n\\}$ over the real numbers, computing the permanent of an $n \\times n$ matrix requires circuits of size at least $2^{\\Omega(n)}$, assuming the existen",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 6,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T07:56:16.473002"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Depth_d_Frege_Lower_Bound_via_Recursive_Majority_Thresholds**\n\nSTATEMENT: Let $d \\geq 1$ be a fixed integer. Let $\\text{MAJ}_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the majority function on $n$ variables (where $n$ is odd). Let $\\phi_n$ be the tautology asserting the logical equivalence betw",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:00:57.436592"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Width_Expander_Clique_Coloring_Lower_Bound**\n\n**STATEMENT:**\nLet \\( G_n \\) be an expander graph on \\( n \\) vertices with constant degree \\( d \\geq 3 \\), girth \\( \\Omega(\\log n) \\), and expansion \\( h(G_n) = \\Omega(1) \\). Define the *Clique-Coloring Tautology* \\( \\text{CC",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:08:08.079859"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Symmetric_Frege_Lower_Bound_Mod_p_Tseitin**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular expander graphs with $n$ vertices and edge expansion constant $\\alpha > 0$ independent of $n$. Let $\\text{TS}(G_n, \\vec{1})$ denote ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-30T08:13:36.548011"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Frege_ChromaticTseitin_ExponentialLowerBound**\n\n**STATEMENT:**  \nLet $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of 3-regular graphs with chromatic number $\\chi(G_n) = \\Omega(\\log n)$. The Tseitin tautology over $G_n$ requires Frege proofs of exponential size in $n$.\n\n**PROOF_SKETC",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:20:42.865662"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **CP_Matrix_Tseitin_Lower_Bound**\nSTATEMENT: Let $\\{G_n\\}$ be a sequence of expander graphs with $n$ vertices and constant degree. The Cutting Planes (CP) proof system requires proofs of exponential size (in $n$) to refute the Tseitin tautologies $\\tau(G_n)$. Specifically, for any c",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 7
-    },
-    "timestamp": "2026-03-30T08:29:23.373357"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Frege_Width_Expander_Parity_Principle_Lower_Bound**\n\nSTATEMENT:\nLet $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of $d$-regular expander graphs on $n$ vertices (for fixed $d \\geq 3$) with spectral expansion $\\lambda(G_n) \\leq \\lambda_0 < d$, and let $\\text{PARITY}_n$ be the parity p",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 7,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T08:34:31.169214"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Lower_Bound_on_Extended_Frege_via_Polynomial_Threshold_Functions**\n\nSTATEMENT: \nLet $\\{f_n\\}_{n \\in \\mathbb{N}}$ be a sequence of polynomial threshold functions (PTFs) of degree at most $d$ that compute the negated pigeonhole principle (PHP) over $n$ elements. Then, any Extended F",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:42:24.285751"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Cutting_Planes_Rank_Gap_Mod_p_Tseitin**\n\nSTATEMENT:\nLet $p \\geq 3$ be a fixed prime. Let $\\{G_n\\}_{n \\in \\mathbb{N}}$ be a sequence of $d$-regular expander graphs on $n$ vertices with expansion constant $\\alpha > 0$. Let $T_n$ be the Tseitin tautology over $G_n$ with total charge ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:47:33.770689"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Resolution_Width_Gap_for_Ramsey_Coloring_Tautologies**\n\n**STATEMENT:**\nLet \\( R(k) \\) denote the Ramsey number for \\( k \\)-cliques, and let \\( n = R(k) - 1 \\). Define the *Ramsey Coloring Tautology* \\( \\text{RCT}_{k,n} \\) as the CNF formula encoding the statement:\n*\"There exis",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T08:53:56.549242"
-  },
-  {
-    "approach": "/--\nCONJECTURE_NAME: **Cutting_Planes_Tseitin_Expansion_Gap**\nSTATEMENT: Let $\\{G_n\\}$ be a sequence of 3-regular expander graphs with $n$ vertices and girth $\\Omega(\\log n)$. The Cutting Planes (CP) refutation length of the Tseitin tautology $\\text{TSEITIN}(G_n, s)$, for a fixed sink $s$, requires ",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 6
-    },
-    "timestamp": "2026-03-30T09:00:57.409636"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Frege_Width_Gap_for_Modular_Hyperplane_Tseitin**\n\n**STATEMENT:**\nLet \\( p \\geq 2 \\) be a fixed prime, and let \\( \\{G_n\\}_{n \\in \\mathbb{N}} \\) be a sequence of connected, \\( d \\)-regular expander graphs (for constant \\( d \\geq 3 \\)) with \\( n \\) vertices, where \\( n \\) is chos",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 2
-    },
-    "timestamp": "2026-03-30T09:06:57.978007"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Cutting_Planes_Rank_Gap_for_Mod_p_Tseitin_on_Cycles**\n\nSTATEMENT:\nLet $p \\geq 3$ be a fixed prime. Let $G_n$ be the cycle graph $C_n$ on $n$ vertices (where $n$ is odd to ensure unsatisfiability of the parity constraint). Let $\\mathcal{T}(G_n, \\mathbf{1})$ denote the Tseitin tauto",
-    "reason": "Falsified (repair failed)",
-    "barrier_profile": {
-      "R": 5,
-      "N": 2,
-      "A": 8
-    },
-    "timestamp": "2026-03-30T09:13:59.486008"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **NonCommutativeCuttingPlanesRank**\nSTATEMENT: For the language of arithmetic circuits over the ring $\\mathbb{Z}[X]/(X^2)$, the Cutting Planes (CP) rank of the tautology $T_n$ derived from the $n \\times n$ non-commutative polynomial identity testing (PIT) problem is at least $2^{\\Om",
+    "approach": "**CONJECTURE_NAME:** **Non-Commutative_Cutting_Planes_Lower_Bound**\n\n**STATEMENT:**\nFor any integer \\( n \\geq 1 \\), the treewidth-\\( n \\) Tseitin tautology \\( T_n \\) requires Cutting Planes (CP) proofs of length at least \\( 2^{n^{1 - o(1)}} \\). Specifically, there exists a family of unsatisfiable fo",
     "reason": "Falsified (repair failed)",
     "barrier_profile": {
       "R": 5,
       "N": 2,
       "A": 5
     },
-    "timestamp": "2026-03-30T09:21:24.132514"
+    "timestamp": "2026-03-30T06:11:35.788954"
   },
   {
-    "approach": "**CONJECTURE_NAME:** **Frege_Width_Gap_for_Block_Sparse_Tseitin_Tautologies**\n\n---\n\n### **STATEMENT:**\nLet \\( d, k \\geq 2 \\) be fixed constants. Let \\( \\{G_n\\}_{n \\in \\mathbb{N}} \\) be a sequence of \\( d \\)-regular graphs where:\n1. \\( G_n \\) has \\( n \\) vertices and is partitioned into \\( \\Theta(n /",
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Length_Exponential_Separation_for_Orthogonal_Constraints**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be a sound and complete Frege proof system for propositional logic over the basis \\( \\{\\land, \\lor, \\neg\\} \\). For every \\( n \\in \\mathbb{N} \\), define the *orthogonal ",
     "reason": "Falsified (repair failed)",
     "barrier_profile": {
       "R": 5,
       "N": 2,
       "A": 2
     },
-    "timestamp": "2026-03-30T09:27:27.466135"
+    "timestamp": "2026-03-30T06:21:18.413960"
   },
   {
-    "approach": "CONJECTURE_NAME: **Cutting_Planes_Mod_p_Rank_Gap_on_Cycles**\n\nSTATEMENT: Let $p \\geq 3$ be a fixed prime. Let $C_n$ denote the cycle graph on $n$ vertices where $n$ is odd. Let $\\text{TS}_{p}(C_n, \\mathbf{1})$ be the Tseitin tautology asserting that there exists an assignment of values $x_e \\in \\{0,",
+    "approach": "CONJECTURE_NAME: Frege_Tseitin_Exponential_LowerBound\nSTATEMENT: Let $\\mathcal{F}$ be a standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. There exists a constant $c > 0$ and a sequence of graphs $\\{G_n\\}_{n \\in \\mathbb{N}}$ (where $G_n$ has $n$ vertices and bounded degree) such tha",
     "reason": "Falsified (repair failed)",
     "barrier_profile": {
       "R": 5,
       "N": 2,
       "A": 2
     },
-    "timestamp": "2026-03-30T09:33:31.983977"
+    "timestamp": "2026-03-30T06:26:48.588652"
   },
   {
-    "approach": "### **CONJECTURE_NAME:** **Monotone_Circuit_Lower_Bound_for_Clique_vs_Independent_Set**\n### **STATEMENT:**\nFor any integer \\( n \\geq 3 \\), any monotone Boolean circuit computing the function \\( f(x) = \\text{CLIQUE}_n(x) \\wedge \\text{IND-SET}_n(x) \\) requires at least \\( 2^{n/2} \\) gates, where \\( \\t",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Lifting_From_Resolution**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be a Frege proof system over the basis \\( \\{\\land, \\lor, \\neg\\} \\), and let \\( \\tau_n \\) be the Tseitin tautology over a connected expander graph \\( G_n \\) of bounded degree and \\( n \\) vert",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 5
+    },
+    "timestamp": "2026-03-30T06:34:08.584481"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **NonCommutativeGCTviaProofComplexity**\n\n**STATEMENT:**\nLet $F$ be a non-commutative polynomial ring over $\\mathbb{F}_2$. For any $n \\geq 1$, the Tseitin tautology $T_n$ requires Frege proofs of length at least $2^{n^{\\epsilon}}$ for some $\\epsilon > 0$ over the basis $\\{\\land, ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T06:39:54.798497"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Extended_Frege_PHP_SuperPolynomial_LowerBound\nSTATEMENT: Let $\\mathcal{EF}$ be any standard Extended Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. Let $PHP_n$ denote the propositional tautology encoding the Pigeonhole Principle for $n+1$ pigeons and $n$ holes (specifica",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T06:46:18.168935"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **NonCommutativeGCTviaProofComplexityRev**\nSTATEMENT: Let $F$ be a non-commutative polynomial ring over $\\mathbb{F}_2$. For any $n \\geq 1$, the proof length of the $n$-variable Tseitin tautology in the Non-Commutative Cutting Planes (NCCP) proof system is at least $2^{\\Omega(n)}$. F",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 3,
+      "A": 5
+    },
+    "timestamp": "2026-03-30T06:53:11.597315"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Proof_Complexity_Gap_for_Iterated_Parity_Constraints**\n\n**STATEMENT:**\nLet \\(\\mathcal{F}\\) be a Frege proof system over the basis \\(\\{\\land, \\lor, \\neg\\}\\). For any \\(k \\geq 2\\), define the *iterated parity tautology* \\(\\mathrm{IPT}_k\\) over \\(n = 2^k\\) variables \\(x_1, \\dot",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T06:58:41.311430"
+  },
+  {
+    "approach": "CONJECTURE_NAME: NonCommutativeRank_Frege_LowerBound\nSTATEMENT: Let $\\mathcal{F}$ be any standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. Let $N \\in \\mathbb{N}$. Consider the tautology $T_N$ asserting that a specific $N \\times N$ matrix $M(x_1, \\dots, x_k)$ of linear forms over $\\",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:05:11.779628"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Tseitin_SuperPoly_LowerBound**\nSTATEMENT: For any integer \\( n \\geq 1 \\), let \\( \\text{Tseitin}_n \\) denote the Tseitin tautology over a planar graph \\( G_n \\) with treewidth at least \\( n \\). Then, the size of any Frege proof of \\( \\text{Tseitin}_n \\) is superpolynomial in ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:12:32.519120"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Proof_Complexity_Exponential_Gap_for_Iterated_Matrix_Identities**\n\n---\n\n**STATEMENT:**\nLet \\(\\mathcal{F}\\) be a Frege proof system over the basis \\(\\{\\land, \\lor, \\neg\\}\\) (or any complete basis). For every \\(n \\in \\mathbb{N}\\), define the *iterated matrix identity tauto",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:19:53.205706"
+  },
+  {
+    "approach": "CONJECTURE_NAME: NonCommutativeRank_Frege_LowerBound_Tseitin\nSTATEMENT: Let $\\mathcal{F}$ be any standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. Let $G_n$ be a family of 3-regular expander graphs on $n$ vertices. Let $TS(G_n)$ be the Tseitin tautology associated with $G_n$ (encod",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T07:24:56.159150"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Resolution_Width_To_Frege_Size_Gap_Tseitin\nSTATEMENT: Let $\\mathcal{F}$ be any standard Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$. For every integer $n \\geq 3$, let $G_n$ be the 3-regular expander graph on $n$ vertices, and let $\\text{TS}(G_n)$ be the corresponding T",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T07:33:51.622472"
+  },
+  {
+    "approach": "Okay, let's tackle this. The user wants a specific, formal conjecture in proof complexity that's novel and plausibly provable. They mentioned avoiding failed approaches and barriers like Natural Proofs. The example given was about Frege systems and Tseitin tautologies, but those were falsified.\n\nFir",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T07:38:30.103535"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Parity_Reasoning**\n\n**STATEMENT:**\nLet \\(\\mathcal{F}\\) be a Frege proof system over the basis \\(\\{\\land, \\lor, \\neg, \\oplus\\}\\) (where \\(\\oplus\\) is the parity connective). For every \\(n \\geq 1\\), let \\(\\text{PHP}_n^\\oplus\\) denote the *Parity Pi",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T07:46:45.239952"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Resolution_Width_Certified_Parity_Gap\nSTATEMENT: Let $n$ be an even integer and let $G$ be a 3-regular expander graph on $n$ vertices with expansion constant $\\alpha > 0$. Let $\\text{Tseitin}(G, \\mathbf{1})$ be the Tseitin tautology asserting that the sum of edge variables modulo 2 ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T07:53:33.974876"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **AlgPHP_Frege_Exponential_LowerBound**\n\n**STATEMENT:**\nFor each integer \\( n \\geq 1 \\), the *Algebraic Pigeonhole Tautology* \\( \\text{AlgPHP}_n \\) is defined over variables \\( x_{i,j} \\) (for \\( 1 \\leq i \\leq n+1 \\), \\( 1 \\leq j \\leq n \\)) as the conjunction of:\n1. **Pigeonhole",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:01:39.723367"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Hermitian_Identity_Frege_Exponential_LowerBound**  \n**STATEMENT:**  \nLet $\\{\\text{HIT}_n\\}$ be the family of *Hermitian Identity Tautologies* over $n$ variables, encoding the identity $\\sum_{i=1}^n x_i^2 = 1$ for $x_i \\in \\{0,1\\}$, formalized in a Frege system $\\mathcal{F}$ over t",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:10:27.776610"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **DepthThree_Frege_Parity_Exponential_LowerBound**\n\n**STATEMENT:**\nLet $\\mathcal{F}_3$ denote the depth-3 Frege proof system over the basis $\\{\\land, \\lor, \\neg\\}$ with unbounded fan-in, where the size of a proof is the total number of symbols. Let $\\text{PARITY}_n$ be the tautology",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:19:26.294717"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **AlgSurjPairing_Frege_Exponential_LowerBound**  \n**STATEMENT:**  \nFor each integer \\( n \\geq 1 \\), let \\( \\text{ASPT}_n \\) denote the *Algebraic Surjective Pairing Tautology*, which encodes that there is no surjective function \\( f: [n] \\times [n] \\to [n] \\) satisfying \\( f(i,j) = ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:28:02.670754"
+  },
+  {
+    "approach": "CONJECTURE_NAME: CuttingPlanes_Parity_ExpGap\nSTATEMENT: Let $n$ be an even integer. Let $\\text{PARITY}_n$ be the unsatisfiable system of linear inequalities over $\\{0,1\\}^n$ asserting that $\\sum_{i=1}^n x_i = n/2 + 1/2$ (which has no integer solution). Specifically, consider the CNF encoding of the ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T08:34:18.534377"
+  },
+  {
+    "approach": "Here\u2019s a novel conjecture in **proof complexity**, specifically targeting **Frege lower bounds** via a new combinatorial principle that evades known barriers:\n\n---\n\n### **CONJECTURE_NAME:** **Frege_Exponential_LowerBound_for_Threshold_Isomorphism_Principle**\n\n#### **STATEMENT:**\nLet \\( \\mathcal{F} \\",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 5,
+      "A": 4
+    },
+    "timestamp": "2026-03-30T08:42:42.383152"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **ParityPigeonhole_Frege_Exponential_LowerBound**  \n\n**STATEMENT:**  \nFor each integer \\( n \\geq 1 \\), the *Parity-Pigeonhole Tautology* \\( \\text{PPT}_n \\) over variables \\( x_{i,j} \\) (for \\( 1 \\leq i, j \\leq n \\)) is defined by the clauses:  \n1. **Pigeonhole Constraints:** \\( ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T08:52:44.483351"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Resolution_Width_Gap_for_Modular_Counting**\n\n**STATEMENT:**\nLet \\( \\mathcal{F} \\) be a Frege proof system over the standard basis \\( \\{ \\neg, \\land, \\lor \\} \\), and let \\( \\text{MOD}_k^n \\) denote the unsatisfiable \\( k \\)-modular counting principle on \\( n \\) variables ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:01:55.136975"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Oddtown_CuttingPlanes_Exponential_LowerBound**  \nSTATEMENT: For each integer \\( n \\geq 1 \\), the *Oddtown Tautology* \\( \\text{ODDTOWN}_n \\), which encodes the unsatisfiable assertion that there exists a family of more than \\( n \\) subsets of \\([n]\\) where each subset has odd size ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:10:16.870383"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **SymmetricTseitin_CuttingPlanes_ExponentialLowerBound**\n\nSTATEMENT: \nFor every integer \\( n \\geq 2 \\), let \\( \\text{ST}_n \\) be the symmetric Tseitin tautology over a complete graph \\( K_n \\), which asserts that the sum of the edges incident to any vertex is even. Then, any Cutting",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:18:41.179701"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Frege_Exponential_SubsetSum_Threshold_LowerBound**\n\n**STATEMENT:**\nFor every sufficiently large integer \\( n \\), let \\( \\text{SST}_n \\) be the *Subset-Sum Threshold Tautology* defined as follows:\n- Input: A set \\( S = \\{a_1, \\dots, a_n\\} \\) of positive integers where \\( a_i \\i",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:24:39.282999"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Tseitin_Resolution_Width_Certified_Gap\nSTATEMENT: Let $G$ be a $d$-regular graph on $n$ vertices with expansion constant $h(G) > 0$ (an expander). Let $\\text{TS}_G$ be the unsatisfiable Tseitin tautology over $G$ with an odd charge distribution. There exists a constant $c > 0$ depen",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 2
+    },
+    "timestamp": "2026-03-30T09:30:29.997576"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Frege_Exponential_Coloring_Contradiction_LowerBound**\n\n**STATEMENT:**\nFor every integer \\( k \\geq 3 \\) and sufficiently large \\( n \\), let \\( \\phi_{k,n} \\) be the unsatisfiable propositional formula encoding the following combinatorial principle:\n*\"There exists a \\( k \\)-coloring ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 7
+    },
+    "timestamp": "2026-03-30T09:39:06.862740"
+  },
+  {
+    "approach": "CONJECTURE_NAME: RamseyClique_Frege_Exponential_LowerBound  \n**STATEMENT:**  \nFor every integer \\( n \\geq 6 \\), the *Ramsey-Clique Tautology* \\( \\text{RCT}_n \\), which asserts that every 2-coloring of the edges of the complete graph \\( K_n \\) contains a monochromatic triangle, requires Frege proofs ",
+    "reason": "Falsified (repair failed)",
+    "barrier_profile": {
+      "R": 5,
+      "N": 2,
+      "A": 8
+    },
+    "timestamp": "2026-03-30T09:46:25.056204"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Sipser_Lautemann_BPP_in_Sigma2P  \nSTATEMENT: $\\mathbf{BPP} \\subseteq \\Sigma_2^P$. Specifically, for every language $L \\in \\mathbf{BPP}$, there exists a polynomial-time computable relation $R$ such that for all inputs $x$,  \n$x \\in L \\iff \\exists a \\forall b \\, R(x, a, b)$,  \nwhere $",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2001,10 +2001,22 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T09:44:36.967973"
+    "timestamp": "2026-03-30T09:54:50.833317"
   },
   {
-    "approach": "**CONJECTURE_NAME:** **Ajtai_Miltersen_Lower_Bound_for_Sparse_Polynomials**\n\n**STATEMENT:**\nLet \\( \\mathbb{F} \\) be a finite field, and let \\( f \\colon \\mathbb{F}^n \\to \\mathbb{F} \\) be a polynomial of degree \\( d \\) (in each variable) such that \\( f \\) depends on at most \\( k \\) monomials (i.e., \\(",
+    "approach": "CONJECTURE_NAME: Smolensky_AC0q_Parity_LowerBound\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. For any depth $d \\geq 2$ and any size $S$, there exists a constant $\\epsilon > 0$ (depending on $p, q, d$) such that for sufficiently large $n$, any Boolean circuit $C$ of depth $d$ and size $S = ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-30T10:07:12.050129"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Ajtai_MonotoneCircuit_Exponential_LowerBound_for_SparseClique**\n\n**STATEMENT:**\nFor every integer \\( k \\geq 2 \\), let \\( \\text{CLIQUE}_{k,n} \\) be the monotone Boolean function on \\( \\binom{n}{2} \\) variables that outputs 1 if and only if the input graph (represented as an adj",
     "reason": "Formalization failed",
     "barrier_profile": {
       "R": 0,
@@ -2013,11 +2025,11 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T09:45:24.456956"
+    "timestamp": "2026-03-30T10:11:56.043578"
   },
   {
-    "approach": "CONJECTURE_NAME: **Sipser_Lautemann_BPP_in_Sigma2**\n\nSTATEMENT: Let $\\text{BPP}$ be the class of languages decidable by a probabilistic polynomial-time Turing machine with error probability at most $2^{-n}$. Let $\\Sigma_2^P = \\text{NP}^{\\text{NP}}$ be the second level of the polynomial hierarchy. Th",
-    "reason": "Intent mismatch",
+    "approach": "CONJECTURE_NAME: Sipser_Lautemann_BPP_in_Sigma2P  \nSTATEMENT: For every language \\( L \\in \\mathbf{BPP} \\), \\( L \\) can be decided by a \\( \\Sigma_2^P \\) machine. Specifically, there exists a polynomial-time nondeterministic Turing machine \\( M \\) with an \\( \\mathsf{NP} \\) oracle such that \\( L = \\{ x",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (14s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2025,22 +2037,10 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T09:47:02.406910"
+    "timestamp": "2026-03-30T10:22:25.793373"
   },
   {
-    "approach": "**CONJECTURE_NAME:** **Ajtai_Lower_Bound_for_Parity_in_AC0**\n**STATEMENT:**\nFor every fixed constant \\( d \\geq 1 \\), there exists an \\( \\epsilon > 0 \\) such that any depth-\\( d \\) circuit of size \\( 2^{n^\\epsilon} \\) over the basis \\(\\{ \\wedge, \\vee, \\neg \\}\\) computing the parity function \\( \\oplus",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (11s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T09:55:16.999160"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0  \n**STATEMENT:**  \nFor every integer \\( d \\geq 1 \\), there exists an integer \\( n_0 \\) such that for all \\( n \\geq n_0 \\), the Parity function on \\( n \\) variables cannot be computed by an \\( \\text{AC}^0 \\) circuit of depth \\( d \\) and size at most \\( 2^{n^{1/(d-1)",
+    "approach": "CONJECTURE_NAME: Razborov_Smolensky_AC0q_Parity_LowerBound\nSTATEMENT: Let $p$ and $q$ be distinct prime numbers. For any depth $d \\geq 2$ and any size $S$, if a Boolean circuit $C$ of depth $d$ and size $S$ consists of AND, OR, NOT, and MOD$_q$ gates, then the probability that $C(x)$ equals the Pari",
     "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
     "barrier_profile": {
       "R": 0,
@@ -2049,11 +2049,11 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T10:03:27.988224"
+    "timestamp": "2026-03-30T10:26:31.330181"
   },
   {
-    "approach": "CONJECTURE_NAME: Parity_Not_In_AC0_Furst_Saxe_Sipser\nSTATEMENT: Let $\\text{PARITY}_n: \\{0,1\\}^n \\to \\{0,1\\}$ be the function computing the sum of inputs modulo 2. For any constant depth $d \\geq 1$, there exists a constant $\\epsilon_d > 0$ such that for all sufficiently large $n$, any Boolean circuit",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "approach": "CONJECTURE_NAME: **AjtaiGurevich_MonotoneCircuit_AC0_Separation**\nSTATEMENT:\nLet \\( f_n : \\{0,1\\}^n \\to \\{0,1\\} \\) be the **monotone s-t-connectivity** function on layered directed graphs with \\( n = 2^k \\) vertices per layer, defined as follows:\n- Input: Adjacency matrix of a directed graph \\( G \\)",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (52s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2061,6 +2061,6 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-03-30T10:10:18.699196"
+    "timestamp": "2026-03-30T10:31:13.227929"
   }
 ]
