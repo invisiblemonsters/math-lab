@@ -1558,5 +1558,261 @@
     "timestamp": "2026-03-30T00:44:15.970890",
     "code_hash": "1cbab094b3c144cf",
     "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774856793",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:46:33.034384",
+    "code_hash": "4496dc4a7548a4e0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_fintype_pigeonhole_1774856921",
+    "statement": "If f maps a larger Fintype to a smaller one, f is not injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:48:41.309335",
+    "code_hash": "81531859d1791a76",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774856971",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:49:31.333887",
+    "code_hash": "9212a437d3e711bc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774857007",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:50:07.994748",
+    "code_hash": "6d87657801f228a0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774857049",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:50:49.721485",
+    "code_hash": "9f3f5d82285e67fb",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774857103",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:51:43.656009",
+    "code_hash": "2f2b0c9550be3df3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774857167",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:52:47.943304",
+    "code_hash": "f0283384370a0ab5",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774857207",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:53:27.606183",
+    "code_hash": "e578b88a84c93f74",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774857225",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:53:45.521542",
+    "code_hash": "c4df268d90a7a892",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774857267",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:54:27.288636",
+    "code_hash": "a8117b26ace836a6",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774857365",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:56:05.795819",
+    "code_hash": "52cde6a0e93567dc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774857421",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:57:01.854780",
+    "code_hash": "00c427cb7d779617",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774857469",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:57:49.065190",
+    "code_hash": "dd4f229de4a35040",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774857514",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T00:58:34.725382",
+    "code_hash": "b5685dfc8533eaf3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_finset_union_comm_1774857652",
+    "statement": "For finite sets A and B, A union B = B union A.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:00:52.568535",
+    "code_hash": "a1ba860d1b079393",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774857670",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:01:10.331092",
+    "code_hash": "3c915bc15a591854",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774857707",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:01:47.940803",
+    "code_hash": "00c427cb7d779617",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774857906",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:05:06.722327",
+    "code_hash": "52cde6a0e93567dc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_even_or_odd_1774858033",
+    "statement": "Every natural number is either even or odd.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:07:13.293230",
+    "code_hash": "aa9a2a73b7a8c608",
+    "difficulty": 5
+  },
+  {
+    "name": "train_fintype_pigeonhole_1774858350",
+    "statement": "If f maps a larger Fintype to a smaller one, f is not injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:12:30.310102",
+    "code_hash": "f86f9baa6d06317c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774858386",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:13:06.637058",
+    "code_hash": "16153be5064f411b",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774858834",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:20:34.918767",
+    "code_hash": "dd4f229de4a35040",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774858852",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:20:52.835304",
+    "code_hash": "52cde6a0e93567dc",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774858913",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:21:53.185322",
+    "code_hash": "1c150ba0d0388a82",
+    "difficulty": 5
+  },
+  {
+    "name": "train_disjoint_compl_1774859032",
+    "statement": "A set and its complement are disjoint.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:23:52.615299",
+    "code_hash": "00c427cb7d779617",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774859068",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:24:28.739959",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_comp_injective_1774859089",
+    "statement": "If f and g are both injective, then f composed with g is injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:24:49.678535",
+    "code_hash": "36a4f65b28a2e740",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774859125",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:25:25.865135",
+    "code_hash": "dd4f229de4a35040",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774859167",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:26:07.811060",
+    "code_hash": "b976633115345dd8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_pow_pos_1774859186",
+    "statement": "For any natural number n, 2^n > 0.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:26:26.982193",
+    "code_hash": "89fb7a10c9a09483",
+    "difficulty": 5
+  },
+  {
+    "name": "train_fintype_pigeonhole_1774859448",
+    "statement": "If f maps a larger Fintype to a smaller one, f is not injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:30:48.066258",
+    "code_hash": "f86f9baa6d06317c",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774859466",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T01:31:06.267379",
+    "code_hash": "3c915bc15a591854",
+    "difficulty": 5
   }
 ]
