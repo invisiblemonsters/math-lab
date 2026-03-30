@@ -2406,5 +2406,269 @@
     "timestamp": "2026-03-30T02:51:37.392884",
     "code_hash": "38bad7270f70590c",
     "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774864457",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:54:17.967920",
+    "code_hash": "05a3469b70e2164a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774864478",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:54:38.020343",
+    "code_hash": "194c6fb740d48933",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774864631",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T02:57:11.593592",
+    "code_hash": "ba265ca24130ef84",
+    "difficulty": 5
+  },
+  {
+    "name": "train_sum_range_id_1774864954",
+    "statement": "The sum of 0 + 1 + ... + (n-1) = n*(n-1)/2.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:02:34.764696",
+    "code_hash": "fe4708c357326522",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774865003",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:03:23.215679",
+    "code_hash": "194c6fb740d48933",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774865024",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:03:44.066793",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774865132",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:05:32.695356",
+    "code_hash": "f54e244d2ce1a63e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774865150",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:05:50.418607",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774865364",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:09:24.834684",
+    "code_hash": "f54e244d2ce1a63e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774865382",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:09:42.537693",
+    "code_hash": "3cd0ed82a2a2e5bd",
+    "difficulty": 5
+  },
+  {
+    "name": "train_fintype_pigeonhole_1774865536",
+    "statement": "If f maps a larger Fintype to a smaller one, f is not injective.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:12:16.472278",
+    "code_hash": "aed514a3d02987d8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774865797",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:16:37.872048",
+    "code_hash": "f54e244d2ce1a63e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774865857",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:17:37.637083",
+    "code_hash": "fdf39862668df1c9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_bool_not_not_1774865934",
+    "statement": "For any boolean b, !!b = b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:18:54.009876",
+    "code_hash": "fa514b1c63e94cd4",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_add_1774866369",
+    "statement": "For natural numbers, 2^(a+b) = 2^a * 2^b.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:26:09.213868",
+    "code_hash": "ba265ca24130ef84",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774866433",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:27:13.297805",
+    "code_hash": "79b612091f8ff59a",
+    "difficulty": 5
+  },
+  {
+    "name": "train_subset_trans_sets_1774866470",
+    "statement": "If A is a subset of B and B is a subset of C, then A is a subset of C.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:27:50.367178",
+    "code_hash": "0a9b51a868077039",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774866489",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:28:09.042474",
+    "code_hash": "d052ae00075f396f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774866609",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:30:09.438786",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774866631",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:30:31.783071",
+    "code_hash": "dfb7e38a4cb07e11",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774866650",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:30:50.912250",
+    "code_hash": "f54e244d2ce1a63e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_de_morgan_not_and_1774866687",
+    "statement": "not (P and Q) iff (not P or not Q).",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:31:27.766325",
+    "code_hash": "eb715f111ad289c8",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774866724",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:32:04.522773",
+    "code_hash": "16cab6b155d58049",
+    "difficulty": 5
+  },
+  {
+    "name": "train_mono_comp_strict_1774866741",
+    "statement": "If f is strictly monotone and g is strictly monotone, f comp g is strictly monotone.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:32:21.775196",
+    "code_hash": "d052ae00075f396f",
+    "difficulty": 5
+  },
+  {
+    "name": "train_double_complement_1774866967",
+    "statement": "For any set S, the complement of the complement of S equals S.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:36:07.181168",
+    "code_hash": "a107aa873507a54d",
+    "difficulty": 5
+  },
+  {
+    "name": "train_list_length_append_1774866984",
+    "statement": "The length of list A ++ B equals length A + length B.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:36:24.325930",
+    "code_hash": "244de56c1e890fe0",
+    "difficulty": 5
+  },
+  {
+    "name": "train_nat_add_comm_1774867026",
+    "statement": "For natural numbers a and b, a + b = b + a.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:37:06.007579",
+    "code_hash": "f54e244d2ce1a63e",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774867262",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:41:02.250517",
+    "code_hash": "16cab6b155d58049",
+    "difficulty": 5
+  },
+  {
+    "name": "train_pow_two_ge_one_1774867300",
+    "statement": "For any natural number n, 2^n >= 1.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:41:40.044497",
+    "code_hash": "583d3c59c49515e9",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_image_le_1774867341",
+    "statement": "For a finite set s and function f, the cardinality of f(s) <= cardinality of s.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:42:21.438413",
+    "code_hash": "14e38afbd0112cfd",
+    "difficulty": 5
+  },
+  {
+    "name": "train_card_powerset_1774867359",
+    "statement": "The powerset of a finset of size n has 2^n elements.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:42:39.862687",
+    "code_hash": "dfb7e38a4cb07e11",
+    "difficulty": 5
+  },
+  {
+    "name": "train_exp_monotone_1774867484",
+    "statement": "If a <= b then 2^a <= 2^b for natural numbers.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:44:44.968048",
+    "code_hash": "62d865d3f60d77b3",
+    "difficulty": 5
+  },
+  {
+    "name": "train_empty_subset_1774867502",
+    "statement": "The empty set is a subset of every set.",
+    "approach": "compile_training",
+    "timestamp": "2026-03-30T03:45:02.414558",
+    "code_hash": "5aa5300433eb12fa",
+    "difficulty": 5
   }
 ]
