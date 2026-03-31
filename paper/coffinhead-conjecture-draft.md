@@ -245,11 +245,36 @@ Three models fit the observed data:
 
 The data slightly favors Model A over Model B, but three data points cannot distinguish confidently.
 
-### 4.2 The k=1 Anomaly
+### 4.2 The Reshuffle Mechanism: Why k+1 Succeeds
 
-The inability of k=1 to achieve even modest improvement on the hard core (stuck at ~55%) while k=2 achieves perfection is striking. This suggests a phase transition in information content between k=1 and k=2.
+To understand why additional lookahead depth extends the perfect zone, we performed a detailed analysis of how scoring rankings change between k and k+1 (Phase 10, Python dissection tools).
 
-One interpretation: the hard core is defined by balanced polarities and high backbone fraction (from Phase 6 analysis). k=1 lookahead only sees immediate propagation yield, which is uniformly low when polarities are balanced. k=2 sees the gradient — how each choice affects the *next* choice's propagation yield. This second-order information breaks the symmetry that makes the hard core hard for k=1.
+**Rank Correlation Analysis.** We computed Spearman rank correlation rho(k, k+1, n) between the candidate rankings produced by k-step and (k+1)-step scoring at the first decision point on hard core instances:
+
+| n  | rho(1,2) | rho(2,3) |
+|----|----------|----------|
+|  7 |  0.249   |  0.960   |
+|  9 |  0.236   |  0.942   |
+| 10 |  0.175   |  0.881   |
+| 12 |  0.205   |  0.842   |
+| 15 |  0.117   |  0.691   |
+| 18 |  0.105   |  0.392   |
+| 20 |  0.203   |  0.345   |
+| 25 |  0.147   |  0.224   |
+
+Three key observations:
+
+1. **k=1 and k=2 are nearly uncorrelated (rho ~ 0.1-0.2).** k=2 completely reshuffles k=1's ranking. The information in the second lookahead step is qualitatively different from the first — it is not a refinement but a revolution.
+
+2. **k=2 and k=3 are highly correlated at small n, decreasing with n.** At n=7, rho(2,3) = 0.96 — k=3 barely changes anything. At n=18, rho(2,3) = 0.39 — significant reshuffling. This correlation drops below a critical threshold precisely where k=2's perfect zone ends.
+
+3. **Choice divergence matches failure rate.** At n=12, k=2 and k=3 pick the same first candidate 100% of the time. At n=15 (k=2's boundary), agreement drops to 85%. At n=18-20, agreement is 80%. The ~4% backtrack rate on hard core at n=18 comes from the ~20% of instances where k=3 disagrees with k=2, of which ~20% (4% total) are cases where k=2's choice was critically wrong.
+
+**The Mechanism.** k+1 succeeds not by breaking ties within k's top candidates, but by completely reshuffling the ranking when the problem is large enough that k's information is insufficient. The additional depth reveals that candidates rated highly by k-step lead to constrained landscapes k+1 steps later — information invisible to k.
+
+Detailed trace analysis of the k=2 failure at n=18 (seed=14) confirms this: k=2 scores x10=T at 69 and x18=F at 68 (near-tie, picks x10=T). This leads to 25 backtracks. k=3 scores x18=F at 87, far above x10=T, and solves in 3 decisions with zero backtracks. The third lookahead level sees that x10=T creates a constrained downstream landscape that x18=F avoids entirely.
+
+**Information-Theoretic Interpretation.** Each additional step of lookahead adds information about the formula's global structure that is invisible to shallower search. At small n, k steps suffice because the formula is small enough that even shallow search captures the global picture. As n grows, the "information radius" of k steps becomes insufficient, and k+1 is needed. The scaling law of n_perfect(k) reflects how the information radius grows with depth — and our data shows it grows superlinearly.
 
 ### 4.3 Relationship to Existing Lookahead Solvers
 

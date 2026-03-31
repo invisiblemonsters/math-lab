@@ -3536,43 +3536,35 @@
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c7_gamma_1774956994",
-    "statement": "CONJECTURE_NAME: Shannon_Counting_Functions\nSTATEMENT: For every natural number $n$, the total number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{2^n}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ contains exactly $2^n$ distinct input vectors.\n2. A Boolean function is defined by assigning an output value (0 or 1) to each of these $2^n$ inputs.\n3. Since there are 2 choices for each of the $2^n$ inputs, and the choices are independent, the total number of distinct funct",
+    "name": "swarm_v30_c13_gamma_1774940446",
+    "statement": "CONJECTURE_NAME: Circuit_Size_Upper_Bound_DNF\nSTATEMENT: For every natural number $n \\geq 1$, every Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ can be computed by a Boolean circuit of size at most $n \\cdot 2^n$ using AND, OR, and NOT gates with fan-in 2.\nPROOF_SKETCH: Construct the Disjunctive Normal Form (DNF) for $f$. The DNF consists of a disjunction (OR) of minterms, where each minterm corresponds to an input $x$ such that $f(x)=1$. There are at most $2^n$ such minterms. Each minterm is a ",
     "approach": "gamma",
-    "timestamp": "2026-03-31T04:36:34.124421",
-    "code_hash": "9153f2e11a679cfb",
+    "timestamp": "2026-03-31T00:00:46.115195",
+    "code_hash": "74d9ef3afcef13e2",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c8_alpha_1774958749",
-    "statement": "CONJECTURE_NAME: Shannon_Exponential_Circuit_Lower_Bound  \nSTATEMENT: For every natural number \\( n \\), the number of distinct Boolean functions \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) that can be computed by a circuit of size at most \\( \\frac{2^n}{n} \\) is less than \\( 2^{2^n} \\). Hence, most Boolean functions require circuits of size exceeding \\( \\frac{2^n}{n} \\).  \nPROOF_SKETCH: Count the number of circuits of size \\( s = \\frac{2^n}{n} \\) using a combinatorial argument (each gate can be specified by",
+    "name": "swarm_v30_c8_alpha_1774950146",
+    "statement": "**CONJECTURE_NAME:** **Shannon_Existence_Lemma**  \n**STATEMENT:** For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) such that every Boolean circuit computing \\( f \\) has size at least \\( \\frac{2^n}{n} \\).  \n**PROOF_SKETCH:**  \n1. **Counting Argument:** The number of Boolean functions is \\( 2^{2^n} \\).  \n2. **Circuit Upper Bound:** The number of circuits with size \\( s \\) is at most \\( (2^n + 1)^{s} \\) (using gates and variables).  \n3. **Pig",
     "approach": "alpha",
-    "timestamp": "2026-03-31T05:05:49.536681",
-    "code_hash": "fcfd907c7e5c306d",
+    "timestamp": "2026-03-31T02:42:26.770174",
+    "code_hash": "122aefd4046ec7c2",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c9_alpha_1774959191",
-    "statement": "/-\nCONJECTURE_NAME: Shannon_Circuit_Counting_Lemma\nSTATEMENT: For every natural number \\( n \\geq 1 \\) and every natural number \\( s \\geq 1 \\), the number of distinct Boolean functions \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) that can be computed by a Boolean circuit with at most \\( s \\) gates is at most \\( (2^n)^s \\).\nPROOF_SKETCH: Count the number of possible functions by considering the number of choices for each gate's input and operation, assuming each gate has fan-in at most 2. Each gate can be spe",
+    "name": "swarm_v30_c10_alpha_1774963229",
+    "statement": "/--\nCONJECTURE_NAME: NEXP_not_in_P\nSTATEMENT: There exists a language $L \\in \\text{NEXP}$ such that $L \\notin \\text{P}$.\nPROOF_SKETCH: Use the time hierarchy theorem, which states that for any time-constructible function $T$, there exists a language decidable in time $O(T(n))$ that is not decidable in time $o(T(n))$. Since $\\text{NEXP}$ contains $\\text{EXP}$, and $\\text{EXP}$ is not contained in $\\text{P}$, we can conclude that $\\text{NEXP}$ is not contained in $\\text{P}$.\nBARRIER_CLAIM: This re",
     "approach": "alpha",
-    "timestamp": "2026-03-31T05:13:11.175398",
-    "code_hash": "9f6c441fffca96b5",
+    "timestamp": "2026-03-31T06:20:29.921673",
+    "code_hash": "8cb676dcc9eea42d",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c9_gamma_1774959289",
-    "statement": "CONJECTURE_NAME: Boolean_Function_Count\nSTATEMENT: For every natural number $n$, the cardinality of the set of all distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ contains exactly $2^n$ distinct input vectors.\n2. A Boolean function is defined by assigning an output value ($0$ or $1$) to each of these $2^n$ inputs.\n3. Since there are 2 choices for each of the $2^n$ inputs, and the choices are independent, the total number o",
-    "approach": "gamma",
-    "timestamp": "2026-03-31T05:14:49.850088",
-    "code_hash": "96d2c9219d48f4c8",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c2_beta_1774966169",
-    "statement": "Here\u2019s a precise, formalizable result from circuit complexity that avoids the failed approaches and fits the constraints:\n\n---\n**CONJECTURE_NAME:** `Parity_Not_In_AC0`\n\n**STATEMENT:**\nFor every natural number \\( d \\geq 0 \\) and \\( n \\geq 1 \\), there does *not* exist a circuit \\( C \\) of depth \\( d \\), size \\( 2^{n^{o(1/d)}} \\), and unbounded fan-in over the basis \\(\\{ \\land, \\lor, \\neg \\}\\) such that for all \\( x \\in \\{0,1\\}^n \\),\n\\[ C(x) = \\bigoplus_{i=1}^n x_i, \\]\nwhere \\( \\bigoplus \\) denotes",
+    "name": "swarm_v30_c2_beta_1774970827",
+    "statement": "CONJECTURE_NAME: **Savitch_Theorem**\n\nSTATEMENT:\nFor every function \\( f: \\mathbb{N} \\to \\mathbb{N} \\) such that \\( f(n) \\geq \\log n \\) and \\( f \\) is space-constructible, it holds that\n\\[ \\text{NSPACE}(f(n)) \\subseteq \\text{DSPACE}(f(n)^2). \\]\nIn other words, every language decidable by a non-deterministic Turing machine using \\( O(f(n)) \\) space is decidable by a deterministic Turing machine using \\( O(f(n)^2) \\) space.\n\nPROOF_SKETCH:\n1. Given a non-deterministic Turing machine \\( M \\) decidin",
     "approach": "beta",
-    "timestamp": "2026-03-31T07:09:29.984609",
-    "code_hash": "1b133bc2e288ce37",
+    "timestamp": "2026-03-31T08:27:07.577504",
+    "code_hash": "f83052e446e3f915",
     "difficulty": 1
   }
 ]
