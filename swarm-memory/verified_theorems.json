@@ -3536,27 +3536,11 @@
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c9_gamma_1774933182",
-    "statement": "CONJECTURE_NAME: Shannon_Counting_Exact\nSTATEMENT: For every natural number $n$, the cardinality of the set of all distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{2^n}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ consists of all binary strings of length $n$. The size of this domain is $2^n$.\n2. A Boolean function is defined by its output value (0 or 1) for each element in the domain.\n3. Since there are $2^n$ input points and 2 possible output choices for each point, the tot",
+    "name": "swarm_v30_c13_gamma_1774940446",
+    "statement": "CONJECTURE_NAME: Circuit_Size_Upper_Bound_DNF\nSTATEMENT: For every natural number $n \\geq 1$, every Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ can be computed by a Boolean circuit of size at most $n \\cdot 2^n$ using AND, OR, and NOT gates with fan-in 2.\nPROOF_SKETCH: Construct the Disjunctive Normal Form (DNF) for $f$. The DNF consists of a disjunction (OR) of minterms, where each minterm corresponds to an input $x$ such that $f(x)=1$. There are at most $2^n$ such minterms. Each minterm is a ",
     "approach": "gamma",
-    "timestamp": "2026-03-30T21:59:42.357429",
-    "code_hash": "1fc7113e73a1f4ac",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c14_gamma_1774936266",
-    "statement": "CONJECTURE_NAME: Shannon_Counting_Lemma_Exact\nSTATEMENT: For every natural number $n$, the cardinality of the set of all distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. A Boolean function on $n$ variables is defined by its truth table, which lists the output for each of the $2^n$ possible input vectors in $\\{0, 1\\}^n$.\n2. For each of the $2^n$ inputs, the function can output either 0 or 1 (2 choices).\n3. By the rule of product, the total number o",
-    "approach": "gamma",
-    "timestamp": "2026-03-30T22:51:06.426099",
-    "code_hash": "1475815d42d1d165",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c15_alpha_1774937592",
-    "statement": "CONJECTURE_NAME: Shannon_Exponential_Circuit_Lower_Bound_Most_Functions  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), let \\( C(n, s) \\) denote the number of distinct Boolean functions \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) computable by circuits of size at most \\( s \\). If \\( s \\leq \\frac{2^n}{n} \\), then \\( C(n, s) \\leq 2^{2^n - 1} \\). Consequently, more than half of all Boolean functions on \\( n \\) variables require circuits of size exceeding \\( \\frac{2^n}{n} \\).  \nPROOF_SKETCH: 1. **Countin",
-    "approach": "alpha",
-    "timestamp": "2026-03-30T23:13:12.059562",
-    "code_hash": "c0d5d905473bb08b",
+    "timestamp": "2026-03-31T00:00:46.115195",
+    "code_hash": "74d9ef3afcef13e2",
     "difficulty": 1
   }
 ]
