@@ -3534,5 +3534,21 @@
     "timestamp": "2026-03-30T17:21:32.032962",
     "code_hash": "369ba750f03b03b1",
     "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c13_gamma_1774940446",
+    "statement": "CONJECTURE_NAME: Circuit_Size_Upper_Bound_DNF\nSTATEMENT: For every natural number $n \\geq 1$, every Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ can be computed by a Boolean circuit of size at most $n \\cdot 2^n$ using AND, OR, and NOT gates with fan-in 2.\nPROOF_SKETCH: Construct the Disjunctive Normal Form (DNF) for $f$. The DNF consists of a disjunction (OR) of minterms, where each minterm corresponds to an input $x$ such that $f(x)=1$. There are at most $2^n$ such minterms. Each minterm is a ",
+    "approach": "gamma",
+    "timestamp": "2026-03-31T00:00:46.115195",
+    "code_hash": "74d9ef3afcef13e2",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c8_alpha_1774950146",
+    "statement": "**CONJECTURE_NAME:** **Shannon_Existence_Lemma**  \n**STATEMENT:** For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) such that every Boolean circuit computing \\( f \\) has size at least \\( \\frac{2^n}{n} \\).  \n**PROOF_SKETCH:**  \n1. **Counting Argument:** The number of Boolean functions is \\( 2^{2^n} \\).  \n2. **Circuit Upper Bound:** The number of circuits with size \\( s \\) is at most \\( (2^n + 1)^{s} \\) (using gates and variables).  \n3. **Pig",
+    "approach": "alpha",
+    "timestamp": "2026-03-31T02:42:26.770174",
+    "code_hash": "122aefd4046ec7c2",
+    "difficulty": 1
   }
 ]
