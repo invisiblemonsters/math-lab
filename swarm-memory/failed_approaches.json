@@ -1,53 +1,5 @@
 [
   {
-    "approach": "CONJECTURE_NAME: Shannon_Counting_Lower_Bound\nSTATEMENT: For every integer $n \\geq 1$, there exists a Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ such that any Boolean circuit computing $f$ requires size at least $\\lceil \\frac{2^n}{n+1} \\rceil - 1$. (Here, circuit size is defined as the number of ",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:08:34.311988"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Shannon_Circuit_Counting_Bound\nSTATEMENT: For every natural number $n \\geq 1$, the number of distinct Boolean circuits with $n$ inputs, size at most $s$ (measured by the number of gates), and fan-in at most 2 over the basis $\\{\\text{AND}, \\text{OR}, \\text{NOT}\\}$ is strictly less th",
-    "reason": "Intent mismatch",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:16:32.230114"
-  },
-  {
-    "approach": "/-\nCONJECTURE_NAME: **Pigeonhole_Principle_Circuit_Lower_Bound**\nSTATEMENT: For every natural number $n \\geq 1$, any Boolean circuit $C$ that computes the pigeonhole principle function $\\text{PHP}_n^m$ (which outputs 1 if and only if the input has at least $n+1$ ones in the first $m$ bits, where $m ",
-    "reason": "Intent mismatch",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:18:42.614962"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Sipser_Function_In_NC1_Not_AC0**\n\nSTATEMENT:\nFor every natural number \\( n \\geq 1 \\),\nlet \\( S_n \\) be the Boolean function on \\( 2n \\log n \\) bits defined as follows:\n- The input is interpreted as a string of \\( n \\) blocks, each of length \\( 2 \\log n \\), representing \\( n \\) num",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (15s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T13:21:06.048362"
-  },
-  {
     "approach": "CONJECTURE_NAME: Circuit_Size_Upper_Bound_Trivial\nSTATEMENT: For every natural number $n$, every Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ can be computed by a Boolean circuit of size at most $O(2^n / n)$. Specifically, there exists a constant $C > 0$ such that for all $n \\geq 1$, any function o",
     "reason": "Intent mismatch",
     "barrier_profile": {
@@ -2398,5 +2350,53 @@
       "killed": false
     },
     "timestamp": "2026-03-31T14:45:12.668114"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Cook_Levin_Theorem_NP_Completeness_of_SAT**\n\n**STATEMENT:**\nFor every language \\( L \\in \\text{NP} \\), there exists a polynomial-time computable function \\( f : \\{0,1\\}^* \\to \\{0,1\\}^* \\) such that for all \\( x \\in \\{0,1\\}^* \\),\n\\[ x \\in L \\iff f(x) \\in \\text{SAT}, \\]\nwhere \\(\\",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (190s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-31T15:02:36.228370"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Time_Hierarchy_Theorem  \nSTATEMENT: For any time-constructible function \\( f : \\mathbb{N} \\to \\mathbb{N} \\), there exists a language \\( L \\) such that \\( L \\in \\text{DTIME}(f(n) \\log f(n)) \\) and \\( L \\notin \\text{DTIME}(f(n)) \\).  \nPROOF_SKETCH: Diagonalize against all Turing machi",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (162s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-31T15:12:26.271538"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Parity_Not_In_AC0**\n\n**STATEMENT:**\nFor every natural number \\( n \\geq 1 \\), the **Parity** function \\( \\text{PARITY}_n : \\{0, 1\\}^n \\to \\{0, 1\\} \\), defined by:\n\\[\n\\text{PARITY}_n(x_1, \\dots, x_n) = \\left( \\sum_{i=1}^n x_i \\right) \\mod 2,\n\\]\ncannot be computed by any family o",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (58s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-31T15:21:57.352294"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Circuit_Lower_Bound  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), the number of Boolean functions \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) computable by a Boolean circuit of size at most \\( \\frac{2^n}{n} \\) is strictly less than \\( 2^{2^n} \\). Consequently, there exists a Bo",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (110s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-31T15:32:42.041595"
   }
 ]
