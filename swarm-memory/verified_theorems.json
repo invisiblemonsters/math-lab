@@ -3464,67 +3464,75 @@
     "difficulty": 5
   },
   {
-    "name": "swarm_v30_c5_gamma_1774895417",
-    "statement": "CONJECTURE_NAME: Pigeonhole_Principle_Functional_Form\nSTATEMENT: Let $n, m \\in \\mathbb{N}$ with $n > m$. For any function $f: \\{1, \\dots, n\\} \\to \\{1, \\dots, m\\}$, there exist distinct indices $i, j \\in \\{1, \\dots, n\\}$ such that $f(i) = f(j)$.\nPROOF_SKETCH: Assume for contradiction that $f$ is injective (i.e., $f(i) = f(j) \\implies i = j$). If $f$ is injective, then the image of $f$, denoted $\\text{Im}(f)$, must have cardinality equal to the domain, so $|\\text{Im}(f)| = n$. However, by definiti",
+    "name": "swarm_v30_c6_gamma_1774898053",
+    "statement": "CONJECTURE_NAME: Pigeonhole_No_Injection_Larger_to_Smaller\nSTATEMENT: For any natural numbers $n$ and $m$, if there exists an injective function $f: \\text{Fin}(n) \\to \\text{Fin}(m)$, then $n \\leq m$.\nPROOF_SKETCH: We proceed by induction on $m$. \nBase case: If $m=0$, then $\\text{Fin}(m)$ is empty. An injective function into an empty set implies the domain $\\text{Fin}(n)$ must also be empty, so $n=0$, satisfying $0 \\leq 0$.\nInductive step: Assume the statement holds for $m$. Consider an injection",
     "approach": "gamma",
-    "timestamp": "2026-03-30T11:30:17.328637",
-    "code_hash": "8f1a6d835ff592fc",
+    "timestamp": "2026-03-30T12:14:13.664413",
+    "code_hash": "a43252e8ab561d84",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c9_beta_1774898170",
-    "statement": "CONJECTURE_NAME: **Finite_Function_Non_Compression**\n\n**STATEMENT:**\nLet \\( n, m \\in \\mathbb{N} \\) with \\( m < n \\). There does not exist an injective function\n\\[ f : \\{0, 1\\}^n \\to \\{0, 1\\}^m. \\]\n\n**PROOF_SKETCH:**\n1. The domain \\( \\{0, 1\\}^n \\) has cardinality \\( 2^n \\).\n2. The codomain \\( \\{0, 1\\}^m \\) has cardinality \\( 2^m \\).\n3. Since \\( m < n \\), \\( 2^m < 2^n \\).\n4. By the pigeonhole principle, any function from a larger finite set to a smaller one cannot be injective.\n5. Thus, no such in",
-    "approach": "beta",
-    "timestamp": "2026-03-30T12:16:10.904880",
-    "code_hash": "f04d3b8a34bf2515",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c15_gamma_1774902809",
-    "statement": "CONJECTURE_NAME: Finite_Set_Injection_Bound\nSTATEMENT: Let $A$ and $B$ be finite sets with cardinalities $|A| = n$ and $|B| = m$. If there exists an injective function $f: A \\to B$, then $n \\leq m$.\nPROOF_SKETCH: We proceed by induction on $n$. \nBase case: If $n=0$, then $0 \\leq m$ holds for any non-negative integer $m$.\nInductive step: Assume the statement holds for all sets of size $k$. Consider sets $A, B$ with $|A|=k+1$ and $|B|=m$, and an injection $f: A \\to B$. Pick an element $a \\in A$. S",
+    "name": "swarm_v30_c7_gamma_1774898751",
+    "statement": "CONJECTURE_NAME: Counting_Boolean_Functions\nSTATEMENT: For every natural number $n$, the total number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ contains exactly $2^n$ distinct input vectors (since there are $n$ bits, each with 2 possibilities).\n2. A Boolean function is defined by assigning an output value ($0$ or $1$) to each of these $2^n$ inputs.\n3. Since the choice of output for each input is independent and bi",
     "approach": "gamma",
-    "timestamp": "2026-03-30T13:33:29.662783",
-    "code_hash": "944de8ffc16a6700",
+    "timestamp": "2026-03-30T12:25:51.980721",
+    "code_hash": "21448001daaf6723",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c2_beta_1774903854",
-    "statement": "CONJECTURE_NAME: **Finite_Map_Injection_Implies_Domain_Le_Codomain**\n\n**STATEMENT:**\nLet \\( A \\) and \\( B \\) be finite sets with cardinalities \\( |A| = n \\) and \\( |B| = m \\), respectively. If there exists an injective function \\( f : A \\to B \\), then \\( n \\leq m \\).\n\n**PROOF_SKETCH:**\n1. Assume for contradiction that \\( n > m \\).\n2. By the pigeonhole principle, if \\( n > m \\), then no function \\( f : A \\to B \\) can be injective (as at least two elements of \\( A \\) must map to the same element o",
-    "approach": "beta",
-    "timestamp": "2026-03-30T13:50:54.991541",
-    "code_hash": "eb729803956e0fcc",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c2_gamma_1774904054",
-    "statement": "CONJECTURE_NAME: Boolean_Function_Counting_Bound\nSTATEMENT: Let $n$ be a natural number. The total number of distinct Boolean functions $f: \\{0,1\\}^n \\to \\{0,1\\}$ is exactly $2^{2^n}$. Specifically, if $\\mathcal{F}_n$ denotes the set of all such functions, then $|\\mathcal{F}_n| = 2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0,1\\}^n$ contains exactly $2^n$ distinct input strings.\n2. A Boolean function is defined by assigning an output value (0 or 1) to each of these $2^n$ inputs.\n3. Since there ar",
-    "approach": "gamma",
-    "timestamp": "2026-03-30T13:54:14.779960",
-    "code_hash": "74af2ccf66ff54c5",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c2_alpha_1774904255",
-    "statement": "CONJECTURE_NAME: **P_Closed_Under_Karp_Reductions**  \nSTATEMENT: Let \\( L, L' \\subseteq \\{0,1\\}^* \\) be languages. If \\( L \\in \\mathbf{P} \\) and there exists a polynomial-time computable function \\( f: \\{0,1\\}^* \\to \\{0,1\\}^* \\) such that for all \\( x \\), \\( x \\in L' \\iff f(x) \\in L \\), then \\( L' \\in \\mathbf{P} \\).  \n\nPROOF_SKETCH:  \n1. Since \\( L \\in \\mathbf{P} \\), there exists a deterministic Turing machine \\( M \\) that decides \\( L \\) in polynomial time.  \n2. Since \\( f \\) is polynomial-time",
+    "name": "swarm_v30_c14_alpha_1774903440",
+    "statement": "/-\nCONJECTURE_NAME: **Pigeonhole_No_Injection_Larger_to_Smaller**\nSTATEMENT: For any natural numbers $n$ and $m$, if there exists an injective function $f: \\text{Fin } n \\to \\text{Fin } m$, then $n \\leq m$. \nPROOF_SKETCH: Assume for contradiction that $n > m$. By the pigeonhole principle, an injection from a larger set to a smaller one cannot exist because at least two distinct elements from the domain would map to the same element in the codomain, violating injectivity. This leads to a contradi",
     "approach": "alpha",
-    "timestamp": "2026-03-30T13:57:35.575275",
-    "code_hash": "38835930af72ab4c",
+    "timestamp": "2026-03-30T13:44:00.712037",
+    "code_hash": "66dde5d67841fbfe",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c13_beta_1774912855",
-    "statement": "**CONJECTURE_NAME:** **Pigeonhole_Principle_Cardinality_Injection**\n\n**STATEMENT:**\nLet \\( A \\) and \\( B \\) be finite sets with \\( |A| > |B| \\). Then, there does not exist an injective function \\( f: A \\to B \\).\n\n**PROOF_SKETCH:**\n1. Assume for contradiction that an injective function \\( f: A \\to B \\) exists.\n2. By definition of injectivity, \\( |A| \\leq |f(A)| \\leq |B| \\), since \\( f(A) \\subseteq B \\).\n3. This contradicts the hypothesis \\( |A| > |B| \\), so no such injection can exist.\n\n**BARRIER",
-    "approach": "beta",
-    "timestamp": "2026-03-30T16:20:55.933255",
-    "code_hash": "4bae85d837c8e4c1",
+    "name": "swarm_v30_c1_gamma_1774904809",
+    "statement": "CONJECTURE_NAME: Boolean_Function_Count\nSTATEMENT: For every natural number $n$, the cardinality of the set of all Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ has cardinality $2^n$ (by basic combinatorics of binary strings).\n2. A Boolean function is defined by its output value for each input in the domain.\n3. For each of the $2^n$ inputs, there are 2 choices (0 or 1) for the output.\n4. By the multiplication principle, the total",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T14:06:49.602461",
+    "code_hash": "981b6026c0cf5b81",
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c15_alpha_1774914655",
-    "statement": "CONJECTURE_NAME: Finite_Surjection_Cardinality_Bound  \nSTATEMENT: Let \\( A \\) and \\( B \\) be finite sets. If there exists a surjective function \\( f: A \\to B \\), then \\( |A| \\geq |B| \\).  \nPROOF_SKETCH: Assume for contradiction that \\( |A| < |B| \\). By the pigeonhole principle, there exist distinct elements \\( b_1, b_2 \\in B \\) such that \\( f^{-1}(b_1) \\) and \\( f^{-1}(b_2) \\) are non-empty and disjoint. Construct an injection \\( g: B \\to A \\) by selecting one preimage for each \\( b \\in B \\), co",
-    "approach": "alpha",
-    "timestamp": "2026-03-30T16:50:55.329650",
-    "code_hash": "7a8c0a96eeb43d8e",
+    "name": "swarm_v30_c2_gamma_1774906297",
+    "statement": "CONJECTURE_NAME: Boolean_Function_Count_Exact\nSTATEMENT: For every natural number $n$, the cardinality of the set of all Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ has cardinality $2^n$ (by basic combinatorics of binary strings).\n2. The codomain $\\{0, 1\\}$ has cardinality $2$.\n3. A function is defined by assigning an output value to each input in the domain.\n4. By the rule of product, the total number of such assignments is $|",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T14:31:37.621061",
+    "code_hash": "a824716dec8edc39",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c3_gamma_1774907304",
+    "statement": "CONJECTURE_NAME: Boolean_Function_Count_Exact\nSTATEMENT: For every natural number $n$, the cardinality of the set of all Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{(2^n)}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ consists of all binary strings of length $n$. There are $2^n$ such distinct strings.\n2. A Boolean function is defined by its output value (0 or 1) for each of the $2^n$ inputs.\n3. Since the choice of output for each input is independent and binary, the total number ",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T14:48:24.079766",
+    "code_hash": "335c9f701ffdb96c",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c6_gamma_1774909471",
+    "statement": "CONJECTURE_NAME: Shannon_Counting_Lemma\nSTATEMENT: For every natural number $n$, the number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{2^n}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ contains exactly $2^n$ distinct input vectors.\n2. A Boolean function is defined by assigning an output value ($0$ or $1$) to each of these $2^n$ inputs.\n3. Since there are 2 choices for each of the $2^n$ inputs, and the choices are independent, the total number of distinct assignments",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T15:24:31.959392",
+    "code_hash": "3369bd63b0da1ed2",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c11_gamma_1774913064",
+    "statement": "CONJECTURE_NAME: Shannon_Counting_Bound\nSTATEMENT: For every natural number $n$, the number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{2^n}$. Consequently, for any integer $s \\geq 0$, the fraction of Boolean functions on $n$ variables computable by a Boolean circuit of size at most $s$ (using AND, OR, NOT gates with fan-in 2) is at most $\\frac{O(s)^s}{2^{2^n}}$. Specifically, if $s < \\frac{2^n}{10n}$, then strictly less than half of all Boolean functions on $n$ var",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T16:24:24.074096",
+    "code_hash": "5428afef3db75b10",
+    "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c15_gamma_1774916492",
+    "statement": "CONJECTURE_NAME: Circuit_Size_Upper_Bound_Shannon\nSTATEMENT: For every natural number $n \\geq 1$, every Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ can be computed by a Boolean circuit (using AND, OR, NOT gates with fan-in 2) of size at most $n \\cdot 2^n$.\nPROOF_SKETCH: This is a constructive upper bound derived from the Disjunctive Normal Form (DNF) representation. Any Boolean function $f$ can be written as the OR of minterms corresponding to inputs $x$ where $f(x)=1$. There are at most $2^n$",
+    "approach": "gamma",
+    "timestamp": "2026-03-30T17:21:32.032962",
+    "code_hash": "369ba750f03b03b1",
     "difficulty": 1
   }
 ]
