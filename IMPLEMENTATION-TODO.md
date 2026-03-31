@@ -33,5 +33,34 @@ There exists a polynomial-time-computable variable ordering for any satisfiable 
 
 ---
 
+## 3. Coffinhead Conjecture — Next Paths (from Phase 3 results)
+
+### Status Summary
+- Strong conjecture (all SAT): FALSIFIED at n=6
+- Refined conjecture (backbone<0.7, solutions>=4): FALSIFIED (~0.9% failure rate)
+- Structured instances (pigeonhole, graph coloring): ALL have zero-BT orderings
+- Least-frequent-first heuristic: ~99% zero-BT rate even on random instances
+
+### Path A: Structural Class Conjecture
+Define a formal class of SAT instances where zero-BT orderings provably exist. Candidates:
+- Bounded treewidth on variable interaction graph
+- Community structure (graph partitioning metric)
+- Instances arising from real combinatorial problems (pigeonhole, coloring, latin square)
+- Key test: run on SATLIB benchmark instances (industrial/crafted, not random)
+- If provable for bounded treewidth → connects to Courcelle's theorem (MSO on bounded treewidth is linear)
+
+### Path B: Least-Frequent-First Analysis
+Understand WHY the heuristic works 99%+ of the time:
+- Characterize the 1% failure mode — what structural property do failing instances share?
+- Prove polynomial bound for LFF on specific instance classes
+- Compare LFF to optimal ordering (from brute force) — how close is it?
+- Information-theoretic angle: does LFF maximize information gain per decision?
+
+### Empirical Data (saved in ~/projects/math-lab/coffinhead/)
+- sat_engine.py — Phase 1 harness + all heuristics
+- phase1b_stress.py — Phase transition + adversarial tests
+- phase2_analysis.py — Structural feature comparison, deep counterexample analysis
+- phase3_refined.py — Boundary sweep, structured instances, tightest boundary search
+
 ## Future items
 (add here as discussion continues)
