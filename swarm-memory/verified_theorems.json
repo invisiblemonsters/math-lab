@@ -3566,5 +3566,13 @@
     "timestamp": "2026-03-31T08:27:07.577504",
     "code_hash": "f83052e446e3f915",
     "difficulty": 1
+  },
+  {
+    "name": "swarm_v30_c13_alpha_1774999214",
+    "statement": "CONJECTURE_NAME: Pigeonhole_Circuit_Lower_Bound  \nSTATEMENT: For every natural number \\( n \\geq 1 \\) and size parameter \\( s \\geq 1 \\), if \\( s < \\frac{2^n}{n + s} \\), then there exists a Boolean function \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) that cannot be computed by any Boolean circuit of size \\( s \\).  \nPROOF_SKETCH: The number of distinct Boolean functions on \\( n \\) variables is \\( 2^{2^n} \\). Using a counting argument, the number of circuits of size \\( s \\) is upper-bounded by a polynomial in ",
+    "approach": "alpha",
+    "timestamp": "2026-03-31T16:20:14.574763",
+    "code_hash": "301e9f26d2f1ecc6",
+    "difficulty": 1
   }
 ]

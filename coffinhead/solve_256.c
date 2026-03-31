@@ -106,7 +106,14 @@ void up(const BClause *cl, int nc, const BAssign *ain, PropResult *out) {
             u256 nl = u256_andnot(n, assigned);
             u256 al = u256_or(pl, nl);
             if (u256_zero(al)) { out->contradiction = true; return; }
-            if (u256_popcnt(al) == 1) {
+            /* Fast unit check: exactly one bit set = popcount==1.
+               Faster: x & (x-1) == 0 and x != 0 */
+            u128 al_full = al.lo | al.hi;
+            bool is_unit;
+            if (!al.hi) is_unit = al.lo && !(al.lo & (al.lo - 1));
+            else if (!al.lo) is_unit = al.hi && !(al.hi & (al.hi - 1));
+            else is_unit = false; /* bits in both halves = at least 2 */
+            if (is_unit) {
                 int b = u256_lowest(al);
                 u256 bit = u256_bit(b);
                 if (u256_test(pl, b)) {
