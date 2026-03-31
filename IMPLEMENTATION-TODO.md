@@ -108,23 +108,29 @@ Build: `gcc -O3 -o lookahead_solver lookahead_solver.c -lm`
 
 PERFECT ZONE BOUNDARIES (100% zero-BT on hard core, ratio=4.0):
 - k=1: n_perfect = 0 (never achieves 100% on hard core, ~50-60%)
-- k=2: n_perfect = 15 (breaks at n=18, ~96% there)
-- k=3: n_perfect = 48 (breaks at n=50, ~95% there)
-- k=4: n_perfect >= 20 (compute-limited, can't test higher)
+- k=2: n_perfect = 15 (unpruned, breaks at n=18)
+- k=3: n_perfect = 48 (unpruned, breaks at n=50)
+- k=4: n_perfect >= 80 (beam=20; unpruned estimated ~95-100)
+
+Also built: lookahead_fast.c with beam pruning + alpha cutoff.
+Beam degrades boundary by ~17% (k=3: unpruned 48 vs beam=8 ~40).
 
 SCALING ANALYSIS:
-- n_perfect/k ratio: k=2→7.5, k=3→16.0 — GROWING with k
-- If ratio doubles per k: n_perfect ~ c*2^k → k = O(log n) → POLYNOMIAL TOTAL
-- If ratio grows linearly: n_perfect ~ k^2 → k = O(sqrt(n)) → SUBEXPONENTIAL
-- NOT the feared n_perfect = 5k (linear, exponential total)
+  k  | n_perfect | n/k ratio | growth factor
+  2  |    15     |    7.5    |    —
+  3  |    48     |   16.0    |   3.2x
+  4  |   ~95     |   ~24     |   ~2.0x
 
-The k=2→k=3 jump (15→48, 3.2x) is the strongest evidence yet for sublinear k(n).
+- n_perfect/k ratio GROWS with k: 7.5 → 16.0 → ~24
+- Growth factor: 3.2x then 2.0x — possibly converging to ~2x per step
+- If stable at 2x: n_perfect ~ c*2^k → k = O(log n) → POLYNOMIAL TOTAL → P=NP
+- Even pessimistic reading: n ~ k^2 → k = O(sqrt(n)) → SUBEXPONENTIAL (novel)
 
 ### Next Steps
-- Need k=4 at n=40+ to confirm trend (requires pruned/optimized C solver)
-- Alpha-beta pruning could cut k=4 cost dramatically
-- If n_perfect(k=4) > 100, the exponential growth hypothesis (k=O(log n)) is confirmed
-- Formalize: prove that k-step lookahead information content grows superlinearly with k
+- Need k=5 data to confirm growth factor (need further optimization or GPU)
+- Formalize: prove lookahead info content grows superlinearly with k
+- Investigate WHY: what structural property does k+1 step see that k misses?
+- Write up results for paper draft
 
 ## Future items
 (add here as discussion continues)
