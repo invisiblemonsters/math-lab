@@ -3568,19 +3568,11 @@
     "difficulty": 1
   },
   {
-    "name": "swarm_v30_c2_beta_1775002653",
-    "statement": "**CONJECTURE_NAME:** **NP_Closed_Under_Union**\n\n**STATEMENT:**\nFor every pair of languages \\( L_1, L_2 \\subseteq \\{0,1\\}^* \\), if \\( L_1 \\in \\text{NP} \\) and \\( L_2 \\in \\text{NP} \\), then \\( L_1 \\cup L_2 \\in \\text{NP} \\).\n\n**PROOF_SKETCH:**\n1. Let \\( L_1, L_2 \\in \\text{NP} \\). By definition, there exist polynomial-time verifiers \\( V_1 \\) and \\( V_2 \\) and polynomials \\( p_1(n), p_2(n) \\) such that:\n   - \\( x \\in L_1 \\iff \\exists y_1 \\in \\{0,1\\}^{p_1(|x|)} \\text{ s.t. } V_1(x, y_1) = 1 \\),\n   - ",
+    "name": "swarm_v30_c7_beta_1775003334",
+    "statement": "CONJECTURE_NAME: **Linear_Size_Circuit_For_Parity**\nSTATEMENT:\nFor every natural number \\( n \\geq 1 \\), there exists a Boolean circuit \\( C_n \\) of size at most \\( 3n - 3 \\) (using AND, OR, and NOT gates) that computes the parity function \\( \\text{PARITY}_n : \\{0, 1\\}^n \\to \\{0, 1\\} \\), defined by \\( \\text{PARITY}_n(x_1, \\dots, x_n) = x_1 \\oplus \\dots \\oplus x_n \\).\n\nPROOF_SKETCH:\nConstruct the circuit inductively:\n- Base case: For \\( n = 1 \\), the circuit is trivial (size 0 or 1, depending on c",
     "approach": "beta",
-    "timestamp": "2026-03-31T17:17:33.944087",
-    "code_hash": "6e77bcac3c7b4791",
-    "difficulty": 1
-  },
-  {
-    "name": "swarm_v30_c3_gamma_1775026767",
-    "statement": "CONJECTURE_NAME: Shannon_Counting_Upper_Bound\nSTATEMENT: For every natural number $n \\geq 0$, the total number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{2^n}$.\nPROOF_SKETCH: A Boolean function on $n$ variables is completely determined by its truth table, which consists of $2^n$ rows (one for each input in $\\{0,1\\}^n$). For each row, the output can be either 0 or 1 (2 choices). Since there are $2^n$ independent rows, the total number of distinct functions is the pr",
-    "approach": "gamma",
-    "timestamp": "2026-03-31T23:59:27.612544",
-    "code_hash": "63f755424f825736",
+    "timestamp": "2026-03-31T17:28:54.261295",
+    "code_hash": "67126595e3248d9e",
     "difficulty": 1
   }
 ]

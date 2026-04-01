@@ -1,38 +1,6 @@
 [
   {
     "error_type": "unknown_identifier",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (24s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
-    "fix_summary": "Fixed unknown_identifier error",
-    "before_snippet": "import Mathlib\n\nopen scoped BigOperators\n\n/-- The number of Boolean functions on n variables is 2^(2^n) -/\ntheorem boolean_functions_count (n : \u2115) :\n    Fintype.card ((Fin n \u2192 Bool) \u2192 Bool) = 2^(2^n) := by\n  simp [Fintype.card_fun_eq, Bool.alpha_eq_two]\n  -- Bool has 2 elements, hence 2^(2^n) functi",
-    "after_snippet": "import Mathlib\n\nopen scoped BigOperators\n\n/-- The number of Boolean functions on n variables is 2^(2^n) -/\ntheorem boolean_functions_count (n : \u2115) :\n    Fintype.card ((Fin n \u2192 Bool) \u2192 Bool) = 2^(2^n) := by\n  simp [Fintype.card_fun, Fintype.card_fin, Fintype.card_bool]\n  -- Bool has 2 elements, hence",
-    "timestamp": "2026-04-01T00:23:32.763920"
-  },
-  {
-    "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (97s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\n\nopen scoped Nat\n\n-- Define the type for Boolean gates if not already defined\ninductive BooleanGate\n  | input : BooleanGate\n  | not : BooleanGate\n  | and : BooleanGate\n  | or : BooleanGate\n  | xor : BooleanGate\n\n-- Define the type for the upper bound on the number of distinct Boolean ",
-    "after_snippet": "import Mathlib\n\nopen scoped Nat\n\n-- Define the type for Boolean gates if not already defined\ninductive BooleanGate\n  | input : BooleanGate\n  | not : BooleanGate\n  | and : BooleanGate\n  | or : BooleanGate\n  | xor : BooleanGate\n\n-- Define the type for the upper bound on the number of distinct Boolean ",
-    "timestamp": "2026-04-01T00:32:08.188635"
-  },
-  {
-    "error_type": "import_error",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (12s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
-    "fix_summary": "Fixed import_error error",
-    "before_snippet": "import Mathlib\n\n/-\nOracle Separation of P and NP\nMain theorem: There exists an oracle A such that P^A \u2260 NP^A\n-/\n\n-- Decomposition:\n\n-- 1. Required definitions (assuming not in Mathlib)\n-- We need to define:\n-- - Oracle Turing machine classes P^A and NP^A\n-- - Diagonalization language L_A\n-- - Oracle",
-    "after_snippet": "import Mathlib\n\n/- Oracle Separation of P and NP\nMain theorem: There exists an oracle A such that P^A \u2260 NP^A -/\n-- Decomposition:\n-- 1. Required definitions (assuming not in Mathlib)\n-- We need to define:\n-- - Oracle Turing machine classes P^A and NP^A\n-- - Diagonalization language L_A\n-- - Oracle A",
-    "timestamp": "2026-04-01T00:47:39.249347"
-  },
-  {
-    "error_type": "unknown_identifier",
-    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (21s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
-    "fix_summary": "Fixed unknown_identifier error",
-    "before_snippet": "import Mathlib\n\n/-- The Pigeonhole Principle function: checks if there exists a duplicate in a list of n+1 values from {1,...,n} -/\ndef PH_function (n : \u2115) (f : Fin n \u2192 Set (Fin n)) : Prop :=\n  \u2203 i j : Fin n, i \u2260 j \u2227 f i = f j\n\n-- Placeholder for the switching lemma: for all AC0 circuits of size s a",
-    "after_snippet": "import Mathlib\n\n/-- The Pigeonhole Principle function: checks if there exists a duplicate in a list of n+1 values from {1,...,n} -/\ndef PH_function (n : \u2115) (f : Fin n \u2192 Set (Fin n)) : Prop := \u2203 i j : Fin n, i \u2260 j \u2227 f i = f j\n\n-- Placeholder for the switching lemma: for all AC0 circuits of size s and",
-    "timestamp": "2026-04-01T00:51:42.644413"
-  },
-  {
-    "error_type": "unknown_identifier",
     "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
     "fix_summary": "Fixed unknown_identifier error",
     "before_snippet": "import Mathlib\n\n-- Define Boolean functions and circuit size concepts\ndef boolean_functions_count (n : \u2115) : \u2115 := 2^(2^n)\n\ndef circuit_size_upper_bound (n s : \u2115) : \u2115 :=\n  (2 * s * (n + s) ^ 2) ^ s\n\n-- Main theorem: Shannon's lower bound\ntheorem shannon_circuit_lower_bound : \u2200 n \u2265 1, \n  \u2203 f : Fin n \u2192 ",
@@ -158,5 +126,37 @@
     "before_snippet": "import Mathlib\n\n-- Define the number of boolean functions on n variables\ndef numBooleanFunctions (n : \u2115) : \u2115 := 2^(2^n)\n\n-- Define an upper bound on the number of circuits of size s\ndef numCircuitsUpperBound (n s : \u2115) : \u2115 := (2^n + 2)^s\n\n-- For large enough n, there exists a boolean function that re",
     "after_snippet": "import Mathlib\n\n-- Define the number of boolean functions on n variables\ndef numBooleanFunctions (n : \u2115) : \u2115 := 2^(2^n)\n\n-- Define an upper bound on the number of circuits of size s\ndef numCircuitsUpperBound (n s : \u2115) : \u2115 := (2^n + 2)^s\n\n-- For large enough n, there exists a boolean function that re",
     "timestamp": "2026-04-01T04:10:35.154289"
+  },
+  {
+    "error_type": "import_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
+    "fix_summary": "Fixed import_error error",
+    "before_snippet": "import Mathlib\n\n/-- The number of distinct Boolean functions representable by circuits of size at most s(n) is strictly less than 2^(2^n) when s(n) \u2264 (2^n - 1)/n. -/\ntheorem shannon_circuit_counting_lemma (n : \u2115) (hn : 1 \u2264 n) \n  (s : \u2115 \u2192 \u2115) (hs : \u2200 n, s n \u2264 (2^n - 1) / n) :\n \n  -- Upper bound on cir",
+    "after_snippet": "import Mathlib\n\n/-- The number of distinct Boolean functions representable by circuits of size at most s(n) is strictly less than 2^(2^n) when s(n) \u2264 (2^n - 1)/n. -/\ntheorem shannon_circuit_counting_lemma (n : \u2115) (hn : 1 \u2264 n)\n  (s : \u2115 \u2192 \u2115) (hs : \u2200 n, s n \u2264 (2^n - 1) / n) :\n\n  -- Upper bound on circu",
+    "timestamp": "2026-04-01T04:25:24.817894"
+  },
+  {
+    "error_type": "unknown_identifier",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (14s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
+    "fix_summary": "Fixed unknown_identifier error",
+    "before_snippet": "import Mathlib\n\n-- Define theorems for the Shannon Circuit Lower Bound Existence\n\n-- Auxiliary lemma: a simple upper bound on circuit count\ntheorem circuit_count_upper_bound (n s : \u2115) :\n  (5 * n * s) ^ s \u2265 (2:\u2115) ^ (2^n) := by\n  -- This is a simplified version; in reality, the circuit count is more i",
+    "after_snippet": "import Mathlib\n\n-- Define theorems for the Shannon Circuit Lower Bound Existence\n\n-- Auxiliary lemma: a simple upper bound on circuit count\ntheorem circuit_count_upper_bound (n s : \u2115) :\n  (5 * n * s) ^ s \u2265 (2:\u2115) ^ (2^n) := by\n  -- This is a simplified version; in reality, the circuit count is more i",
+    "timestamp": "2026-04-01T04:29:02.630255"
+  },
+  {
+    "error_type": "unknown_identifier",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (18s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
+    "fix_summary": "Fixed unknown_identifier error",
+    "before_snippet": "import Mathlib\n\n-- Define the number of Boolean functions on n variables\ndef boolean_functions (n : \u2115) : \u2115 := 2 ^ (2 ^ n)\n\n-- Define the number of circuits of size s\ndef circuits_of_size (n s : \u2115) : \u2115 := (n + s) ^ s\n\n-- Theorem: For every n \u2265 1, there exists a Boolean function on n bits that require",
+    "after_snippet": "import Mathlib -- Define the number of Boolean functions on n variables def boolean_functions (n : \u2115) : \u2115 := 2 ^ (2 ^ n) -- Define the number of circuits of size s def circuits_of_size (n s : \u2115) : \u2115 := (n + s) ^ s -- Define a placeholder predicate for circuit computation since it's not in Mathlib de",
+    "timestamp": "2026-04-01T04:41:38.604322"
+  },
+  {
+    "error_type": "import_error",
+    "error_snippet": "\u2716 [8204/8204] Building MyProofs.Attempt (18s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/Qq/.lake/build/lib/lean:/home/power/mathlib_test/.lake/pac",
+    "fix_summary": "Fixed import_error error",
+    "before_snippet": "import Mathlib\n\n/-- A function s is space-constructible if a deterministic TM can compute s(n) in O(s(n)) space -/\ndef space_constructible (s : \u2115 \u2192 \u2115) : Prop :=\n  \u2203 M : \u2115 \u2192 \u2115, (\u2200 x, M x \u2264 s x) \u2227\n    \u2200 n, M n = s n\n\n/-- The class of languages decidable by NTIME machines in space O(s(n)) -/\ndef NSPACE",
+    "after_snippet": "import Mathlib\n\n/-- A function s is space-constructible if a deterministic TM can compute s(n) in O(s(n)) space -/\ndef space_constructible (s : \u2115 \u2192 \u2115) : Prop :=\n  \u2203 M : \u2115 \u2192 \u2115, (\u2200 x, M x \u2264 s x) \u2227\n    \u2200 n, M n = s n\n\n/-- The class of languages decidable by NTIME machines in space O(s(n)) -/\ndef NSPACE",
+    "timestamp": "2026-04-01T05:08:15.455554"
   }
 ]
