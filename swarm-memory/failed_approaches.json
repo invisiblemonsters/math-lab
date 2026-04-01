@@ -1,17 +1,5 @@
 [
   {
-    "approach": "**CONJECTURE_NAME:** **Sipser_Separation_AC0_from_NC1**\n\n**STATEMENT:**\nFor every natural number \\( d \\geq 1 \\), there exists a family of Boolean functions \\( \\{ f_n : \\{0,1\\}^n \\to \\{0,1\\} \\}_{n \\in \\mathbb{N}} \\) such that:\n1. \\( f_n \\) is computable by a polynomial-size, depth-\\( d \\) circuit (i.",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (150s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T15:40:43.277592"
-  },
-  {
     "approach": "CONJECTURE_NAME: Pigeonhole_No_Injection_Larger_to_Smaller\nSTATEMENT: For any natural numbers $n$ and $m$, if $n > m$, then there does not exist an injective function $f: \\{0, 1, \\dots, n-1\\} \\to \\{0, 1, \\dots, m-1\\}$. Formally, $\\neg (\\exists f: \\text{Fin}(n) \\to \\text{Fin}(m), \\text{Function.Injec",
     "reason": "Intent mismatch",
     "barrier_profile": {
@@ -2398,5 +2386,17 @@
       "killed": false
     },
     "timestamp": "2026-03-31T19:08:22.754384"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Space_Hierarchy_Theorem  \nSTATEMENT: For any space-constructible function \\( f: \\mathbb{N} \\to \\mathbb{N} \\), there exists a language \\( L \\) that is decidable in space \\( O(f(n)) \\) but not in space \\( o(f(n)) \\).  \nPROOF_SKETCH: Construct a Turing machine that diagonalizes against",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (180s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-31T19:28:40.645032"
   }
 ]
