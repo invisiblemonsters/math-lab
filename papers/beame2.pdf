@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="google" content="notranslate">
+        <meta http-equiv="Content-Language" content="en">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="csrf-token" content="KU3FjaehpZ0cxDk41Agwerx0IIUyReIYDoH5eJoS">
+
+        
+        <title>DROPS</title>
+
+        <link rel="icon" href="https://drops.dagstuhl.de/favicon.ico">
+        <link rel="stylesheet" href="https://drops.dagstuhl.de/css/app.css?drops-core-2026-03-25">
+
+            </head>
+
+    <body>
+        
+    <nav class="navbar main fixed-top navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="https://www.dagstuhl.de">
+            <img class="lzi-logo" src="https://drops.dagstuhl.de/images/LZI-Logo.jpg" width="84" height="62" alt="Schloss Dagstuhl - LZI - Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item" style="white-space: nowrap">
+                    <a class="nav-link" href="https://drops.dagstuhl.de" title="DROPS Home">
+                        <i class="bi bi-house large-icon"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAboutUs" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false" data-fix-width>
+                        <img width="54" src="https://drops.dagstuhl.de/images/dagpub-bildmarke-grey.png" alt="Dagstuhl Publishing Logo" style="vertical-align: bottom; transform: translateY(-2px)">
+                        <span class="nav-text-dagstuhl-publishing">Dagstuhl Publishing</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="https://www.dagstuhl.de/en/publishing">
+                                Dagstuhl Publishing
+                            </a>
+                            <a class="dropdown-item" href="https://www.dagstuhl.de/en/publishing/team">
+                                Dagstuhl Publishing Team
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="/docs/ethics">
+                                Publication Ethics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/docs/gen-ai">
+                                GenAI Statement
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="https://drops.dagstuhl.de/docs/about">
+                                About DROPS
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.dagstuhl.de/en/publishing/team">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSeries" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false" data-fix-width>
+                        <i class="bi bi-journals large-icon"></i> Series
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/series/LIPIcs">
+                                    LIPIcs – Leibniz International Proceedings in Informatics
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/series/OASIcs">
+                                    OASIcs – Open Access Series in Informatics
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/series/DFU">
+                                    Dagstuhl Follow-Ups
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/series/DagAnnRep">
+                                    Schloss Dagstuhl Jahresbericht
+                                </a>
+                            </li>
+                                                <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="/#discontinued-series">Discontinued Series</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownJournals" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false" data-fix-width>
+                        <i class="bi bi-journal large-icon"></i> Journals
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/journal/DARTS">
+                                    DARTS – Dagstuhl Artifacts Series
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/journal/DagRep">
+                                    Dagstuhl Reports
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/journal/DagMan">
+                                    Dagstuhl Manifestos
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/journal/LITES">
+                                    LITES – Leibniz Transactions on Embedded Systems
+                                </a>
+                            </li>
+                        
+                            <li><a class="dropdown-item" href="https://drops.dagstuhl.de/entities/journal/TGDK">
+                                    TGDK – Transactions on Graph Data and Knowledge
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownConferences" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false" data-fix-width>
+                        <i class="bi bi-people large-icon"></i> Conferences
+                    </a>
+                    <ul class="dropdown-menu conference-dropdown" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                            <div class="col-sm-4 nav-conference-col">
+                                <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/AFT">
+                AFT
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/AIB">
+                AIB
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/AofA">
+                AofA
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/APPROX">
+                APPROX
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ATMOS">
+                ATMOS
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/CALCO">
+                CALCO
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/CCC">
+                CCC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/CONCUR">
+                CONCUR
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/COSIT">
+                COSIT
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/CP">
+                CP
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/CPM">
+                CPM
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/CSL">
+                CSL
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/DISC">
+                DISC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/DITAM">
+                DITAM
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/DNA">
+                DNA
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ECOOP">
+                ECOOP
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ECRTS">
+                ECRTS
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ESA">
+                ESA
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/FAB">
+                FAB
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/FMBC">
+                FMBC
+            </a>
+        </li>
+                            </div>
+                            <div class="col-sm-4 nav-conference-col">
+                                <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/FORC">
+                FORC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/FSCD">
+                FSCD
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/FSTTCS">
+                FSTTCS
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/FUN">
+                FUN
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/GD">
+                GD
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/GIScience">
+                GIScience
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ICALP">
+                ICALP
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ICDT">
+                ICDT
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ICPEC">
+                ICPEC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/IPEC">
+                IPEC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/iPMVM">
+                iPMVM
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ISAAC">
+                ISAAC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ITC">
+                ITC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ITCS">
+                ITCS
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/ITP">
+                ITP
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/LDK">
+                LDK
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/MFCS">
+                MFCS
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/Microservices">
+                Microservices
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/NG-RES">
+                NG-RES
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/OPODIS">
+                OPODIS
+            </a>
+        </li>
+                            </div>
+                            <div class="col-sm-4 nav-conference-col">
+                                <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/PARMA">
+                PARMA
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/RANDOM">
+                RANDOM
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SAND">
+                SAND
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SAT">
+                SAT
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SEA">
+                SEA
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SLATE">
+                SLATE
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SNAPL">
+                SNAPL
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SoCG">
+                SoCG
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/STACS">
+                STACS
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/SWAT">
+                SWAT
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/TIME">
+                TIME
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/Tokenomics">
+                Tokenomics
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/TQC">
+                TQC
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/TYPES">
+                TYPES
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/WABI">
+                WABI
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/conference/WCET">
+                WCET
+            </a>
+        </li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArtifacts" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false" data-fix-width>
+                        <i class="bi bi-braces-asterisk large-icon"></i> Artifacts
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <li>
+                            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/collection/supplementary-materials">
+                                Supplementary Materials (Software, Datasets, ...)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://drops.dagstuhl.de/entities/collection/dblp">
+                                dblp Artifacts
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="/entities/journal/DARTS">
+                                DARTS (Evaluated Artifacts)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+                            <form class="navbar-search d-flex" action="https://drops.dagstuhl.de/search" method="post">
+                    <input type="hidden" name="_token" value="KU3FjaehpZ0cxDk41Agwerx0IIUyReIYDoH5eJoS" autocomplete="off">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                               name="term" autocomplete="off" maxlength="600">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="bi bi-search" style="color: #000"></i>
+                        </button>
+                    </div>
+                </form>
+            
+            <ul class="navbar-nav nav-metadata">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMetadata" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-database-down large-icon"></i><span class="nav-text-metadata">Metadata Export</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-metadata" aria-labelledby="navbarDropdownMetadata">
+                        <li>
+                            <a class="dropdown-item" href="https://drops.dagstuhl.de/metadata">Metadata Export</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://drops.dagstuhl.de/oai?verb=Identify" target="_blank">OAI Interface</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+                    </div>
+    </div>
+</nav>
+
+    
+    <div id="app"
+         data-release="drops-core-2026-03-25"
+         class="container  ">
+
+        <div id="_top-of-page"></div>
+
+        
+                    <div class="fixed-search-button"><i class="bi bi-search"></i></div>
+        
+                
+        
+    <div class="m-5">
+        <div class="row">
+            <div class="col-sm-6" style="text-align: right">
+                <h1>Welcome to <b>DROPS</b></h1>
+                <h2 style="font-size: 0.9rem;">The Dagstuhl Research Online Publication Server</h2>
+            </div>
+            <div class="col-sm-6">
+                <img class="publishing-logo"
+                     src="https://drops.dagstuhl.de/images/dagstuhl-publishing-logo-color-316x69.jpg"
+                     alt="Dagstuhl Publishing Logo"
+                     style="transform: translateY(-4px)">
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-danger">
+        <b>ERROR</b> The resource you requested does not exist on the server!
+    </div>
+
+    <form class="home-search" method="post" action="https://drops.dagstuhl.de/search">
+        <input type="hidden" name="_token" value="KU3FjaehpZ0cxDk41Agwerx0IIUyReIYDoH5eJoS" autocomplete="off">        <div class="input-group mb-3">
+            <input id="general-search" class="form-control form-control-lg" type="text" name="term" placeholder="Search All Entities in DROPS"
+                   aria-label="Search DROPS" autocomplete="off" maxlength="600">
+            <button class="btn btn-lg btn-outline-success" type="button" id="button-home-search">
+                <i class="bi bi-search" style="color: #000"></i>
+            </button>
+        </div>
+    </form>
+
+
+    </div>
+
+    <span class="_feedback-button">
+    <i class="bi bi-patch-exclamation -hidden"></i>
+    <i class="bi bi-exclamation-circle"></i>
+    <span class="text"><a href="#">Any Issues?</a></span>
+</span>
+
+<div class="_feedback-form -hidden">
+    <span class="_feedback-close"><a href="#">X</a></span>
+    <p>Feedback on the Current Page</p>
+    <div>
+        <textarea class="form-control" name="_feedback"></textarea>
+        <input class="form-control" type="text" name="name" autocomplete="off" placeholder="Name (optional)" maxlength="60">
+        <input class="form-control" type="email" name="email" autocomplete="off" placeholder="Email (optional)" maxlength="60">
+        <div class="_captcha-check">
+            <button class="btn btn-sm btn-default btn-send">Send</button>
+            <div id="captcha" class="mt-2 -hidden">
+                <img src="" alt="CAPTCHA" style="width: 49%">
+                <input class="form-control" type="text" name="captcha" autocomplete="off" placeholder="Enter CAPTCHA" maxlength="60">
+                <input type="hidden" name="phrase">
+                <button class="btn btn-sm btn-default btn-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="alert alert-success _feedback-success -hidden">
+    <span class="glyphicon glyphicon-ok"></span>
+    <h3>Thanks for your feedback!</h3>
+    <div>Feedback submitted to Dagstuhl Publishing</div>
+    <button class="btn btn-white _feedback-done">OK</button>
+</div>
+
+<div class="alert alert-danger _feedback-error -hidden">
+    <span class="glyphicon glyphicon-remove"></span>
+    <h3>Could not send message</h3>
+    <div>Please try again later or send an <a href="mailto:publishing@dagstuhl.de">E-mail</a></div>
+    <button class="btn btn-white _feedback-done">OK</button>
+</div>
+
+
+    <a class="scroll-up-button -hidden" href="#_top-of-page">
+    <i class="bi bi-arrow-up-circle"></i>
+</a>
+
+    <footer class="page-footer dark">
+
+    <div class="container">
+        <h5>About DROPS</h5>
+        <p>Schloss Dagstuhl - Leibniz Center for Informatics has been operating the Dagstuhl Research Online Publication Server (short: DROPS) since 2004. DROPS enables publication of the latest research findings in a fast, uncomplicated manner, in addition to providing unimpeded, open access to them. All the requisite metadata on each publication is administered in accordance with general guidelines pertaining to online publications (cf. Dublin Core). This enables the online publications to be authorized for citation and made accessible to a wide readership on a permanent basis. Access is free of charge for readers following the open access idea which fosters unimpeded access to scientific publications. </p>
+        <ul style="margin-top: -0.5em">
+            <li><a href="https://drops.dagstuhl.de/docs/about">More about DROPS</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <h5>Instructions for Authors</h5>
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+                        <b>Dagstuhl Series</b><br>
+                        <ul>
+                                                                                                <li><a href="https://submission.dagstuhl.de/series/details/lipics#author">LIPIcs</a></li>
+                                                                                                                                <li><a href="https://submission.dagstuhl.de/series/details/oasics#author">OASIcs</a></li>
+                                                                                                                                <li><a href="https://submission.dagstuhl.de/series/details/dfu#author">Dagstuhl Follow-Ups</a></li>
+                                                                                                                                                </ul>
+
+                    </div>
+                                        <div class="col-sm-6">
+                        <b>Dagstuhl Journals</b><br>
+                        <ul>
+                                                                <li><a href="https://submission.dagstuhl.de/series/details/darts#author">DARTS – Dagstuhl Artifacts Series</a></li>
+                                                                <li><a href="https://submission.dagstuhl.de/series/details/dagrep#author">Dagstuhl Reports</a></li>
+                                                                <li><a href="https://submission.dagstuhl.de/series/details/dagman#author">Dagstuhl Manifestos</a></li>
+                                                                <li><a href="https://submission.dagstuhl.de/series/details/lites#author">LITES</a></li>
+                                                                <li><a href="https://submission.dagstuhl.de/series/details/tgdk#author">TGDK – Transactions on Graph Data and Knowledge</a></li>
+                                                    </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h5>Instructions for Editors</h5>
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+                        <b>Dagstuhl Series</b><br>
+                        <ul>
+                                                                                                <li><a href="https://submission.dagstuhl.de/series/details/lipics#editor">LIPIcs</a></li>
+                                                                                                                                <li><a href="https://submission.dagstuhl.de/series/details/oasics#editor">OASIcs</a></li>
+                                                                                                                                <li><a href="https://submission.dagstuhl.de/series/details/dfu#editor">Dagstuhl Follow-Ups</a></li>
+                                                                                                                                                </ul>
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <b>Dagstuhl Journals</b><br>
+                        <ul>
+                                                            <li><a href="https://submission.dagstuhl.de/series/details/darts#editor">DARTS – Dagstuhl Artifacts Series</a></li>
+                                                            <li><a href="https://submission.dagstuhl.de/series/details/dagrep#editor">Dagstuhl Reports</a></li>
+                                                            <li><a href="https://submission.dagstuhl.de/series/details/dagman#editor">Dagstuhl Manifestos</a></li>
+                                                            <li><a href="https://submission.dagstuhl.de/series/details/lites#editor">LITES</a></li>
+                                                            <li><a href="https://submission.dagstuhl.de/series/details/tgdk#editor">TGDK – Transactions on Graph Data and Knowledge</a></li>
+                                                    </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="copyright">
+
+    &copy; 2023-2025 <a href="https://www.dagstuhl.de">Schloss Dagstuhl – LZI GmbH</a>
+    <a href="https://drops.dagstuhl.de/docs/about">About&nbsp;DROPS</a>
+
+    <a href="https://drops.dagstuhl.de/docs/imprint">Imprint</a>
+
+    <a href="https://drops.dagstuhl.de/docs/privacy">Privacy</a>
+
+    <a href="https://www.dagstuhl.de/en/publishing/team">Contact</a>
+
+</div>
+
+    <script type="text/javascript" src="https://drops.dagstuhl.de/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://drops.dagstuhl.de/js/app.js?drops-core-2026-03-25"></script>
+    <script type="text/javascript" src="https://drops.dagstuhl.de/js/popper.min.js"></script>
+
+        <script type="text/javascript">
+
+    function _enableFeedback() {
+
+        const $feedbackButton = $('._feedback-button, .fixed-beta-button');
+        const $feedbackClose = $('._feedback-close');
+        const $feedbackForm = $('._feedback-form');
+        const $feedbackSend = $('._feedback-form .btn-send');
+        const $textarea = $feedbackForm.find('textarea');
+        const $captcha = $('#captcha');
+        const $captchaSend = $captcha.find('.btn-submit');
+
+        const $feedbackSuccess = $('._feedback-success');
+        const $feedbackError = $('._feedback-error');
+
+        const $feedbackDoneButton = $('._feedback-done');
+
+        const getCaptchaImage = function() {
+            $.ajax({
+                url: '/api/v1/feedback/captcha',
+                type: 'get',
+                success: function (result) {
+                    replaceCaptchaImage(result);
+                },
+                error: function () {
+                    $feedbackError.removeClass('-hidden');
+                }
+            });
+        }
+
+        const replaceCaptchaImage = function(result) {
+            $captcha.removeClass('-hidden');
+            $captcha.find('input[name="phrase"]').val(result.phrase);
+            $captcha.find('img').attr('src', result.image);
+            $captcha.find('input[name="captcha"]').val('');
+            $captcha.find('input[name="captcha"]').focus();
+            $feedbackSend.addClass('-hidden');
+        }
+
+        const getMessage = function() {
+            let message = $textarea.val();
+
+            if (message === undefined) {
+                message = '';
+            }
+
+            return message.trim();
+        }
+
+        $feedbackButton.addClass('_show');
+
+        $feedbackButton.on('click', function (e) {
+            e.preventDefault();
+            $feedbackButton.addClass('-hidden');
+            $feedbackForm.removeClass('-hidden');
+            $textarea.focus();
+            return false;
+        });
+
+        $feedbackClose.on('click', function (e) {
+            e.preventDefault();
+            $feedbackSuccess.addClass('-hidden');
+            $feedbackForm.addClass('-hidden');
+            $feedbackButton.removeClass('-hidden');
+            return false;
+        });
+
+        $feedbackDoneButton.on('click', function () {
+            $feedbackError.addClass('-hidden');
+            $feedbackSuccess.addClass('-hidden');
+            $feedbackForm.addClass('-hidden');
+            $feedbackButton.removeClass('-hidden');
+            $feedbackSend.removeClass('-hidden');
+        });
+
+        $feedbackSend.on('click', function () {
+            const message = getMessage();
+            if (message.length < 4) {
+                return;
+            }
+
+            getCaptchaImage();
+        });
+
+        $captchaSend.on('click', function () {
+            const message = getMessage();
+            if (message.length < 4) {
+                return;
+            }
+
+            $.ajax({
+                url: '/api/v1/feedback',
+                type: 'post',
+                data: {
+                    content: message,
+                    context: window.location.href,
+                    name: $('input[name="name"]').val(),
+                    email: $('input[name="email"]').val(),
+                    captcha: $('input[name="captcha"]').val(),
+                    phrase: $('input[name="phrase"]').val(),
+                },
+                success: function (result) {
+                    if (result.image !== undefined) {
+                        replaceCaptchaImage(result);
+                    }
+                    else {
+                        $textarea.val('');
+                        $feedbackButton.removeClass('-hidden');
+                        $captcha.addClass('-hidden');
+                        $feedbackSuccess.removeClass('-hidden');
+                    }
+                },
+                error: function () {
+                    $feedbackError.removeClass('-hidden');
+                    $captcha.addClass('-hidden');
+                }
+            });
+        });
+    }
+
+    let _defer_counter = 0;
+
+    function _defer(method) {
+        if (window.jQuery) {
+            method();
+        } else {
+            if (_defer_counter < 20) {
+                setTimeout(function () {
+                    _defer(method);
+                    console.log(_defer_counter);
+                    _defer_counter++;
+                }, 500);
+            }
+        }
+    }
+
+    setTimeout(function() {
+        _defer(_enableFeedback);
+    }, 1000);
+
+</script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        const app = {
+            maxScrollPos: window.innerWidth < 500
+                ? 100	// mobile
+                : 400,	// desktop
+
+            $el : {
+                navbarSearch: $('nav .navbar-search'),
+                fixedSearchButton: $('.fixed-search-button'),
+                copyToClipboard: $('.copy-to-clipboard')
+            },
+
+            methods: {
+                hideMenuOnScroll: function(scrollPos) {
+                    const $menu = $('nav.navbar.main');
+                    const $stickySearch = $('.search.sticky');
+                    const $banner = $('#_banner');
+                    const $fixedSearchButton = $('.fixed-search-button');
+
+                    if (scrollPos > app.maxScrollPos) {
+                        $menu.addClass('-hide');
+                        $banner.addClass('-hide');
+                        $stickySearch.addClass('-top');
+                        $fixedSearchButton.addClass('-show');
+                    }
+                    else {
+                        app.methods.showMenu(null, false);
+                    }
+                },
+
+                showMenu: function(e, focus) {
+                    const $menu = $('nav.navbar.main');
+                    const $stickySearch = $('.search.sticky');
+                    const $banner = $('#_banner');
+                    const $fixedSearchButton = $('.fixed-search-button');
+
+                    $menu.removeClass('-hide');
+                    $banner.removeClass('-hide');
+                    $stickySearch.removeClass('-top');
+                    $fixedSearchButton.removeClass('-show');
+
+                    if (focus !== false) {
+                        $('.navbar-search').find('input[name="term"]').focus();
+                    }
+                },
+
+                showUpLinkOnScroll: function(scrollPos) {
+                    const $upLink = $('.scroll-up-button');
+
+                    if (scrollPos > app.maxScrollPos) {
+                        $upLink.removeClass('-hidden');
+                    }
+                    else {
+                        $upLink.addClass('-hidden');
+                    }
+                },
+
+                scrollHandler: function() {
+                    const scrollPos = $(document).scrollTop();
+
+                    app.methods.hideMenuOnScroll(scrollPos);
+                    app.methods.showUpLinkOnScroll(scrollPos);
+                },
+
+                copyToClipboard: function(e) {
+                    e.preventDefault();
+                    const $current  = $(e.currentTarget); // console.log($current.attr('data-selector'));
+                    const element = $('#'+$current.attr('data-selector'))[0]; console.log(element);
+                    element.select();
+                    document.execCommand("copy");
+                    const $success = $current.find('.bi-check');
+                    $success.removeClass('-hidden');
+                    setTimeout(function() {
+                        $success.addClass('-hidden');
+                    }, 1000);
+                },
+
+                initTooltips: function() {
+                    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                        return new bootstrap.Tooltip(tooltipTriggerEl)
+                    });
+                },
+
+                expandSearch: function() {
+                    app.$el.navbarSearch.addClass('expanded');
+                },
+
+                collapseSearch: function(e) {
+                    if (!$(e.currentTarget).is('button.btn-outline-success')) {
+                        app.$el.navbarSearch.removeClass('expanded');
+                    }
+                },
+
+                initDeepLinksTabs: function() {
+
+                    app.methods.initTabLinks();
+
+                    const innerAnchors =[];
+
+                    $('.tab-pane').find('[id]').each(function() {
+                        innerAnchors.push(this.getAttribute('id'));
+                    });
+
+                    const anchors = [];
+
+                    $('a[role="tab"]').each(function() {
+                        anchors.push($(this).attr('aria-controls'));
+                    });
+
+                    innerAnchors.forEach(function(anchor) {
+                        if ($('#'+anchor).length > 0) {
+                            anchors.push(anchor);
+                        }
+                    });
+
+                    if (anchors.length === 0) {
+                        return;
+                    }
+
+                    let selectedAnchor = window.location.hash.substring(1);
+                    if (anchors.indexOf(selectedAnchor) === -1) {
+                        $('#publications-tab').tab('show');
+                        window.scrollTo(0,0);
+                        return;
+                    }
+
+                    if (selectedAnchor !== 'publications') {
+
+                        const innerAnchorIndex = innerAnchors.indexOf(selectedAnchor);
+
+                        // anchor sits inside tab -> open the tab first, then scroll to anchor
+                        if (innerAnchorIndex > -1) {
+                            const $tab = $('#'+selectedAnchor).closest('.tab-pane');
+
+                            console.log($tab);
+
+                            try {
+                                $('#'+$tab.attr('id')+'-tab').tab('show');
+                            }
+                            catch (e) { }
+                            setTimeout(function () {
+                                $('#' + selectedAnchor)[0].scrollIntoView();
+                            }, 800);
+                        } else {
+                            try {
+                                $('#' + selectedAnchor + '-tab').tab('show');
+                            }
+                            catch (e) { }
+                            window.scrollTo(0, 0);
+                        }
+                    }
+                },
+
+                fixNavWidth: function() {
+                    $('[data-fix-width]').each(function() {
+                        let $el = $(this);
+                        $el.css('width', 'unset');
+                        $el.css('width', ($el[0].clientWidth+5)+'px');
+                    });
+                },
+
+                initTabLinks: function() {
+                    $('[data-tab-link]').on('click', function(e) {
+                        e.preventDefault();
+                        const $target = $(e.currentTarget);
+                        document.location.href = $target.attr('href');
+                        document.location.reload();
+                    });
+                },
+            },
+
+            initialize: function() {
+                $(window).on('scroll', app.methods.scrollHandler);
+                $(window).on('scroll-to-top', function() { window.scrollTo(0,0) });
+                $(window).on('resize', app.methods.fixNavWidth);
+
+                $(document).trigger('scroll'); // set correct status for scroll-related parts (navbar/back-to-top) on page reload
+
+                app.$el.copyToClipboard.on('click', app.methods.copyToClipboard);
+                app.$el.fixedSearchButton.on('click', app.methods.showMenu);
+                app.$el.navbarSearch.find('input').on('click', app.methods.expandSearch)
+                app.$el.navbarSearch.find('input').on('blur', app.methods.collapseSearch);
+
+                app.methods.initTooltips();
+                app.methods.fixNavWidth();
+                app.methods.initDeepLinksTabs();
+
+            }
+        };
+
+        app.initialize();
+    });
+</script>
+
+    </body>
+</html>
