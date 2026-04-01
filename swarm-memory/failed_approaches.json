@@ -1,17 +1,5 @@
 [
   {
-    "approach": "CONJECTURE_NAME: **NP_Oracle_Separation**\nSTATEMENT: For every natural number $n$, there exists a language $L$ such that $L \\in \\text{NP}^{\\text{NP}}$ and $L \\notin \\text{P}^{\\text{NP}}$. Specifically, the language $L$ can be constructed using a diagonalization argument against all polynomial-time T",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T14:57:07.212219"
-  },
-  {
     "approach": "CONJECTURE_NAME: Shannon_Lower_Bound_Exponential\nSTATEMENT: For every natural number $n \\geq 1$, there exists a Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ such that any Boolean circuit computing $f$ requires at least $\\frac{2^n}{n+1}$ gates (assuming a standard basis like $\\{\\text{AND}, \\text{OR}",
     "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (7.7s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
     "barrier_profile": {
@@ -2398,5 +2386,17 @@
       "killed": false
     },
     "timestamp": "2026-03-31T18:11:13.852878"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** P_Poly_Size_Circuits  \n**STATEMENT:** For every language \\( L \\in \\text{P} \\), there exists a polynomial \\( p \\) such that for all \\( n \\in \\mathbb{N} \\), the characteristic function of \\( L \\) restricted to inputs of length \\( n \\) can be computed by a Boolean circuit of size a",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-03-31T18:58:44.026360"
   }
 ]
