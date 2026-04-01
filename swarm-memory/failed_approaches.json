@@ -1,125 +1,5 @@
 [
   {
-    "approach": "/--\nCONJECTURE_NAME: Shannon_Circuit_Count_Bound\nSTATEMENT: For every natural number \\( n \\geq 1 \\), let \\( N = 2^n \\). The number of distinct Boolean functions \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) that can be computed by Boolean circuits with at most \\( s(n) \\) gates is at most \\( (2 + \\binom{2s(n)}{2}",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T23:43:44.467065"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Shannon_Circuit_Count_Upper_Bound\nSTATEMENT: For every natural number $n \\geq 1$ and every integer $s \\geq 1$, the number of distinct Boolean circuits with $n$ inputs and at most $s$ gates (using the standard basis $\\{\\text{AND}, \\text{OR}, \\text{NOT}\\}$ with fan-in 2) is strictly l",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-30T23:46:46.991384"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** Time_Hierarchy_Theorem_Basic\n\n**STATEMENT:**\nFor any time-constructible functions \\( t_1, t_2 : \\mathbb{N} \\to \\mathbb{N} \\) such that \\( t_2(n) \\cdot \\log(t_2(n)) = o(t_1(n)) \\), we have\n\\[ \\text{TIME}(t_2(n)) \\subsetneq \\text{TIME}(t_1(n)). \\]\nHere, \\( \\text{TIME}(t(n)) \\) den",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.0s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:03:49.636189"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Exp_Circuit_Upper_Bound_Shannon\nSTATEMENT: For every natural number $n \\geq 1$, the number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ that can be represented by Boolean circuits with at most $2^n / n$ gates is at most $2^{2^n - n}$.\nPROOF_SKETCH: Apply Shannon's coun",
-    "reason": "Intent mismatch",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:07:34.766088"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Boolean_Function_Count_Exact\nSTATEMENT: For every natural number $n$, the cardinality of the set of all Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^{2^n}$.\nPROOF_SKETCH: \n1. The domain $\\{0, 1\\}^n$ contains exactly $2^n$ distinct input vectors (since there are $n$ b",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (22s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:14:12.342702"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Pigeonhole_Principle_Circuit_Size_Lower_Bound_Exact**\n\n**STATEMENT:**\nFor every natural number \\( n \\geq 1 \\), let \\( \\text{PHP}_n : \\{0,1\\}^{n+1} \\to \\{0,1\\} \\) be the Boolean function defined by:\n\\[\n\\text{PHP}_n(x_1, \\dots, x_{n+1}) =\n\\begin{cases}\n1 & \\text{if } \\exists i \\neq ",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (12s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:19:25.178938"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Diagonalization_Lemma_for_EXP_vs_P\nSTATEMENT: For every language L \u2208 P, there exists a language L' \u2208 EXP such that L' \u2209 P. Formally, \u2200L \u2208 P, \u2203L' \u2208 EXP, L' \u2209 P.\nPROOF_SKETCH: Use a diagonalization argument to construct L' by simulating all polynomial-time Turing machines on inputs of",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (20s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:24:32.509570"
-  },
-  {
-    "approach": "CONJECTURE_NAME: **Time_Hierarchy_Theorem_Subexponential_Separation**\n\nSTATEMENT:\nFor every time-constructible function \\( t: \\mathbb{N} \\to \\mathbb{N} \\) such that \\( t(n) \\geq n \\) and for every \\( \\epsilon > 0 \\), there exists a language \\( L \\) such that:\n1. \\( L \\in \\text{DTIME}(t(n)^{1+\\epsilo",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:29:38.916157"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Shannon_Counting_Lemma_Weak\nSTATEMENT: For every natural number $n \\geq 1$, let $N = 2^n$. The total number of distinct Boolean functions $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ is exactly $2^N$. Furthermore, if $S(n)$ denotes the number of distinct Boolean circuits with $n$ inputs and size at",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (9.6s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:35:57.871320"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Pigeonhole_Principle_Circuit_Size_Lower_Bound**\n\n**STATEMENT:**\nFor every natural number \\( n \\geq 1 \\), let \\( \\text{PHP}_n : \\{0, 1\\}^{n(n+1)} \\to \\{0, 1\\} \\) be the Boolean function representing the *pigeonhole principle* for \\( n+1 \\) pigeons and \\( n \\) holes, defined as:",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (148s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T00:58:46.747758"
-  },
-  {
     "approach": "CONJECTURE_NAME: Shannon_Circuit_Count_Bound\nSTATEMENT: For every natural number \\( n \\geq 1 \\), let \\( N = 2^n \\). The number of distinct Boolean functions \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) that can be represented by Boolean circuits with at most \\( s \\) gates is at most \\( \\binom{s + n}{n} \\cdot 2^",
     "reason": "Formalization failed",
     "barrier_profile": {
@@ -2340,8 +2220,8 @@
     "timestamp": "2026-04-01T05:14:12.568687"
   },
   {
-    "approach": "**CONJECTURE_NAME:** Diagonalization_Separation_P_EXP\n\n**STATEMENT:** For every constructible function \\( f: \\mathbb{N} \\to \\mathbb{N} \\) where \\( f(n) > n \\), there exists a language \\( L \\in \\text{EXPTIME} \\) such that \\( L \\notin \\text{P} \\) with respect to time complexity \\( f(n) \\).\n\n**PROOF_SK",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (23s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "approach": "CONJECTURE_NAME: PHP_Circuit_Lower_Bound  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), the Pigeonhole Principle function \\( \\text{PHP}_n \\) (which outputs 1 on inputs of length \\( n^2 \\) that do not represent a permutation matrix) cannot be computed by any Boolean circuit of size \\( O(n^{1.5",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (21s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2349,10 +2229,94 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-04-01T05:26:44.679508"
+    "timestamp": "2026-04-01T05:22:43.510681"
   },
   {
-    "approach": "CONJECTURE_NAME: Shannon_Circuit_Counting_Lemma  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) that cannot be computed by any Boolean circuit of size at most \\( \\frac{2^n}{n + 1} \\).  \nPROOF_SKETCH: The total number of Boolean fun",
+    "approach": "CONJECTURE_NAME: EXP_not_in_P  \nSTATEMENT: There exists a language \\( L \\in \\text{EXP} \\) such that \\( L \\notin \\text{P} \\).  \nPROOF_SKETCH: Construct a language via diagonalization against all polynomial-time Turing machines, ensuring the constructed language is in EXP by simulating each machine on",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (76s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T05:32:21.768910"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Immerman_Szelepcsenyi_Theorem  \nSTATEMENT: For every space-constructible function \\( f: \\mathbb{N} \\to \\mathbb{N} \\) with \\( f(n) \\geq \\log n \\), the class \\( \\text{NSPACE}(f(n)) \\) is closed under complementation.  \nPROOF_SKETCH: Show that the complement of a language recognized by",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T05:38:24.058424"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Circuit_Counting_Lemma  \nSTATEMENT: For all natural numbers \\( n \\) and \\( s \\), the number of distinct Boolean circuits of size at most \\( s \\) over \\( n \\) variables is at most \\( (n + s)^{c(s + n \\log n)} \\) for some constant \\( c > 0 \\).  \nPROOF_SKETCH: By induction on circuit s",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.6s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T05:43:25.848515"
+  },
+  {
+    "approach": "CONJECTURE_NAME: LogSpace_In_P\nSTATEMENT: For every language $L \\subseteq \\{0,1\\}^*$, if $L \\in \\text{L}$ (solvable by a deterministic Turing machine in $O(\\log n)$ space), then $L \\in \\text{P}$ (solvable by a deterministic Turing machine in polynomial time). Formally, $\\text{L} \\subseteq \\text{P}$.",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.8s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T05:47:28.991004"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Cook_Levin_Theorem  \nSTATEMENT: The Boolean satisfiability problem (SAT) is NP-complete. Specifically,  \n1. SAT \u2208 NP (i.e., there exists a polynomial-time verifier for SAT).  \n2. Every language \\( L \\in \\text{NP} \\) polynomial-time many-one reduces to SAT.  \n\nPROOF_SKETCH:  \n1. **Ve",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (10s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T05:59:05.218539"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Shannon_Exp_Circuit_LB  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) such that any Boolean circuit computing \\( f \\) has size at least \\( \\frac{2^n}{n + 1} \\).  \nPROOF_SKETCH: Use a counting argument. The number ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T06:09:22.850149"
+  },
+  {
+    "approach": "CONJECTURE_NAME: AC0_Parity_Lower_Bound  \nSTATEMENT: For every constant \\( c \\in \\mathbb{N} \\), there exists a natural number \\( n_0 \\) such that for all \\( n \\geq n_0 \\), the parity function \\( \\text{PARITY}_n \\) (which outputs the XOR of its \\( n \\) input bits) cannot be computed by any AC\u2070 circui",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.9s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T06:18:14.394833"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Time_Hierarchy_Theorem  \nSTATEMENT: For any time-constructible functions \\( t_1, t_2: \\mathbb{N} \\to \\mathbb{N} \\) where \\( t_2(n) = o(t_1(n)) \\) and \\( t_1(n) \\) is non-decreasing, there exists a language \\( L \\in \\text{TIME}(t_2(n)) \\setminus \\text{TIME}(t_1(n)) \\).  \nPROOF_SKETCH",
     "reason": "Intent mismatch",
     "barrier_profile": {
       "R": 0,
@@ -2361,11 +2325,11 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-04-01T05:40:52.039951"
+    "timestamp": "2026-04-01T06:24:07.128575"
   },
   {
-    "approach": "CONJECTURE_NAME: BGS_Oracle_Separation  \nSTATEMENT: There exists an oracle \\( A \\) such that \\( \\text{P}^A \\neq \\text{NP}^A \\).  \nPROOF_SKETCH: Construct an oracle \\( A \\) by diagonalization against polynomial-time machines, ensuring that a specific language (e.g., the halting problem for NP machine",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.7s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "approach": "CONJECTURE_NAME: P_Closed_Under_Complement  \nSTATEMENT: For every language \\( L \\subseteq \\{0,1\\}^* \\), if \\( L \\in \\text{P} \\), then \\( \\overline{L} \\in \\text{P} \\).  \nPROOF_SKETCH: A deterministic polynomial-time Turing machine for \\( \\overline{L} \\) can be constructed by swapping the accept and r",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.6s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2373,11 +2337,11 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-04-01T05:46:10.198857"
+    "timestamp": "2026-04-01T06:29:38.773718"
   },
   {
-    "approach": "CONJECTURE_NAME: Shannon_Circuit_Lower_Bound_Existence  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) that cannot be computed by any Boolean circuit with at most \\( \\frac{2^n}{n + 1} \\) gates.  \nPROOF_SKETCH: The number of Boolean",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (57s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "approach": "CONJECTURE_NAME: FP_Closed_Under_Composition  \nSTATEMENT: For all functions \\( f, g : \\{0,1\\}^* \\to \\{0,1\\}^* \\), if \\( f \\in \\text{FP} \\) and \\( g \\in \\text{FP} \\), then the composition \\( f \\circ g \\) is also in \\( \\text{FP} \\).  \nPROOF_SKETCH: Let \\( f \\) be computable in polynomial time \\( p \\) ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (5.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2385,11 +2349,11 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-04-01T06:07:11.268937"
+    "timestamp": "2026-04-01T06:39:38.976691"
   },
   {
-    "approach": "CONJECTURE_NAME: P_Closed_Under_Complement  \nSTATEMENT: For every language \\( L \\subseteq \\{0,1\\}^* \\), if \\( L \\in \\text{P} \\), then \\( \\overline{L} \\in \\text{P} \\).  \nPROOF_SKETCH: If \\( L \\) is decidable by a polynomial-time Turing machine \\( M \\), construct \\( M' \\) that simulates \\( M \\) and in",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (6.5s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "approach": "CONJECTURE_NAME: Karp_Lipton_Theorem\nSTATEMENT: For every pair of languages $L_1, L_2 \\subseteq \\{0,1\\}^*$, if $L_1 \\in \\text{NP}$, $L_2 \\in \\text{NP}$, and both $L_1$ and $L_2$ are polynomial-time reducible to some language in $\\text{P/poly}$, then their union $L_1 \\cup L_2$ is also polynomial-time",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (20s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
     "barrier_profile": {
       "R": 0,
       "N": 0,
@@ -2397,6 +2361,42 @@
       "total": 0,
       "killed": false
     },
-    "timestamp": "2026-04-01T06:17:51.720926"
+    "timestamp": "2026-04-01T06:45:01.946140"
+  },
+  {
+    "approach": "/--\nCONJECTURE_NAME: Linear_Circuit_Separation\nSTATEMENT: For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0,1\\}^n \\to \\{0,1\\} \\) such that \\( f \\) can be computed by a linear-size circuit (i.e., \\( O(n) \\) gates) but cannot be computed by any circuit with \\( o(n) \\) ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.4s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T06:54:36.331887"
+  },
+  {
+    "approach": "CONJECTURE_NAME: **Immerman_Szelepcs\u00e9nyi_Theorem**  \nSTATEMENT: For every space-constructible function \\( s: \\mathbb{N} \\to \\mathbb{N} \\), the nondeterministic space class \\( \\text{NSPACE}(s(n)) \\) is closed under complementation. Formally, if \\( L \\subseteq \\{0,1\\}^* \\) is in \\( \\text{NSPACE}(s(n))",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (12s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T07:00:33.643509"
+  },
+  {
+    "approach": "CONJECTURE_NAME: BGS_Oracle_Separation  \nSTATEMENT: There exists an oracle \\( A \\) such that \\( \\text{P}^A \\neq \\text{NP}^A \\).  \nPROOF_SKETCH: Construct an oracle by diagonalizing against polynomial-time Turing machines, using a padded SAT problem to separate \\( \\text{NP}^A \\) from \\( \\text{P}^A \\)",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (8.2s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T07:11:51.496889"
   }
 ]
