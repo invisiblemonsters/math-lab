@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>METATRON — The Celestial Token</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --abyss: #050507;
+    --carbon: #101010;
+    --charcoal: #3d3a39;
+    --signal: #00d992;
+    --mint: #2fd6a1;
+    --snow: #f2f2f2;
+    --parchment: #b8b3b0;
+    --slate: #8b949e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--abyss);
+    color: var(--snow);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Navigation */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(5, 5, 7, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--charcoal);
+    z-index: 100;
+    padding: 16px 0;
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--snow);
+    letter-spacing: -0.3px;
+  }
+  .logo span { color: var(--signal); }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .nav-links a {
+    color: var(--slate);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--snow); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--snow);
+    border: 1px solid var(--charcoal);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-ghost:hover {
+    background: rgba(0,0,0,0.2);
+    border-color: var(--signal);
+  }
+  .btn-primary {
+    background: var(--carbon);
+    color: var(--mint);
+    border: none;
+    outline: 1px solid var(--mint);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-primary:hover {
+    background: rgba(0, 217, 146, 0.08);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.0;
+    letter-spacing: -0.65px;
+    margin-bottom: 24px;
+  }
+  .hero h1 span { color: var(--signal); }
+  .hero p {
+    color: var(--parchment);
+    font-size: 18px;
+    max-width: 640px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  .hero-address {
+    background: var(--carbon);
+    border: 1px solid var(--charcoal);
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--slate);
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .hero-address code {
+    color: var(--snow);
+    font-size: 13px;
+    word-break: break-all;
+  }
+  .hero-address .copy {
+    color: var(--mint);
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  /* Section */
+  section {
+    padding: 80px 0;
+  }
+  .section-label {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.52px;
+    text-transform: uppercase;
+    color: var(--signal);
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.11;
+    letter-spacing: -0.9px;
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--snow);
+    margin-bottom: 8px;
+  }
+  p, li {
+    color: var(--parchment);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .card {
+    background: var(--carbon);
+    border: 1px solid var(--charcoal);
+    border-radius: 8px;
+    padding: 28px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--signal); }
+  .card .icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .card p { font-size: 14px; margin-top: 8px; }
+
+  /* Tokenomics */
+  .token-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .token-stat {
+    background: var(--carbon);
+    border: 1px solid var(--charcoal);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+  }
+  .token-stat .value {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--snow);
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .token-stat .label {
+    font-size: 13px;
+    color: var(--slate);
+    font-weight: 500;
+  }
+
+  /* Code block */
+  .code-block {
+    background: var(--carbon);
+    border: 1px solid var(--charcoal);
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--snow);
+    overflow-x: auto;
+    margin-top: 24px;
+  }
+  .code-block .comment { color: var(--slate); }
+  .code-block .keyword { color: var(--signal); }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--charcoal);
+    padding: 40px 0;
+    text-align: center;
+  }
+  footer p { font-size: 13px; color: var(--slate); }
+  footer a { color: var(--parchment); text-decoration: none; }
+  footer a:hover { color: var(--signal); }
+
+  /* Glow */
+  .glow {
+    filter: drop-shadow(0 0 4px var(--signal));
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 36px; }
+    .hero { padding: 80px 0 48px; }
+    section { padding: 48px 0; }
+    h2 { font-size: 28px; }
+    .nav-links { display: none; }
+    .card-grid { grid-template-columns: 1fr; }
+    .token-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Animation */
+  @keyframes pulse {
+    0%, 100% { filter: drop-shadow(0 0 2px var(--signal)); }
+    50% { filter: drop-shadow(0 0 8px var(--signal)); }
+  }
+  .pulse { animation: pulse 3s ease-in-out infinite; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo"><span>⚡</span> METATRON</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#how-to-buy">Buy</a>
+      <a href="#community">Community</a>
+      <a href="https://basescan.org/token/0x3f5c560b8C33Fb59F944e55798a75935eb693362" target="_blank" class="btn-ghost">Basescan ↗</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>The <span>Celestial</span><br>Scribe Token</h1>
+    <p>One billion METATRON tokens. No taxes. No mint function. No owner privileges after deploy. Pure, immutable value on Base.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="#how-to-buy" class="btn-primary">How to Buy</a>
+      <a href="https://basescan.org/token/0x3f5c560b8C33Fb59F944e55798a75935eb693362" target="_blank" class="btn-ghost">View on Basescan</a>
+    </div>
+    <div class="hero-address" style="margin-top: 32px;">
+      <code>0x3f5c560b8C33Fb59F944e55798a75935eb693362</code>
+      <span class="copy" onclick="navigator.clipboard.writeText('0x3f5c560b8C33Fb59F944e55798a75935eb693362')">[COPY]</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">About</div>
+    <h2>What is METATRON?</h2>
+    <p style="max-width: 720px;">METATRON is a zero-overhead ERC20 token on Base L2. No transaction taxes, no admin keys, no hidden mint functions — the contract is immutable the moment it was deployed. 1,000,000,000 tokens exist and no more can ever be created.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Immutable</h3>
+        <p>No owner functions. No upgrade proxy. No pause. The contract cannot be changed — ever.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Zero Tax</h3>
+        <p>0% buy tax. 0% sell tax. 0% transfer tax. What you send is what arrives.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Base L2</h3>
+        <p>Built on Base — Ethereum's fastest-growing L2. Sub-cent transactions. 2-second confirmations.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📜</div>
+        <h3>Verified</h3>
+        <p>Source code is public. Full ERC20 standard. No hidden logic. No backdoors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tokenomics">
+  <div class="container">
+    <div class="section-label">Tokenomics</div>
+    <h2>Supply & Distribution</h2>
+    <div class="token-grid">
+      <div class="token-stat">
+        <div class="value">1B</div>
+        <div class="label">Total Supply</div>
+      </div>
+      <div class="token-stat">
+        <div class="value">0%</div>
+        <div class="label">Tax</div>
+      </div>
+      <div class="token-stat">
+        <div class="value">18</div>
+        <div class="label">Decimals</div>
+      </div>
+      <div class="token-stat">
+        <div class="value">Base</div>
+        <div class="label">Chain</div>
+      </div>
+    </div>
+    <p style="margin-top: 32px; max-width: 720px;">All 1 billion METATRON tokens were minted to the deployer at genesis. There is no team allocation, no VC tranche, no vesting schedule. The supply is what it is — transparent and finite.</p>
+  </div>
+</section>
+
+<section id="how-to-buy">
+  <div class="container">
+    <div class="section-label">How to Buy</div>
+    <h2>Get METATRON</h2>
+    <p style="max-width: 720px;">METATRON trades on Uniswap V3 on Base. You can swap any Base token (ETH, USDC, etc.) for METATRON directly.</p>
+    <div class="code-block">
+      <span class="comment">// Add METATRON to your wallet</span><br>
+      <span class="keyword">Token Address:</span> 0x3f5c560b8C33Fb59F944e55798a75935eb693362<br>
+      <span class="keyword">Network:</span> Base (Chain ID 8453)<br>
+      <span class="keyword">Symbol:</span> METATRON<br>
+      <span class="keyword">Decimals:</span> 18
+    </div>
+    <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a href="https://app.uniswap.org/explore/tokens/base/0x3f5c560b8c33fb59f944e55798a75935eb693362" target="_blank" class="btn-ghost">Trade on Uniswap ↗</a>
+      <a href="https://basescan.org/token/0x3f5c560b8C33Fb59F944e55798a75935eb693362" target="_blank" class="btn-ghost">Basescan ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="container">
+    <div class="section-label">Community</div>
+    <h2>Join the Scribes</h2>
+    <p style="max-width: 720px;">METATRON is community-owned. There is no company, no foundation, no team tokens. Every holder is an equal participant.</p>
+    <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a href="https://x.com/search?q=METATRON%20token&src=typed_query" target="_blank" class="btn-ghost">X / Twitter ↗</a>
+      <a href="https://dexscreener.com/base/0x3f5c560b8C33Fb59F944e55798a75935eb693362" target="_blank" class="btn-ghost">DexScreener ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>METATRON — Contract: <a href="https://basescan.org/token/0x3f5c560b8C33Fb59F944e55798a75935eb693362">0x3f5c...93362</a></p>
+    <p style="margin-top: 8px;">No promises. No roadmap. Just code.</p>
+  </div>
+</footer>
+
+</body>
+</html>
