@@ -11,7 +11,7 @@ Production Arbitrage Scanner — Uniswap V3 on Base.
 Data source: Alchemy RPC.
 """
 
-import json, math, time, subprocess
+import json, math, time, subprocess, sys
 from dataclasses import dataclass
 from typing import Optional
 
@@ -423,6 +423,19 @@ def main():
     if not routes:
         print("\n  No profitable arbitrage after gas costs.")
         print("  Market is efficient or spreads too tight for triangular arb.")
+        
+        # JSON summary even when no arb
+        summary = {
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "scan_time_s": round(total_time, 1),
+            "eth_price": round(eth_price, 2),
+            "pools_total": len(pools),
+            "profitable": 0,
+            "executable": 0,
+            "total_net_mev_safe": 0,
+            "top_opportunity": None
+        }
+        print(f"\nJSON: {json.dumps(summary)}")
         return
     
     print(f"\n📊 TOP ARBITRAGE OPPORTUNITIES:")
@@ -458,6 +471,34 @@ def main():
         print(f"  ROI:       {best['roi_pct']:.2f}%")
     
     print(f"\n⏱️  Total scan time: {total_time:.1f}s")
+    
+    # JSON summary for cron/automation
+    summary = {
+        "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "scan_time_s": round(total_time, 1),
+        "eth_price": round(eth_price, 2),
+        "pools_total": len(pools),
+        "candidate_paths": len(routes),
+        "profitable": len(routes),
+        "executable": len(executable),
+        "total_net_mev_safe": round(total_net, 2),
+        "top_opportunity": None
+    }
+    if executable:
+        summary["top_opportunity"] = {
+            "path": best["path"],
+            "pools": best["pools"],
+            "size_usd": best["amount_in_usd"],
+            "gross_usd": best["gross_usd"],
+            "net_usd": best["net_usd"],
+            "net_mev_safe_usd": best["net_after_mev"],
+            "roi_pct": best["roi_pct"],
+        }
+    print(f"\nJSON: {json.dumps(summary)}")
+    
+    # Exit code for cron: 1 if executable arb found
+    if executable:
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
