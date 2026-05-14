@@ -1,0 +1,12 @@
+=== k=4 BOUNDARY SCAN — Mon Apr  6 12:20:08 PDT 2026 ===
+Using top-screened solver, screen_width=50
+
+============================================
+>>> n=105 k=4, 10 HC instances — Mon Apr  6 12:20:08 PDT 2026
+============================================
+======================================================================
+  COFFINHEAD — k=4 Top-Screened (16 threads, screen=50)
+  n=105, target=10 hard-core, ratio=4.0
+======================================================================
+
+  FAIL #1: seed=0, bt=159992, 475049.7s  *** BOUNDARY CANDIDATE ***

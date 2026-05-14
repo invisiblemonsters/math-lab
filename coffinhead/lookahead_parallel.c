@@ -18,8 +18,8 @@
 
 typedef unsigned __int128 u128;
 
-#define MAX_VARS    100
-#define MAX_CLAUSES 500
+#define MAX_VARS    128
+#define MAX_CLAUSES 600
 
 static inline int popcnt128(u128 x) {
     return __builtin_popcountll((uint64_t)x) +

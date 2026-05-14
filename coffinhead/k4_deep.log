@@ -1,0 +1,40 @@
+=== K=4 DEEP BOUNDARY SEARCH (2hr timeout per n) ===
+Started: Wed Apr  1 15:08:12 PDT 2026
+
+--- n=90 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=90, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 1163.5s)
+
+  RESULT k=4 n=90 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 1163.5s
+  >>> PERFECT <<<
+
+--- n=95 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=95, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 2240.6s)
+
+  RESULT k=4 n=95 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 2240.6s
+  >>> PERFECT <<<
+
+--- n=100 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=100, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 1937.7s)
+
+  RESULT k=4 n=100 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 1937.7s
+  >>> PERFECT <<<
+
+--- n=110 ---
+n_vars > 100
+
+Finished: Wed Apr  1 16:37:14 PDT 2026

@@ -178,3 +178,75 @@ Started: Wed Apr  1 09:39:55 PDT 2026
   >>> PERFECT <<<
 
 --- n=75 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=75, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 847.6s)
+
+  RESULT k=4 n=75 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 847.6s
+  >>> PERFECT <<<
+
+--- n=80 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=75, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 851.3s)
+
+  RESULT k=4 n=75 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 851.3s
+  >>> PERFECT <<<
+
+--- n=80 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=80, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 1269.4s)
+
+  RESULT k=4 n=80 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 1269.4s
+  >>> PERFECT <<<
+
+--- n=85 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=80, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 1267.0s)
+
+  RESULT k=4 n=80 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 1267.0s
+  >>> PERFECT <<<
+
+--- n=85 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=85, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 1494.2s)
+
+  RESULT k=4 n=85 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 1494.2s
+  >>> PERFECT <<<
+
+--- n=90 ---
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=85, k=4, target=20, ratio=4.0
+======================================================================
+
+  (instance timeout 1491.2s)
+
+  RESULT k=4 n=85 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 1491.2s
+  >>> PERFECT <<<
+
+--- n=90 ---
+TIMEOUT at n=90 (30min)
+
+Finished: Wed Apr  1 11:57:34 PDT 2026
+TIMEOUT at n=90 (30min)
+
+Finished: Wed Apr  1 11:57:54 PDT 2026

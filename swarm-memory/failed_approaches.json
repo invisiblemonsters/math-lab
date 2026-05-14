@@ -1,65 +1,5 @@
 [
   {
-    "approach": "**CONJECTURE_NAME:** **Pigeonhole_Principle_Circuit_Size_Lower_Bound**\n\n**STATEMENT:**\nFor every natural number \\( n \\geq 1 \\), let \\( \\text{PHP}_n : \\{0, 1\\}^{n \\times (n+1)} \\to \\{0, 1\\} \\) be the Boolean function representing the pigeonhole principle on \\( n+1 \\) pigeons and \\( n \\) holes, define",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (39s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T04:38:48.770234"
-  },
-  {
-    "approach": "/--\nCONJECTURE_NAME: Time_Hierarchy_Theorem\nSTATEMENT: For every time-constructible function $T: \\mathbb{N} \\to \\mathbb{N}$, there exists a language $L \\in \\mathbf{DTIME}(T(n))$ such that $L \\notin \\mathbf{DTIME}(T(n)/2)$. Specifically, for $T(n) = 2^n$, this implies $\\mathbf{EXP} \\neq \\mathbf{P}$.\n",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (156s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/le",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T04:51:07.144383"
-  },
-  {
-    "approach": "**CONJECTURE_NAME:** **Time_Hierarchy_Theorem_Strict_Inclusion**\n\n**STATEMENT:**\nFor any two time-constructible functions \\( T_1, T_2: \\mathbb{N} \\to \\mathbb{N} \\) such that\n\\[ T_2(n) \\log T_2(n) = o(T_1(n)), \\]\nthere exists a language \\( L \\) such that\n\\[ L \\in \\mathbf{DTIME}(T_1(n)) \\setminus \\mat",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (12s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T05:10:02.850928"
-  },
-  {
-    "approach": "/--\nCONJECTURE_NAME: Circuit_Size_Shannon_Bound\nSTATEMENT: For every natural number \\( n \\geq 1 \\), there exists a Boolean function \\( f: \\{0, 1\\}^n \\to \\{0, 1\\} \\) such that every Boolean circuit computing \\( f \\) requires at least \\( n \\) gates.\nPROOF_SKETCH: Use a counting argument to show that t",
-    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (82s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T05:22:52.202725"
-  },
-  {
-    "approach": "CONJECTURE_NAME: Shannon_Lower_Bound_Exponential\nSTATEMENT: For every natural number $n \\geq 1$, there exists a Boolean function $f: \\{0, 1\\}^n \\to \\{0, 1\\}$ such that any Boolean circuit (using AND, OR, NOT gates with fan-in 2) computing $f$ requires size at least $\\frac{2^n}{n+1}$.\nPROOF_SKETCH: \n",
-    "reason": "Formalization failed",
-    "barrier_profile": {
-      "R": 0,
-      "N": 0,
-      "A": 0,
-      "total": 0,
-      "killed": false
-    },
-    "timestamp": "2026-03-31T05:24:14.362670"
-  },
-  {
     "approach": "/--\nCONJECTURE_NAME: Pigeonhole_Circuit_Lower_Bound\nSTATEMENT: For every natural number \\( n \\geq 1 \\), the Pigeonhole Principle language \\( \\text{PHP}_n \\) (defined as the set of all binary strings of length \\( n \\) with exactly \\( n+1 \\) ones) requires Boolean circuits of size at least \\( 2^n / n ",
     "reason": "Intent mismatch",
     "barrier_profile": {
@@ -2398,5 +2338,65 @@
       "killed": false
     },
     "timestamp": "2026-04-01T10:36:18.299986"
+  },
+  {
+    "approach": "/--\nCONJECTURE_NAME: Time_Hierarchy_Theorem\nSTATEMENT: For any time-constructible function \\( T: \\mathbb{N} \\to \\mathbb{N} \\) with \\( T(n) \\geq n \\), there exists a language \\( L \\) such that \\( L \\in \\text{DTIME}(T(n)) \\) but \\( L \\notin \\text{DTIME}(o(T(n))) \\).\nPROOF_SKETCH: Employ a diagonalizat",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (20s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T10:46:59.199962"
+  },
+  {
+    "approach": "CONJECTURE_NAME: Majority_Not_In_AC0  \nSTATEMENT: For every natural number \\( n \\geq 1 \\), the majority function \\( \\text{MAJ}_n: \\{0,1\\}^n \\to \\{0,1\\} \\), defined as \\( \\text{MAJ}_n(x) = 1 \\) if and only if more than half of the bits of \\( x \\) are 1, is not computable by any \\( \\text{AC}^0 \\) circ",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (31s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T10:56:33.386590"
+  },
+  {
+    "approach": "CONJECTURE_NAME: LogSpace_In_P\nSTATEMENT: For every language \\( L \\subseteq \\{0,1\\}^* \\), if \\( L \\in \\text{L} \\) (solvable by a deterministic Turing machine in \\( O(\\log n) \\) space), then \\( L \\in \\text{P} \\) (solvable by a deterministic Turing machine in polynomial time).\nPROOF_SKETCH: Let \\( M \\",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (20s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T11:00:34.692753"
+  },
+  {
+    "approach": "/--\nCONJECTURE_NAME: **Circuit_Lower_Bound_for_PARITY**\nSTATEMENT: For every natural number \\( n \\geq 1 \\), the PARITY function on \\( n \\) variables, defined as \\( \\text{PARITY}_n(x_1, \\ldots, x_n) = \\bigoplus_{i=1}^{n} x_i \\), cannot be computed by any Boolean circuit with depth \\( O(\\log n) \\) and",
+    "reason": "Compile failed: \u2716 [8204/8204] Building MyProofs.Attempt (23s)\ntrace: .> LEAN_PATH=/home/power/mathlib_test/.lake/packages/Cli/.lake/build/lib/lean:/home/power/mathlib_test/.lake/packages/batteries/.lake/build/lib/lea",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T11:07:44.247848"
+  },
+  {
+    "approach": "**CONJECTURE_NAME:** **Cook_Levin_Reduction**\n\n**STATEMENT:**\nFor every language \\( L \\in \\text{NP} \\), there exists a polynomial-time many-one reduction \\( f : \\{0,1\\}^* \\to \\{0,1\\}^* \\) such that for all \\( x \\in \\{0,1\\}^* \\),\n\\[ x \\in L \\iff f(x) \\in \\text{SAT}, \\]\nwhere \\( \\text{SAT} \\) is the s",
+    "reason": "Intent mismatch",
+    "barrier_profile": {
+      "R": 0,
+      "N": 0,
+      "A": 0,
+      "total": 0,
+      "killed": false
+    },
+    "timestamp": "2026-04-01T11:10:26.278272"
   }
 ]

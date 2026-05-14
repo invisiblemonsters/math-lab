@@ -1,0 +1,51 @@
+=== k=4 EXACT BOUNDARY SEARCH — Tue Apr 28 10:34:09 PDT 2026 ===
+Starting at n=103 (n_perfect=100 confirmed, failure at 105 screen)
+
+>>> n=103 — Tue Apr 28 10:34:09 PDT 2026
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=103, k=4, target=5, ratio=4.0
+======================================================================
+
+  (instance timeout 3795.6s)
+
+  RESULT k=4 n=103 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 3795.6s
+  >>> PERFECT <<<
+
+>>> n=104 — Tue Apr 28 11:37:25 PDT 2026
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=104, k=4, target=5, ratio=4.0
+======================================================================
+
+  (instance timeout 4094.0s)
+
+  RESULT k=4 n=104 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 4094.0s
+  >>> PERFECT <<<
+
+>>> n=105 — Tue Apr 28 12:45:39 PDT 2026
+TIMEOUT at n=105 (4hr)
+
+>>> n=102 — Tue Apr 28 16:45:39 PDT 2026
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=102, k=4, target=5, ratio=4.0
+======================================================================
+
+  (instance timeout 4068.2s)
+
+  RESULT k=4 n=102 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 4068.2s
+  >>> PERFECT <<<
+
+>>> n=101 — Tue Apr 28 17:53:27 PDT 2026
+======================================================================
+  COFFINHEAD — Parallel Exact Lookahead (16 threads)
+  n=101, k=4, target=5, ratio=4.0
+======================================================================
+
+  (instance timeout 4511.1s)
+
+  RESULT k=4 n=101 (16 threads): 1/1 = 100.0% zero-BT, avg_bt=0.00, 4511.1s
+  >>> PERFECT <<<
+
+=== DONE — Tue Apr 28 19:08:39 PDT 2026 ===
