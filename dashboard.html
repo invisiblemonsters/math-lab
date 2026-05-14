@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>METATRON Dashboard — Live Token Tracker</title>
+<style>
+  :root {
+    --bg: #050507;
+    --card: #101010;
+    --border: #3d3a39;
+    --green: #00d992;
+    --text: #f2f2f2;
+    --muted: #8b949e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 24px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h1 span { color: var(--green); }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .stat .value { font-size: 24px; font-weight: 700; color: var(--green); }
+  .stat .label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 16px; margin-bottom: 12px; color: var(--green); }
+  
+  .address {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    word-break: break-all;
+    background: rgba(0,0,0,0.3);
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 8px 0;
+  }
+  
+  .tx-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .tx {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(61,58,57,0.5);
+    font-size: 13px;
+  }
+  .tx .hash {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .tx .type { color: var(--green); font-weight: 600; }
+  .tx .amount { color: var(--text); font-weight: 600; }
+  
+  .links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+  .links a {
+    color: var(--green); text-decoration: none;
+    font-size: 13px; padding: 6px 12px;
+    border: 1px solid var(--border); border-radius: 4px;
+  }
+  .links a:hover { background: rgba(0,217,146,0.1); }
+  
+  .donate {
+    text-align: center;
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+  .donate h3 { color: var(--green); margin-bottom: 8px; }
+  .donate .addr { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
+  
+  .loading { color: var(--muted); font-style: italic; }
+  .error { color: #fb565b; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1><span>⚡</span> METATRON Dashboard</h1>
+  <p class="sub">Live token data from Base L2</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="value" id="supply">1,000,000,000</div>
+      <div class="label">Total Supply</div>
+    </div>
+    <div class="stat">
+      <div class="value" id="holders">...</div>
+      <div class="label">Holders</div>
+    </div>
+    <div class="stat">
+      <div class="value" id="transfers">...</div>
+      <div class="label">Total Transfers</div>
+    </div>
+    <div class="stat">
+      <div class="value">0%</div>
+      <div class="label">Tax</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Contract</h2>
+    <div class="address">0x3f5c560b8C33Fb59F944e55798a75935eb693362</div>
+    <div class="links">
+      <a href="https://basescan.org/token/0x3f5c560b8C33Fb59F944e55798a75935eb693362" target="_blank">Basescan ↗</a>
+      <a href="https://app.uniswap.org/explore/tokens/base/0x3f5c560b8c33fb59f944e55798a75935eb693362" target="_blank">Uniswap ↗</a>
+      <a href="https://dexscreener.com/base/0x3f5c560b8C33Fb59F944e55798a75935eb693362" target="_blank">DexScreener ↗</a>
+      <a href="https://invisiblemonsters.github.io/math-lab/" target="_blank">Landing Page ↗</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Recent Transfers</h2>
+    <div class="tx-list" id="tx-list">
+      <div class="loading">Loading transfers...</div>
+    </div>
+  </div>
+
+  <div class="donate">
+    <h3>Tip Jar</h3>
+    <p style="color:var(--muted);font-size:13px;">Find this useful? Send ETH or METATRON.</p>
+    <div class="addr">0x11B185ceFcB2A001FFDddf0f226437D16EbF5437</div>
+  </div>
+</div>
+
+<script>
+const RPC = "https://base-rpc.publicnode.com";
+const TOKEN = "0x3f5c560b8C33Fb59F944e55798a75935eb693362";
+
+async function rpc(method, params) {
+  const res = await fetch(RPC, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({jsonrpc:"2.0",method,params,id:1})
+  });
+  return (await res.json()).result;
+}
+
+async function load() {
+  try {
+    // Get Transfer events (last 20)
+    const transferTopic = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef";
+    const logs = await rpc("eth_getLogs", [{
+      address: TOKEN,
+      fromBlock: "0x" + (await rpc("eth_blockNumber", [])).toString(16),
+      toBlock: "latest",
+      topics: [transferTopic]
+    }]);
+
+    // Get latest block for recent transfers
+    const blockNum = parseInt(await rpc("eth_blockNumber", []), 16);
+    const fromBlock = "0x" + Math.max(0, blockNum - 50000).toString(16);
+    
+    const recentLogs = await rpc("eth_getLogs", [{
+      address: TOKEN,
+      fromBlock,
+      toBlock: "latest",
+      topics: [transferTopic]
+    }]);
+
+    document.getElementById('transfers').textContent = recentLogs.length || "0";
+    
+    // Count unique addresses from logs
+    const addresses = new Set();
+    recentLogs.forEach(log => {
+      addresses.add("0x" + log.topics[1].slice(26));
+      addresses.add("0x" + log.topics[2].slice(26));
+    });
+    document.getElementById('holders').textContent = addresses.size || 1;
+
+    // Show recent transfers
+    const txList = document.getElementById('tx-list');
+    if (recentLogs.length === 0) {
+      txList.innerHTML = '<div class="loading">No transfers yet. Be the first.</div>';
+    } else {
+      txList.innerHTML = recentLogs.slice(-15).reverse().map(log => {
+        const from = "0x" + log.topics[1].slice(26);
+        const to = "0x" + log.topics[2].slice(26);
+        const value = parseInt(log.data, 16) / 1e18;
+        const txHash = log.transactionHash.slice(0,10) + "...";
+        const isMint = from === "0x0000000000000000000000000000000000000000";
+        return `<div class="tx">
+          <span class="type">${isMint ? 'MINT' : 'TRANSFER'}</span>
+          <span class="amount">${value.toLocaleString()} METATRON</span>
+          <div class="hash">${txHash} · ${from.slice(0,8)} → ${to.slice(0,8)}</div>
+        </div>`;
+      }).join('');
+    }
+  } catch(e) {
+    document.getElementById('tx-list').innerHTML = 
+      `<div class="error">Error loading: ${e.message}</div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
