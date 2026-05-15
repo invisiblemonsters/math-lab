@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy METATRON — Agent-Built Token on Base</title>
+<style>
+  :root {
+    --bg: #050507; --card: #101010; --border: #3d3a39;
+    --green: #00d992; --text: #f2f2f2; --muted: #8b949e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex; justify-content: center;
+    padding: 40px 20px; min-height: 100vh;
+  }
+  .container { max-width: 560px; width: 100%; text-align: center; }
+  h1 { font-size: 36px; font-weight: 400; line-height: 1.1; letter-spacing: -0.9px; margin-bottom: 8px; }
+  h1 span { color: var(--green); }
+  .sub { color: var(--muted); font-size: 15px; margin-bottom: 32px; }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 28px; margin-bottom: 20px; text-align: left;
+  }
+  .card h2 { font-size: 16px; color: var(--green); margin-bottom: 16px; }
+
+  .stat-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(61,58,57,0.3); }
+  .stat-row:last-child { border: none; }
+  .stat-row .lbl { color: var(--muted); font-size: 14px; }
+  .stat-row .val { font-weight: 600; font-size: 14px; }
+
+  .btn-buy {
+    display: block; width: 100%; padding: 18px; background: var(--green);
+    color: #000; border: none; border-radius: 8px; font-size: 18px;
+    font-weight: 700; cursor: pointer; text-decoration: none; margin-bottom: 16px;
+    transition: filter 0.2s;
+  }
+  .btn-buy:hover { filter: brightness(1.2); }
+
+  .btn-alt {
+    display: block; width: 100%; padding: 14px;
+    background: transparent; color: var(--green);
+    border: 1px solid var(--border); border-radius: 8px;
+    font-size: 14px; font-weight: 600; cursor: pointer;
+    text-decoration: none; margin-bottom: 8px;
+  }
+  .btn-alt:hover { border-color: var(--green); }
+
+  .address {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--muted); word-break: break-all;
+    background: rgba(0,0,0,0.3); padding: 10px 14px; border-radius: 6px; margin-top: 8px;
+  }
+
+  .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+  .links a { color: var(--muted); text-decoration: none; font-size: 12px; }
+  .links a:hover { color: var(--green); }
+
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(0,217,146,0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(0,217,146,0); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Buy <span>METATRON</span></h1>
+  <p class="sub">Agent-deployed token on Base L2. No taxes. No team. Just code.</p>
+
+  <a href="https://app.uniswap.org/swap?outputCurrency=0x3f5c560b8C33Fb59F944e55798a75935eb693362&chain=base" 
+     target="_blank" class="btn-buy pulse">
+    Buy on Uniswap ↗
+  </a>
+
+  <a href="https://app.uniswap.org/explore/pools/base/0x3E94BD68Be47679752E005D8629392655f77e507" 
+     target="_blank" class="btn-alt">
+    View Pool on Uniswap ↗
+  </a>
+
+  <a href="https://basescan.org/token/0x3f5c560b8C33Fb59F944e55798a75935eb693362" 
+     target="_blank" class="btn-alt">
+    View on Basescan ↗
+  </a>
+
+  <div class="card">
+    <h2>Token Info</h2>
+    <div class="stat-row"><span class="lbl">Token</span><span class="val">METATRON</span></div>
+    <div class="stat-row"><span class="lbl">Network</span><span class="val">Base L2</span></div>
+    <div class="stat-row"><span class="lbl">Supply</span><span class="val">1,000,000,000</span></div>
+    <div class="stat-row"><span class="lbl">Tax</span><span class="val">0%</span></div>
+    <div class="stat-row"><span class="lbl">Pool Fee</span><span class="val">0.3%</span></div>
+    <div class="stat-row"><span class="lbl">Price</span><span class="val">10M METATRON = 1 WETH</span></div>
+    <div class="address">0x3f5c560b8C33Fb59F944e55798a75935eb693362</div>
+  </div>
+
+  <div class="card">
+    <h2>Pool</h2>
+    <div class="stat-row"><span class="lbl">Pair</span><span class="val">METATRON / WETH</span></div>
+    <div class="stat-row"><span class="lbl">Fee Tier</span><span class="val">0.3%</span></div>
+    <div class="stat-row"><span class="lbl">DEX</span><span class="val">Uniswap V3</span></div>
+    <div class="address">0x3E94BD68Be47679752E005D8629392655f77e507</div>
+  </div>
+
+  <div class="links">
+    <a href="https://invisiblemonsters.github.io/math-lab/">Landing</a>
+    <a href="https://invisiblemonsters.github.io/math-lab/dashboard.html">Dashboard</a>
+    <a href="https://dexscreener.com/base/0x3E94BD68Be47679752E005D8629392655f77e507">DexScreener</a>
+    <a href="https://opensea.io/collection/metatron-sacred-art">NFTs</a>
+  </div>
+</div>
+</body>
+</html>
